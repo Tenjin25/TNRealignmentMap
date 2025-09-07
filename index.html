@@ -690,6 +690,70 @@ button {
 </div>
 
     <script>
+// --- Dynamic Year Switching and Contest Dropdown ---
+const availableYears = [2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024];
+let electionData = {};
+
+function loadElectionData(year) {
+    if (electionData[year]) {
+        populateContestDropdown(year);
+        return;
+    }
+    fetch(`output/comprehensive_${year}.json`)
+        .then(res => res.json())
+        .then(data => {
+            electionData[year] = data;
+            populateContestDropdown(year);
+            // Optionally, call applyCategories() or other update functions here
+            console.log(`${year} election data loaded`, data);
+        });
+}
+
+function populateYearDropdown() {
+    const yearSelect = document.getElementById('year-select');
+    if (!yearSelect) return;
+    yearSelect.innerHTML = '';
+    availableYears.forEach(year => {
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        yearSelect.appendChild(opt);
+    });
+    yearSelect.value = 2020;
+}
+
+function populateContestDropdown(year) {
+    const contestSelect = document.getElementById('contest');
+    if (!contestSelect) return;
+    contestSelect.innerHTML = '';
+    const data = electionData[year];
+    if (!data || !data.contests) return;
+    Object.keys(data.contests).forEach(contest => {
+        const opt = document.createElement('option');
+        opt.value = contest;
+        opt.textContent = contest;
+        contestSelect.appendChild(opt);
+    });
+    // Optionally, trigger map update here
+}
+
+// Add year dropdown to controls
+document.addEventListener('DOMContentLoaded', function() {
+    // Insert year dropdown above contest dropdown
+    const controls = document.getElementById('controls-content');
+    if (controls && !document.getElementById('year-select')) {
+        const yearGroup = document.createElement('div');
+        yearGroup.className = 'control-group';
+        yearGroup.innerHTML = '<label>📅 Election Year:</label><select id="year-select"></select>';
+        controls.insertBefore(yearGroup, controls.firstChild);
+        populateYearDropdown();
+        document.getElementById('year-select').addEventListener('change', function() {
+            loadElectionData(this.value);
+        });
+        // Load default year
+        loadElectionData(2020);
+    }
+});
     // ...existing JS code, but update map center/zoom for Tennessee ...
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21kcW8yeDB2MDhvbTJzb29qeGp1aDZmZCJ9.Zw_i6U-dL7_bEKRHTUh7yg';
     let loadingManager, analyticsManager;
@@ -790,5 +854,61 @@ button {
     // Usage: call calculateMargins(electionResults) after loading your data
     // ...rest of the JS code unchanged...
     </script>
+<script>
+// --- Tennessee Map Data Loading Example ---
+map.on('load', function() {
+    // Counties and Grand Divisions
+    map.addSource('counties', {
+        type: 'geojson',
+        data: 'VTDs/TN_counties_with_grand.geojson'
+    });
+    map.addLayer({
+        id: 'county-fill',
+        type: 'fill',
+        source: 'counties',
+        paint: {
+            'fill-color': '#e0e0e0',
+            'fill-opacity': 0.3
+        }
+    });
+    // Precincts (VTDs)
+    map.addSource('precincts', {
+        type: 'geojson',
+        data: 'output/vtd_geojsons/tn_vtds_2020.geojson'
+    });
+    map.addLayer({
+        id: 'precinct-fill',
+        type: 'fill',
+        source: 'precincts',
+        paint: {
+            'fill-color': '#cccccc',
+            'fill-opacity': 0.5
+        },
+        layout: { visibility: 'none' }
+    });
+});
+
+// Example: Load 2020 election results (comprehensive JSON)
+let electionData2020 = null;
+fetch('output/comprehensive_2020.json')
+    .then(res => res.json())
+    .then(data => {
+        electionData2020 = data;
+        // Call your update functions here, e.g.:
+        // applyCategories(electionData2020);
+        // or populate contest/year dropdowns
+        console.log('2020 election data loaded', data);
+    });
+</script>
+</script>
+<script>
+// Fix for missing controls minimize/expand
+function toggleMainControls() {
+    const controls = document.getElementById('main-controls');
+    const btn = document.getElementById('controls-minimize-btn');
+    controls.classList.toggle('minimized');
+    btn.textContent = controls.classList.contains('minimized') ? '+' : '−';
+}
+</script>
 </body>
 </html>
