@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+    <script src='scripts/common.js'></script>
+    <meta charset='utf-8'>
+    <title>TN Political Realignment Map (2008-2024)</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta property="og:title" content="TN Political Realignment Map (2008-2024)">
+    <meta property="og:description" content="Interactive visualization of Tennessee's political trends from 2008 to 2024, showing county-level and precinct-level voting patterns.">
+    <meta property="og:image" content="preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
+    <link href='styles/common.css' rel='stylesheet'>
+    <style>
+        /* ...existing code... */
+    </style>
+</head>
+<body>
+        <div id="share-container" style="position: fixed; top: 20px; right: 440px; z-index: 1000;"></div>
+        <button id="sidebar-float-toggle" style="position:fixed;top:20px;right:20px;z-index:10001;width:56px;height:56px;background:#2563eb;color:#fff;border:none;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.15);font-size:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+            +
+        </button>
+    <div id="map" style="position:relative;width:100%;height:100%;">
+        <canvas id="swingCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1000;"></canvas>
+    </div>
+
+<!-- Main Controls Dropdown (Contest Selector) -->
+<div class="main-controls" id="main-controls">
+    <div class="controls-header">
+        <h3>🗳️ TN Political Contests</h3>
+        <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">−</button>
+    </div>
+    <div class="controls-content" id="controls-content">
+        <div class="analysis-mode">
+            <div class="mode-toggle active" id="county-mode" onclick="setMode('county')">County Results</div>
+            <div class="mode-toggle" id="precinct-mode" onclick="setMode('precinct')">Precinct Patterns</div>
+        </div>
+        <div class="control-group">
+            <label>📊 Contest Type:</label>
+            <select id="contest">
+            </select>
+        </div>
+        <button onclick="applyCategories()" class="btn-primary">
+            🎨 Apply Political Categories
+        </button>
+        <button onclick="resetView()" class="btn-secondary">
+            🔄 Reset View
+        </button>
+        <button onclick="toggleLabels()" class="btn-success">
+            🏷️ Toggle County Labels
+        </button>
+        <button onclick="togglePrecinctsLayer()" class="btn-warning">
+            📍 Toggle Precincts
+        </button>
+        <div class="control-group" style="margin-top: 15px;">
+            <label>🔍 Quick Analysis:</label>
+            <button onclick="showSwingCounties()" class="btn-secondary" style="font-size: 12px;">
+            </button>
+        </div>
+        <div class="control-group">
+            <label>🔄 Compare to Previous:</label>
+            <select id="compare-election" onchange="showSwingArrows()">
+            </select>
+            <button onclick="hideSwingArrows()" class="btn-secondary">
+            </button>
+        </div>
+        </div> <!-- End controls-content -->
+    </div>
+
+<!-- Sidebar for County Details and Research Findings -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header" id="sidebar-header">
+        <h3>📊 County Analysis</h3>
+        <button class="minimize-btn" onclick="toggleSidebar()" id="sidebar-minimize-btn">−</button>
+    </div>
+    <div class="sidebar-content">
+        <!-- County Details Sidebar: moved above statewide margin -->
+        <div class="county-details" id="county-details" style="display: none;">
+          <h4 id="county-name">Select a County</h4>
+          <div id="county-info-content">
+          </div>
+        </div>
+        <div style="margin-bottom: 16px;">
+            <label for="county-search" style="font-weight:600;">Search County:</label>
+            <input type="text" id="county-search" placeholder="Type to search..." style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;" />
+        </div>
+        <div class="statewide-results" id="statewide-results">
+            <h4>🏛️ Tennessee Statewide</h4>
+            <div id="statewide-content">
+            </div>
+        </div>
+        <!-- Research Findings -->
+        <div class="findings-section">
+            <h4>🔍 Research Findings</h4>
+            <div class="finding-card">
+            </div>
+            <div class="finding-card">
+            </div>
+            <div class="finding-card">
+            </div>
+        </div>
+    </div>
+    <div style="padding: 16px 0; text-align: center; color: #888; font-size: 15px; border-top: 1px solid #e5e7eb; background: #f9fafb;">
+        Created by Shamar Davis
+    </div>
+    <div class="status-panel" id="status" style="display:none;">
+        <button id="status-exit" title="Close" style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:6px;border:none;background:#eee;cursor:pointer;font-weight:bold;font-size:18px;">×</button>
+        <strong>Status:</strong> Loading map and data...
+    </div>
+</div>
+
+<!-- Legend Block (independent, not inside sidebar) -->
+    <div class="legend" id="legend">
+    <div class="legend-header">
+        <h4>Political Categories</h4>
+        <button class="minimize-btn" onclick="toggleLegend()" id="legend-minimize-btn">−</button>
+    </div>
+    <div class="legend-content" id="legend-content">
+        <!-- ...existing legend items... -->
+        <div class="legend-item"><div class="legend-color" style="background: #3182bd;"></div>East Tennessee</div>
+        <div class="legend-item"><div class="legend-color" style="background: #31a354;"></div>Middle Tennessee</div>
+        <div class="legend-item"><div class="legend-color" style="background: #e6550d;"></div>West Tennessee</div>
+    </div>
+</div>
+
+    <script>
+    // ...existing JS code, but update map center/zoom for Tennessee ...
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21kcW8yeDB2MDhvbTJzb29qeGp1aDZmZCJ9.Zw_i6U-dL7_bEKRHTUh7yg';
+    let loadingManager, analyticsManager;
+    document.addEventListener('DOMContentLoaded', () => {
+        loadingManager = new LoadingManager();
+        analyticsManager = new AnalyticsManager();
+        MobileWarning.show();
+        const shareContainer = document.getElementById('share-container');
+        SocialShare.createButtons(shareContainer, window.location.href, document.title);
+    });
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v11',
+        center: [-86.5, 35.8], // Centered on Tennessee
+        zoom: 6.5
+    });
+
+    // --- Add Grand Division Overlay ---
+    map.on('load', function() {
+        map.addSource('grand-divisions', {
+            type: 'geojson',
+            data: 'VTDs/TN_counties_with_grand.geojson' // Update path if needed
+        });
+        map.addLayer({
+            id: 'grand-division-fill',
+            type: 'fill',
+            source: 'grand-divisions',
+            paint: {
+                'fill-color': [
+                    'match', ['get', 'Grand'],
+                    'East', '#3182bd',
+                    'Middle', '#31a354',
+                    'West', '#e6550d',
+                    '#cccccc' // default
+                ],
+                'fill-opacity': 0.18
+            }
+        });
+        map.addLayer({
+            id: 'grand-division-outline',
+            type: 'line',
+            source: 'grand-divisions',
+            paint: {
+                'line-color': '#222',
+                'line-width': 2
+            }
+        });
+    });
+
+    // --- Margin Calculation by Grand Division, County, Statewide ---
+    function calculateMargins(results) {
+        // By Grand Division
+        const grandDivisions = {};
+        results.forEach(r => {
+            const grand = r.Grand || r.GrandDivision;
+            if (!grand) return;
+            if (!grandDivisions[grand]) grandDivisions[grand] = { dem: 0, rep: 0, total: 0 };
+            grandDivisions[grand].dem += r.dem_votes || 0;
+            grandDivisions[grand].rep += r.rep_votes || 0;
+            grandDivisions[grand].total += r.total_votes || 0;
+        });
+
+        // By County
+        const counties = {};
+        results.forEach(r => {
+            const county = r.County || r.NAME;
+            if (!county) return;
+            if (!counties[county]) counties[county] = { dem: 0, rep: 0, total: 0 };
+            counties[county].dem += r.dem_votes || 0;
+            counties[county].rep += r.rep_votes || 0;
+            counties[county].total += r.total_votes || 0;
+        });
+
+        // Statewide
+        let statewide = { dem: 0, rep: 0, total: 0 };
+        results.forEach(r => {
+            statewide.dem += r.dem_votes || 0;
+            statewide.rep += r.rep_votes || 0;
+            statewide.total += r.total_votes || 0;
+        });
+
+        // Calculate margins
+        function margin(obj) {
+            const d = obj.dem, r = obj.rep, t = obj.total;
+            if (t === 0) return 0;
+            return ((r - d) / t * 100).toFixed(2); // Republican margin (negative = Dem lead)
+        }
+
+        // Example output (replace with UI update as needed)
+        Object.entries(grandDivisions).forEach(([grand, obj]) => {
+            console.log(`${grand} margin: ${margin(obj)}%`);
+        });
+        Object.entries(counties).forEach(([county, obj]) => {
+            console.log(`${county} margin: ${margin(obj)}%`);
+        });
+        console.log(`Statewide margin: ${margin(statewide)}%`);
+    }
+    // Usage: call calculateMargins(electionResults) after loading your data
+    // ...rest of the JS code unchanged...
+    </script>
+</body>
+</html>
