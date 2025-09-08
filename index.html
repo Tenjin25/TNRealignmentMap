@@ -855,6 +855,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // ...rest of the JS code unchanged...
     </script>
 <script>
+// --- Wire up election data to map coloring and UI ---
+function applyCategories(year) {
+    const contest = document.getElementById('contest').value;
+    const data = electionData[year];
+    if (!data || !data.contests || !data.contests[contest]) return;
+    const results = data.contests[contest];
+    // Example: log results, or call your map coloring function here
+    console.log(`Applying categories for year ${year}, contest ${contest}`, results);
+    // TODO: Replace this with your map coloring and sidebar update logic
+    // colorMapWithResults(results);
+}
+
+// Update map and UI when contest changes
+document.addEventListener('DOMContentLoaded', function() {
+    const contestSelect = document.getElementById('contest');
+    if (contestSelect) {
+        contestSelect.addEventListener('change', function() {
+            const year = document.getElementById('year-select').value;
+            applyCategories(year);
+        });
+    }
+});
 // --- Tennessee Map Data Loading Example ---
 map.on('load', function() {
     // Counties and Grand Divisions
