@@ -2453,6 +2453,11 @@ document.addEventListener('DOMContentLoaded', function() {
           contestNameEl.textContent = `TN ${currentContest.data.contest_name} (${year})`;
         }
         
+        // Update sidebar if a county is currently selected
+        if (lastSelectedCounty) {
+          showCountyDetails(lastSelectedCounty);
+        }
+        
       }, 300); // Wait 300ms before updating
     }
 
@@ -2900,6 +2905,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // County search functionality
+// Global variable to track last selected county for contest changes
+let lastSelectedCounty = null;
+
 // Performance optimization variables
 let countySearchCache = null;
 let searchDebounceTimer = null;
