@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>TN Political Realignment Map (2004-2024)</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta property="og:title" content="TN Political Realignment Map (2004-2024)">
+    <meta property="og:description" content="Interactive visualization of Tennessee's political trends from 2004 to 2024, showing county-level and precinct-level voting patterns.">
+    <meta property="og:image" content="preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
+    <link href='styles/common.css' rel='stylesheet'>
+        <style>
+/* Show floating button only when sidebar is minimized */
+#sidebar-float-toggle { display: none; }
+.sidebar.minimized ~ #sidebar-float-toggle { display: flex !important; }
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh;
+    background: #f0f4f8;
+    transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+    z-index: 1;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+    width: 400px;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    border-left: 1px solid #e5e7eb;
+    overflow-y: auto;
+    transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+.sidebar.minimized {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.sidebar.minimized .sidebar-content {
+    display: none !important;
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+.sidebar-content {
+    padding: 20px;
+}
+.minimize-btn {
+    background: #2563eb;
+    border: 1px solid #1d4ed8;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s ease;
+}
+.minimize-btn:hover {
+    background: #1d4ed8;
+    border-color: #1e40af;
+    transform: scale(1.05);
+}
+.main-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+    min-width: 380px;
+    max-width: 420px;
+    transition: all 0.3s ease;
+}
+.main-controls.minimized {
+    min-width: 60px;
+    max-width: 60px;
+    padding: 15px;
+}
+.main-controls.minimized .controls-content {
+    display: none;
+}
+.controls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.controls-header h3 {
+    margin: 0;
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 16px;
+}
+.controls-content {
+    position: relative;
+}
+.analysis-mode {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.mode-toggle {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+    font-weight: 500;
+}
+.mode-toggle.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+.legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    min-width: 250px;
+    border: 1px solid #e5e7eb;
+}
+.legend.minimized .legend-content {
+    display: none;
+}
+.legend-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+    border-radius: 12px 12px 0 0;
+}
+.legend-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #374151;
+}
+.legend-content {
+    padding: 16px 20px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.county-details {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+.county-details h4 {
+    margin: 0 0 12px 0;
+    color: #374151;
+    font-size: 16px;
+    font-weight: 700;
+}
+.statewide-results {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #f0f9ff;
+    border-radius: 8px;
+    border: 1px solid #0ea5e9;
+}
+.statewide-results h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #1f2937 !important;
+}
+.statewide-margin {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+}
+.margin-text {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.margin-details {
+    font-size: 14px !important;
+    color: #64748b !important;
+    margin-top: 5px !important;
+}
+.findings-section {
+    margin-bottom: 20px;
+}
+.findings-section h4 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+.finding-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.finding-card h5 {
+    margin: 0 0 12px 0;
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 6px;
+}
+.finding-card p {
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #374151;
+}
+.metric {
+    background: #dbeafe;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #1e40af;
+}
+.status-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border: 1px solid #e5e7eb;
+    z-index: 1000;
+    max-width: 300px;
+}
+#sidebar-float-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10001;
+    width: 40px;
+    height: 40px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#sidebar-float-toggle:hover {
+    background: #1746a0;
+}
+.sidebar.minimized ~ #sidebar-float-toggle {
+    display: flex !important;
+}
+        </style>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+    <script src='scripts/common.js'></script>
+    <script src='scripts/map.js'></script>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="sidebar minimized" id="sidebar">
+      <div class="sidebar-header" id="sidebar-header">
+        <h3>📊 County Analysis</h3>
+        <button class="minimize-btn" onclick="toggleSidebar()" id="sidebar-minimize-btn">+</button>
+      </div>
+      <div class="sidebar-content">
+        <div class="county-details" id="county-details" style="display: none;">
+          <h4 id="county-name">Select a County</h4>
+          <div id="county-info-content">
+            Click on any county to see detailed election results and analysis.
+          </div>
+        </div>
+                <div style="margin-bottom: 16px;">
+                    <label for="county-search" style="font-weight:600;">Search County:</label>
+                    <input type="text" id="county-search" placeholder="Type to search..." style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;border:1px solid #d1d5db;" />
+                    <ul id="county-list" style="max-height: 150px; overflow-y: auto; margin-top: 8px; padding-left: 0; list-style: none;"></ul>
+        </div>
+        <h4 id="statewide">🏛️ Tennessee Statewide</h4>
+        <div style="margin:18px 0 8px 0; border-bottom:2px solid #e5e7eb;"></div>
+        <div class="statewide-results" id="statewide-results">
+          <h4 id="contest-name" style="margin:0 0 15px 0; font-size:16px; font-weight:700; color:#1f2937;"></h4>
+          <div id="statewide-content">
+            <p>Select a contest to see statewide results and margin.</p>
+            <div id="statewide-temperature-bar" style="width:100%;height:24px;margin:12px 0;display:none;"></div>
+          </div>
+        </div>
+        <div class="findings-section">
+          <h4>🔍 Research Findings</h4>
+          <div class="finding-card">
+            <h5>Davidson County - Urban Democratic Stronghold</h5>
+            <p><strong>Competitive Trend:</strong> Davidson remains a Democratic stronghold, with margins consistently above 30% for statewide and federal contests.</p>
+            <p><strong>2020 Results:</strong> Biden 64.5% vs Trump 33.2% (D+31.3%)</p>
+            <p><strong>2024 Results:</strong> Harris 65.1% vs Trump 32.8% (D+32.3%)</p>
+            <p><strong>Demographics:</strong> Nashville's growth and diversity continue to drive Democratic margins.</p>
+          </div>
+          <div class="finding-card">
+            <h5>Williamson County - Suburban Realignment</h5>
+            <p><strong>Competitive Trend:</strong> Williamson, once a deep-red suburb, has seen Democratic gains, though Republicans still win by double digits.</p>
+            <p><strong>2020 Results:</strong> Trump 62.1% vs Biden 36.2% (R+25.9%)</p>
+            <p><strong>2024 Results:</strong> Trump 60.4% vs Harris 38.1% (R+22.3%)</p>
+            <p><strong>Growth Centers:</strong> Franklin, Brentwood, Spring Hill.</p>
+          </div>
+          <div class="finding-card">
+            <h5>Shelby County - Urban Democratic Anchor</h5>
+            <p><strong>Competitive Trend:</strong> Shelby is Tennessee's largest Democratic base, with margins above 35% in recent cycles.</p>
+            <p><strong>2020 Results:</strong> Biden 66.7% vs Trump 32.0% (D+34.7%)</p>
+            <p><strong>2024 Results:</strong> Harris 67.2% vs Trump 31.5% (D+35.7%)</p>
+            <p><strong>Demographics:</strong> Memphis metro continues to anchor Democratic performance statewide.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-footer" style="padding: 16px 0; text-align: center; color: #888; font-size: 15px; border-top: 1px solid #e5e7eb; background: #f9fafb;">
+        Created by Shamar Davis
+      </div>
+    </div>
+    <button id="sidebar-float-toggle" title="Expand Sidebar">+</button>
+        <div class="status-panel" id="status-panel" style="display:none;position:fixed;top:20px;right:90px;z-index:10002;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);padding:18px 24px 18px 18px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.12);border:1px solid #e5e7eb;max-width:340px;min-width:200px;font-size:15px;color:#34495e;">
+            <span id="status-message"></span>
+            <button id="status-exit" title="Close" style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:6px;border:none;background:#eee;cursor:pointer;font-weight:bold;font-size:18px;">×</button>
+        </div>
+        <div id="status" style="display:none;"></div>
+    <div class="main-controls" id="main-controls">
+        <div class="controls-header" style="display:flex;align-items:center;justify-content:space-between;">
+            <h3>🗳️ TN Political Contests</h3>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">−</button>
+            </div>
+        </div>
+        <div class="controls-content" id="controls-content">
+            <div class="analysis-mode">
+                <div class="mode-toggle active" id="county-mode" onclick="setMode('county')">County Results</div>
+                <div class="mode-toggle" id="precinct-mode" onclick="setMode('precinct')">Precinct Patterns</div>
+            </div>
+            <div class="control-group">
+                <label for="year">📅 Election Year:</label>
+                <select id="year">
+                    <option value="">Select Year...</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="contest">📊 Contest Type:</label>
+                <select id="contest">
+                    <option value="">Select a Contest...</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="legend" id="legend">
+        <div class="legend-header">
+            <h4>Political Categories</h4>
+            <button class="minimize-btn" onclick="toggleLegend()" id="legend-minimize-btn">−</button>
+        </div>
+        <div class="legend-content" id="legend-content">
+            <div class="legend-item"><div class="legend-color" style="background: #67000d;"></div>Annihilation Republican (40%+)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #a50f15;"></div>Dominant Republican (30-40%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #cb181d;"></div>Stronghold Republican (20-30%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #ef3b2c;"></div>Safe Republican (10-20%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #fb6a4a;"></div>Likely Republican (5.5-10%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #fcae91;"></div>Lean Republican (1-5.5%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #fee8c8;"></div>Tilt Republican (0.5-1%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #f7f7f7; border: 1px solid #999;"></div>Tossup (±0.5%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #e1f5fe;"></div>Tilt Democratic (0.5-1%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #c6dbef;"></div>Lean Democratic (1-5.5%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #9ecae1;"></div>Likely Democratic (5.5-10%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #6baed6;"></div>Safe Democratic (10-20%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #3182bd;"></div>Stronghold Democratic (20-30%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #08519c;"></div>Dominant Democratic (30-40%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #08306b;"></div>Annihilation Democratic (40%+)</div>
+        </div>
+    </div>
+    <script>
+// --- FLMap Sidebar Logic Adapted for TN ---
+// Helper: Normalize county names for matching
+function normalizeCountyName(name) {
+    return (name || '')
+        .replace(/[^a-z0-9 ]/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toUpperCase();
+}
+
+// Sidebar expand/collapse logic
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const sidebarContent = document.querySelector('.sidebar-content');
+    const minimizeBtn = document.getElementById('sidebar-minimize-btn');
+    const mapElement = document.getElementById('map');
+    const floatBtn = document.getElementById('sidebar-float-toggle');
+    if (sidebar.classList.contains('minimized')) {
+        sidebar.classList.remove('minimized');
+        mapElement.classList.remove('sidebar-minimized');
+        sidebarContent.style.display = 'block';
+        minimizeBtn.textContent = '−';
+        minimizeBtn.title = 'Minimize sidebar';
+        if (floatBtn) floatBtn.style.display = 'none';
+    } else {
+        sidebar.classList.add('minimized');
+        mapElement.classList.add('sidebar-minimized');
+        sidebarContent.style.display = 'none';
+        minimizeBtn.textContent = '+';
+        minimizeBtn.title = 'Expand sidebar';
+        if (floatBtn) floatBtn.style.display = 'flex';
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    var floatBtn = document.getElementById('sidebar-float-toggle');
+    if (floatBtn) {
+        floatBtn.addEventListener('click', function() {
+            toggleSidebar();
+        });
+    }
+});
+
+// Show county details in sidebar (updated for new JSON structure)
+function showCountyDetails(countyName) {
+    const sidebar = document.getElementById('sidebar');
+    const detailsDiv = document.getElementById('county-details');
+    const contentEl = document.getElementById('county-info-content');
+    if (!contentEl || !detailsDiv) return;
+    
+    if (sidebar) {
+        sidebar.classList.remove('minimized');
+        const floatBtn = document.getElementById('sidebar-float-toggle');
+        if (floatBtn) floatBtn.style.display = 'none';
+        const btn = document.getElementById('sidebar-minimize-btn');
+        if (btn) btn.textContent = '−';
+    }
+    
+    const countyNameElement = document.getElementById('county-name');
+    if (countyNameElement) countyNameElement.textContent = countyName + ' County';
+    
+    let sidebarContent = '';
+    
+    // Guard: election results must exist
+    if (!window.tnElectionData || !window.tnElectionData.results_by_year) {
+        contentEl.innerHTML = '<p>Select a contest to see county results.</p>';
+        detailsDiv.style.display = 'block';
+        return;
+    }
+    
+    // Get contest and year info
+    const contestSelect = document.getElementById('contest');
+    const yearSelect = document.getElementById('year');
+    const contestKey = contestSelect && contestSelect.value;
+    const selectedYear = yearSelect && yearSelect.value;
+    
+    if (!contestKey || !selectedYear) {
+        contentEl.innerHTML = '<p>Select both a year and contest to see detailed results.</p>';
+        detailsDiv.style.display = 'block';
+        return;
+    }
+    
+    // Find county data in new structure for specific year
+    let result = null;
+    const normalizedCounty = normalizeCountyName(countyName);
+    
+    // Search in the selected year only
+    if (window.tnElectionData.results_by_year[selectedYear]) {
+        Object.values(window.tnElectionData.results_by_year[selectedYear]).forEach(contestTypeData => {
+            Object.values(contestTypeData).forEach(contestInstance => {
+                if (contestInstance.contest_name === contestKey && contestInstance.results) {
+                    // Look for county in this contest
+                    Object.keys(contestInstance.results).forEach(resultKey => {
+                        const countyResult = contestInstance.results[resultKey];
+                        if (normalizeCountyName(countyResult.county) === normalizedCounty) {
+                            result = countyResult;
+                        }
+                    });
+                }
+            });
+        });
+    }
+    
+    if (!result) {
+        contentEl.innerHTML = `<p>No ${contestKey} data available for ${countyName} County in ${selectedYear}.</p>`;
+        detailsDiv.style.display = 'block';
+        return;
+    }
+    
+    // Votes
+    const demVotes = result.dem_votes || 0;
+    const repVotes = result.rep_votes || 0;
+    const totalVotes = result.total_votes || 0;
+    
+    if (totalVotes === 0) {
+        contentEl.innerHTML = `<p>No ${contestKey} data available for ${countyName} County in ${selectedYear}.</p>`;
+        detailsDiv.style.display = 'block';
+        return;
+    }
+    
+    const demCandidate = result.dem_candidate || 'Democrat';
+    const repCandidate = result.rep_candidate || 'Republican';
+    const demPct = (demVotes / totalVotes * 100);
+    const repPct = (repVotes / totalVotes * 100);
+    const winner = result.winner || 'TIE';
+    const competitiveness = result.competitiveness || {};
+    
+    // Card-style layout
+    sidebarContent += '<div class="result-summary">';
+    sidebarContent += '<h3 class="sidebar-section-title">📊 Election Results</h3>';
+    sidebarContent += `<div style="font-size:14px;margin-bottom:10px;"><b>Total Votes:</b> ${totalVotes.toLocaleString()}</div>`;
+    sidebarContent += `<div style="font-size:14px;margin-bottom:10px;"><b>Year:</b> ${result.year}</div>`;
+    sidebarContent += `</div>`;
+    
+    sidebarContent += `<div class="winner-section">`;
+    sidebarContent += '<h3 class="sidebar-section-title">🏆 Winner</h3>';
+    const winnerCandidate = winner === 'DEM' ? demCandidate : (winner === 'REP' ? repCandidate : 'Tie');
+    sidebarContent += `<p class="sidebar-winner" style="font-weight: bold;">${winnerCandidate} (${winner})</p>`;
+    sidebarContent += `</div>`;
+    
+    sidebarContent += `<div class="margin-section">`;
+    sidebarContent += '<h3 class="sidebar-section-title">📈 Margin</h3>';
+    sidebarContent += `<p class="sidebar-margin" style="font-weight: bold;">${result.margin_pct?.toFixed(2) || 0}%</p>`;
+    sidebarContent += `<p class="sidebar-margin-details" style="color: #6b7280;">(${(result.margin || 0).toLocaleString()} vote margin)</p>`;
+    sidebarContent += `</div>`;
+    
+    sidebarContent += `<div class="vote-breakdown">`;
+    sidebarContent += '<h3 class="sidebar-section-title">🗳️ Vote Breakdown</h3>';
+    sidebarContent += `<p class="sidebar-breakdown"><span style="font-weight: bold;">${demCandidate} (D)</span> : ${demPct.toFixed(2)}% (${demVotes.toLocaleString()})</p>`;
+    sidebarContent += `<p class="sidebar-breakdown"><span style="font-weight: bold;">${repCandidate} (R)</span> : ${repPct.toFixed(2)}% (${repVotes.toLocaleString()})</p>`;
+    if (result.other_votes && result.other_votes > 0) {
+        const otherPct = (result.other_votes / totalVotes * 100);
+        sidebarContent += `<p class="sidebar-breakdown"><span style="font-weight: bold;">Other</span> : ${otherPct.toFixed(2)}% (${result.other_votes.toLocaleString()})</p>`;
+    }
+    sidebarContent += `</div>`;
+    
+    // Competitiveness from our data
+    if (competitiveness.category) {
+        sidebarContent += `<div class="competitiveness-section">`;
+        sidebarContent += '<h5>🎯 Competitiveness</h5>';
+        sidebarContent += `<p style="font-weight: bold; font-size: 16px;">${competitiveness.category} ${competitiveness.party}</p>`;
+        if (competitiveness.category === 'Tossup' || competitiveness.category === 'Tilt') {
+            sidebarContent += `<p style="color: #f59e0b; font-style: italic;">(Very close!)</p>`;
+        }
+        sidebarContent += `</div>`;
+    }
+    
+    contentEl.innerHTML = sidebarContent;
+    detailsDiv.style.display = 'block';
+}
+
+// Contest dropdown population (updated for new JSON structure)
+let tnElectionData = null;
+async function loadTNElectionData() {
+    try {
+        const response = await fetch('all_county_results.json');
+        const data = await response.json();
+        tnElectionData = data;
+        window.tnElectionData = tnElectionData;
+        
+        // Create adapter for map.js compatibility
+        window.electionData = createMapDataAdapter(data);
+        
+        populateContestDropdown();
+    } catch (err) {
+        document.getElementById('status').style.display = 'block';
+        document.getElementById('status').innerHTML = '<strong>Status:</strong> Failed to load TN election data.';
+    }
+}
+
+// Adapter function to convert our new JSON structure to what map.js expects
+function createMapDataAdapter(newData) {
+    const adapted = { results: {} };
+    
+    if (!newData.results_by_year) return adapted;
+    
+    Object.entries(newData.results_by_year).forEach(([year, yearData]) => {
+        adapted.results[year] = {};
+        
+        Object.values(yearData).forEach(contestTypeData => {
+            Object.values(contestTypeData).forEach(contestInstance => {
+                if (contestInstance.results) {
+                    Object.values(contestInstance.results).forEach(countyResult => {
+                        const countyName = countyResult.county;
+                        const contestName = countyResult.contest;
+                        
+                        if (!adapted.results[year][countyName]) {
+                            adapted.results[year][countyName] = {};
+                        }
+                        
+                        adapted.results[year][countyName][contestName] = countyResult;
+                    });
+                }
+            });
+        });
+    });
+    
+    return adapted;
+}
+function populateContestDropdown() {
+    const contestSelect = document.getElementById('contest');
+    const yearSelect = document.getElementById('year');
+    if (!tnElectionData || !contestSelect || !yearSelect) return;
+    
+    contestSelect.innerHTML = '<option value="">Select a Contest...</option>';
+    yearSelect.innerHTML = '<option value="">Select Year...</option>';
+    
+    const contests = new Set();
+    const years = new Set();
+    
+    // Extract contests and years from new nested structure
+    if (tnElectionData.results_by_year) {
+        Object.keys(tnElectionData.results_by_year).forEach(year => {
+            years.add(year);
+            
+            Object.values(tnElectionData.results_by_year[year]).forEach(contestTypeData => {
+                Object.values(contestTypeData).forEach(contestInstance => {
+                    if (contestInstance.contest_name) {
+                        contests.add(contestInstance.contest_name);
+                    }
+                });
+            });
+        });
+    }
+    
+    // Populate year dropdown (chronological order)
+    Array.from(years).sort().forEach(year => {
+        yearSelect.innerHTML += `<option value="${year}">${year}</option>`;
+    });
+    
+    // Populate contest dropdown
+    Array.from(contests).sort().forEach(contest => {
+        contestSelect.innerHTML += `<option value="${contest}">${contest}</option>`;
+    });
+}
+document.addEventListener('DOMContentLoaded', loadTNElectionData);
+document.getElementById('contest').addEventListener('change', function() {
+    // Update sidebar and map for selected contest
+    document.getElementById('statewide-content').innerHTML = `<p>Selected contest: <strong>${this.value}</strong></p>`;
+    // Optionally, update county colors and sidebar details
+});
+// County click handler (adapted from FLMap)
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for map and counties source to be loaded
+    if (window.tnMap) {
+        window.tnMap.on('click', 'county-fill', (e) => {
+            const countyName = e.features[0].properties.County || e.features[0].properties.COUNTY;
+            if (countyName) {
+                showCountyDetails(countyName);
+                window.lastSelectedCounty = countyName;
+            }
+        });
+    }
+    // County search
+    const searchInput = document.getElementById('county-search');
+    if (searchInput) {
+        searchInput.addEventListener('change', function() {
+            const val = searchInput.value.trim();
+            if (val) {
+                showCountyDetails(val);
+                window.lastSelectedCounty = val;
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar.classList.contains('minimized')) {
+                    toggleSidebar();
+                }
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>

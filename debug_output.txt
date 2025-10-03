@@ -1,0 +1,65 @@
+Processing 12 CSV files...
+Processing: 2006_standardized_governor_long.csv
+  Extracted year: 2006
+    Columns: ['county', 'precinct', 'office', 'district', 'candidate', 'party', 'votes']
+  Processed 20745 lines, found 0 Republican entries
+  Found 95 county-contest combinations
+Processing: 2006_standardized_senate_long.csv
+  Extracted year: 2006
+    Columns: ['county', 'precinct', 'office', 'district', 'candidate', 'party', 'votes']
+  Processed 26892 lines, found 0 Republican entries
+  Found 95 county-contest combinations
+Processing: 2004_standardized_long.csv
+  Extracted year: 2004
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+  ERROR parsing C:\Users\Shama\OneDrive\Documents\Course_Materials\CPT-236\Side_Projects\TNRealignments\Election_Data\standardized\2004_standardized_long.csv: cannot access local variable 'votes' where it is not associated with a value
+Processing: 20121106__tn__general__precinct.csv
+  Extracted year: 2012
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+  ERROR parsing C:\Users\Shama\OneDrive\Documents\Course_Materials\CPT-236\Side_Projects\TNRealignments\Election_Data\standardized\20121106__tn__general__precinct.csv: cannot access local variable 'votes' where it is not associated with a value
+Processing: 20081104__tn__general__precinct.csv
+  Extracted year: 2008
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+  ERROR parsing C:\Users\Shama\OneDrive\Documents\Course_Materials\CPT-236\Side_Projects\TNRealignments\Election_Data\standardized\20081104__tn__general__precinct.csv: cannot access local variable 'votes' where it is not associated with a value
+Processing: 20101102__tn__general__precinct.csv
+  Extracted year: 2010
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+  Processed 39576 lines, found 0 Republican entries
+  Found 425 county-contest combinations
+Processing: 2024_standardized_long.csv
+  Extracted year: 2024
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 34791 lines, found 0 Republican entries
+  Found 528 county-contest combinations
+Processing: 2022_standardized_long.csv
+  Extracted year: 2022
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 53336 lines, found 0 Republican entries
+  Found 792 county-contest combinations
+Processing: 2020_standardized_long.csv
+  Extracted year: 2020
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 66142 lines, found 0 Republican entries
+  Found 521 county-contest combinations
+Processing: 2018_standardized_long.csv
+  Extracted year: 2018
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 86850 lines, found 0 Republican entries
+  Found 494 county-contest combinations
+Processing: 2016_standardized_long.csv
+  Extracted year: 2016
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 42730 lines, found 0 Republican entries
+  Found 415 county-contest combinations
+Processing: 2014_standardized_long.csv
+  Extracted year: 2014
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 58105 lines, found 0 Republican entries
+  Found 871 county-contest combinations
+
+Summary:
+  Years covered: ['2004', '2006', '2008', '2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024']
+  Total years: 11
+  Total contests: 159
+  Total results: 4236
+Wrote all_county_results.json in requested format.

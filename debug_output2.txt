@@ -1,0 +1,443 @@
+Processing 12 CSV files...
+Processing: 2006_standardized_governor_long.csv
+  Extracted year: 2006
+    Columns: ['county', 'precinct', 'office', 'district', 'candidate', 'party', 'votes']
+  Processed 20745 lines, found 0 Republican entries
+  Found 95 county-contest combinations
+Processing: 2006_standardized_senate_long.csv
+  Extracted year: 2006
+    Columns: ['county', 'precinct', 'office', 'district', 'candidate', 'party', 'votes']
+  Processed 26892 lines, found 0 Republican entries
+  Found 95 county-contest combinations
+Processing: 2004_standardized_long.csv
+  Extracted year: 2004
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 223
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 72
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 127
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 536
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 154
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 300
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 152
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 117
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 156
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 296
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 236
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 118
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 363
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 248
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 246
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 185
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 281
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 134
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 271
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 215
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 207
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 264
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 320
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 204
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 65
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 190
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 77
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 270
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 194
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 541
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 2394
+    PRESIDENT DEBUG: ANDERSON - 'DEM' - John F. Kerry - 3740
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+    FOUND REP: CUMBERLAND - 'STATE HOUSE' - REP - Eric H. Swafford
+  Processed 6751 lines, found 2559 Republican entries
+  Found 120 county-contest combinations
+Processing: 20121106__tn__general__precinct.csv
+  Extracted year: 2012
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1110
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 267
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 6
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 227
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 94
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 3
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1395
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 491
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 11
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 21
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1359
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 575
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 2
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 21
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 778
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 336
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 6
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1201
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 414
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 5
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 9
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 15
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 404
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 131
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 4
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1094
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 384
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 14
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 256
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 84
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1177
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 877
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 6
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 24
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 481
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 151
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 4
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 825
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 677
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 8
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 9
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 22
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 967
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 708
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 2
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 6
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 19
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 323
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 342
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 14
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 233
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 152
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 1
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 1104
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 321
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 3
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 3
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 436
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 150
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 5
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 747
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 338
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 15
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 446
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 359
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 7
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 10
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 839
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 391
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 6
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 8
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 333
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 611
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 1
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 761
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 622
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 4
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 12
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 28
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 552
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 495
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 8
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 10
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 47
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 27
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 705
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 205
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 2
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 9
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 357
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 320
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 2
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 1
+    PRESIDENT DEBUG: ANDERSON - 'R' - Mitt Romney - 811
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 600
+    PRESIDENT DEBUG: ANDERSON - 'C' - Virgil Goode - 2
+    PRESIDENT DEBUG: ANDERSON - 'G' - Jill Stein - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ross C. "Rocky" Anderson - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Gary Johnson - 16
+    PRESIDENT DEBUG: ANDERSON - 'I' - Merlin Miller - 2
+  Processed 43420 lines, found 0 Republican entries
+  Found 441 county-contest combinations
+Processing: 20081104__tn__general__precinct.csv
+  Extracted year: 2008
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 290
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 1004
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 6
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 7
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 120
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 198
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 1
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 79
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 247
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 2
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 694
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 1466
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 8
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 12
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 313
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 722
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 9
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 4
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 839
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 2063
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 13
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 18
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 14
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 182
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 466
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 3
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 356
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 952
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 6
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 9
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 224
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 631
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 5
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 887
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 1099
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 10
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 5
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 322
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 790
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 11
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 7
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 163
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 371
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 5
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 737
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 901
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 8
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 10
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 10
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 688
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 925
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 17
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 4
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 503
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 474
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 6
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 8
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 165
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 270
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 4
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 367
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 923
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 6
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 194
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 480
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 9
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 9
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 337
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 614
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 8
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 406
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 471
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 3
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 249
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 570
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 2
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 5
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 618
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 314
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 3
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 701
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 889
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 11
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 12
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 8
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 385
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 484
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Charles Jay - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 8
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 38
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 31
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 260
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 705
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Brian Moore - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 4
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 172
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 325
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 3
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 3
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 436
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 444
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 1
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 9
+    PRESIDENT DEBUG: ANDERSON - 'D' - Barack Obama - 671
+    PRESIDENT DEBUG: ANDERSON - 'R' - John McCain - 846
+    PRESIDENT DEBUG: ANDERSON - 'I' - Chuck Baldwin - 7
+    PRESIDENT DEBUG: ANDERSON - 'I' - Bob Barr - 5
+    PRESIDENT DEBUG: ANDERSON - 'I' - Cynthia McKinney - 4
+    PRESIDENT DEBUG: ANDERSON - 'I' - Ralph Nader - 9
+  Processed 42754 lines, found 0 Republican entries
+  Found 436 county-contest combinations
+Processing: 20101102__tn__general__precinct.csv
+  Extracted year: 2010
+    Columns: ['county', 'precinct', 'office', 'district', 'party', 'candidate', 'votes']
+  Processed 39576 lines, found 0 Republican entries
+  Found 425 county-contest combinations
+Processing: 2024_standardized_long.csv
+  Extracted year: 2024
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 34791 lines, found 0 Republican entries
+  Found 528 county-contest combinations
+Processing: 2022_standardized_long.csv
+  Extracted year: 2022
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 53336 lines, found 0 Republican entries
+  Found 792 county-contest combinations
+Processing: 2020_standardized_long.csv
+  Extracted year: 2020
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 66142 lines, found 0 Republican entries
+  Found 521 county-contest combinations
+Processing: 2018_standardized_long.csv
+  Extracted year: 2018
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 86850 lines, found 0 Republican entries
+  Found 494 county-contest combinations
+Processing: 2016_standardized_long.csv
+  Extracted year: 2016
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 42730 lines, found 0 Republican entries
+  Found 415 county-contest combinations
+Processing: 2014_standardized_long.csv
+  Extracted year: 2014
+    Columns: ['COUNTY', 'PRECINCT', 'PRCTSEQ', 'BALSEQID', 'JURISID', 'SECJURISID', 'CANDGROUP', 'OFFICENAME', 'ELECTDATE', 'ELECTTYPE', 'CANDIDATE', 'PARTY', 'VOTES']
+  Processed 58105 lines, found 0 Republican entries
+  Found 871 county-contest combinations
+
+Summary:
+  Years covered: ['2004', '2006', '2008', '2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024']
+  Total years: 11
+  Total contests: 165
+  Total results: 5233
+Wrote all_county_results.json in requested format.

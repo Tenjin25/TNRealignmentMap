@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+    <script src='scripts/common.js'></script>
+    <meta charset='utf-8'>
+    <title>TN Political Realignment Map (2008-2024)</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta property="og:title" content="TN Political Realignment Map (2008-2024)">
+    <meta property="og:description" content="Interactive visualization of Tennessee's political trends from 2008 to 2024, showing county-level and precinct-level voting patterns.">
+    <meta property="og:image" content="preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
+    <link href='styles/common.css' rel='stylesheet'>
+    <style>
+/* Highlight competitive counties */
+.competitive-outline {
+    stroke: gold;
+    stroke-width: 3px;
+    filter: drop-shadow(0 0 6px gold);
+}
+.margin-badge {
+    display: inline-block;
+    background: #fffbe6;
+    color: #b8860b;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 8px;
+    margin-left: 8px;
+    border: 1px solid #ffe066;
+}
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  flex: 1 1 auto;
+  position: relative;
+  min-height: 0;
+  height: 100vh;
+  width: 100%;
+  background: #f0f4f8;
+}
+.sidebar {
+  position: relative;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  border-left: 1px solid #e5e7eb;
+  overflow-y: auto;
+  z-index: 1002;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+.sidebar.minimized {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+}
+.sidebar.minimized .sidebar-content {
+  display: none;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+.minimize-btn {
+  background: #e5e7eb;
+  border: none;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+.minimize-btn:hover {
+  background: #d1d5db;
+}
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#swingCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+#map.sidebar-minimized {
+  width: 100vw !important;
+}
+/* Main Controls */
+.main-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+    min-width: 380px;
+    max-width: 420px;
+    transition: all 0.3s ease;
+}
+.main-controls.minimized {
+    min-width: 60px;
+    max-width: 60px;
+    padding: 15px;
+}
+.main-controls.minimized .controls-content {
+    display: none;
+}
+.controls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.minimize-btn {
+    background: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+.minimize-btn:hover {
+    background: #d1d5db;
+}
+.floating-expand-btn {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+    transition: background-color 0.2s;
+    display: none;
+}
+.floating-expand-btn:hover {
+    background: #f3f4f6;
+}
+.sidebar.minimized + .floating-expand-btn {
+    display: flex;
+}
+.main-controls h3 {
+    margin: 0;
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 16px;
+}
+.main-controls select, .main-controls button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: #ffffff;
+    border-left: 1px solid #e5e7eb;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    transform: translateX(0);
+}
+.sidebar.minimized {
+    transform: translateX(100%);
+    pointer-events: none;
+    opacity: 0;
+}
+.sidebar.minimized .sidebar-content {
+    display: none;
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+.sidebar-content {
+    padding: 20px;
+    padding-top: 0;
+}
+.author-credit {
+    padding: 12px 0 8px 0;
+    text-align: center;
+    color: #888;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+.county-details {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.county-details h4 {
+    margin: 0 0 15px 0;
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 600;
+}
+.county-details .result-summary,
+.county-details .winner-section,
+.county-details .margin-section,
+.county-details .vote-breakdown,
+.county-details .competitiveness-section {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.county-details .result-summary:last-child,
+.county-details .winner-section:last-child,
+.county-details .margin-section:last-child,
+.county-details .vote-breakdown:last-child,
+.county-details .competitiveness-section:last-child {
+    border-bottom: none;
+}
+.county-details h5 {
+    margin: 0 0 8px 0;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+.county-details p {
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.statewide-results {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.statewide-results h4 {
+    margin: 0 0 15px 0;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+}
+.statewide-margin {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+}
+.margin-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+.margin-details {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 5px;
+}
+.findings-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+}
+.findings-section h4 {
+    margin: 0 0 20px 0;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+}
+.finding-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.finding-card h5 {
+    margin: 0 0 12px 0;
+    color: #1f2937;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 6px;
+}
+.finding-card p {
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #374151;
+}
+.finding-card .metric {
+    background: #eff6ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #1d4ed8;
+    display: inline-block;
+    margin: 2px;
+}
+.swing-arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1001;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform-origin: center center;
+}
+.swing-arrow.republican {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+.swing-arrow.democratic {
+    background-color: rgba(0, 0, 255, 0.9);
+}
+.control-group {
+    margin-bottom: 15px;
+}
+.control-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: 500;
+    font-size: 14px;
+}
+select, button {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    transition: border-color 0.3s;
+}
+select:focus, button:focus {
+    outline: none;
+    border-color: #3498db;
+}
+button {
+    cursor: pointer;
+    margin: 3px 0;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2980b9, #1f4e79);
+}
+.btn-secondary {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+    color: white;
+    border: none;
+}
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #7f8c8d, #6c7b7d);
+}
+.btn-success {
+    background: linear-gradient(135deg, #27ae60, #229954);
+    color: white;
+    border: none;
+}
+.btn-success:hover {
+    background: linear-gradient(135deg, #229954, #1e8449);
+}
+.btn-warning {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    border: none;
+}
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+}
+.analysis-mode {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.mode-toggle {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+    font-weight: 500;
+}
+.mode-toggle.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+.legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+    max-height: 450px;
+    overflow-y: auto;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+.legend.minimized {
+    padding: 10px;
+    min-width: 120px;
+}
+.legend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.legend.minimized .legend-content {
+    display: none;
+}
+.legend h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    font-size: 12px;
+    color: #34495e;
+}
+.legend-color {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.status-panel {
+    position: absolute;
+    top: 20px;
+    right: 240px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+    max-width: 300px;
+    font-size: 13px;
+    color: #34495e;
+}
+.county-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+    max-width: 400px;
+    font-size: 13px;
+    display: none;
+}
+#county-search {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.sidebar.minimized {
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+}
+.sidebar.minimized .sidebar-content {
+    display: none !important;
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+.sidebar-header h3 {
+    display: block !important;
+    opacity: 1 !important;
+    color: #1f2937;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.sidebar-header .minimize-btn {
+    color: #fff;
+    background: #2563eb;
+    border: none;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar.minimized ~ .floating-expand-btn {
+    display: flex !important;
+}
+.floating-expand-btn {
+    display: none;
+}
+    </style>
+</head>
+<body>
+        <div id="share-container" style="position: fixed; top: 20px; right: 440px; z-index: 1000;"></div>
+        <button id="sidebar-float-toggle" style="position:fixed;top:20px;right:20px;z-index:10001;width:56px;height:56px;background:#2563eb;color:#fff;border:none;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.15);font-size:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+            +
+        </button>
+    <div id="map" style="position:relative;width:100%;height:100%;">
+        <canvas id="swingCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1000;"></canvas>
+    </div>
+
+<!-- Main Controls Dropdown (Contest Selector) -->
+<div class="main-controls" id="main-controls">
+    <div class="controls-header">
+        <h3>🗳️ TN Political Contests</h3>
+        <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">−</button>
+    </div>
+    <div class="controls-content" id="controls-content">
+        <div class="analysis-mode">
+            <div class="mode-toggle active" id="county-mode" onclick="setMode('county')">County Results</div>
+            <div class="mode-toggle" id="precinct-mode" onclick="setMode('precinct')">Precinct Patterns</div>
+        </div>
+        <div class="control-group">
+            <label>📊 Contest Type:</label>
+            <select id="contest">
+            </select>
+        </div>
+        <button onclick="applyCategories()" class="btn-primary">
+            🎨 Apply Political Categories
+        </button>
+        <button onclick="resetView()" class="btn-secondary">
+            🔄 Reset View
+        </button>
+        <button onclick="toggleLabels()" class="btn-success">
+            🏷️ Toggle County Labels
+        </button>
+        <button onclick="togglePrecinctsLayer()" class="btn-warning">
+            📍 Toggle Precincts
+        </button>
+        <div class="control-group" style="margin-top: 15px;">
+            <label>🔍 Quick Analysis:</label>
+            <button onclick="showSwingCounties()" class="btn-secondary" style="font-size: 12px;">
+            </button>
+        </div>
+        <div class="control-group">
+            <label>🔄 Compare to Previous:</label>
+            <select id="compare-election" onchange="showSwingArrows()">
+            </select>
+            <button onclick="hideSwingArrows()" class="btn-secondary">
+            </button>
+        </div>
+        </div> <!-- End controls-content -->
+    </div>
+
+<!-- Sidebar for County Details and Research Findings -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header" id="sidebar-header">
+        <h3>📊 County Analysis</h3>
+        <button class="minimize-btn" onclick="toggleSidebar()" id="sidebar-minimize-btn">−</button>
+    </div>
+    <div class="sidebar-content">
+                <!-- County Details Sidebar: moved above statewide margin -->
+                <div class="county-details" id="county-details" style="display: none;">
+                    <h4 id="county-name">Select a County</h4>
+                    <div id="county-info-content"></div>
+                    <div id="margin-badge-container"></div>
+                </div>
+                <div id="competitive-spotlight" style="margin-bottom:20px;display:none;">
+                    <h5 style="color:#b8860b;margin-bottom:8px;">🏁 Competitive Race Spotlight</h5>
+                    <div id="competitive-county-list"></div>
+                </div>
+        <div style="margin-bottom: 16px;">
+            <label for="county-search" style="font-weight:600;">Search County:</label>
+            <input type="text" id="county-search" placeholder="Type to search..." style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;" />
+        </div>
+        <div class="statewide-results" id="statewide-results">
+            <h4>🏛️ Tennessee Statewide</h4>
+            <div id="statewide-content">
+            </div>
+        </div>
+        <!-- Research Findings -->
+        <div class="findings-section">
+            <h4>🔍 Research Findings</h4>
+            <div class="finding-card">
+            </div>
+            <div class="finding-card">
+            </div>
+            <div class="finding-card">
+            </div>
+        </div>
+    </div>
+    <div style="padding: 16px 0; text-align: center; color: #888; font-size: 15px; border-top: 1px solid #e5e7eb; background: #f9fafb;">
+        Created by Shamar Davis
+    </div>
+    <div class="status-panel" id="status" style="display:none;">
+        <button id="status-exit" title="Close" style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:6px;border:none;background:#eee;cursor:pointer;font-weight:bold;font-size:18px;">×</button>
+        <strong>Status:</strong> Loading map and data...
+    </div>
+</div>
+
+<!-- Legend Block (independent, not inside sidebar) -->
+    <div class="legend" id="legend">
+    <div class="legend-header">
+        <h4>Political Categories</h4>
+        <button class="minimize-btn" onclick="toggleLegend()" id="legend-minimize-btn">−</button>
+    </div>
+    <div class="legend-content" id="legend-content">
+    <div class="legend-item"><div class="legend-color" style="background: #67000d;"></div>Annihilation Republican (40%+)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #a50f15;"></div>Dominant Republican (30-40%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #cb181d;"></div>Stronghold Republican (20-30%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #ef3b2c;"></div>Safe Republican (10-20%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #fb6a4a;"></div>Likely Republican (5.5-10%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #fcae91;"></div>Lean Republican (1-5.5%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #fee8c8;"></div>Tilt Republican (0.5-1%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #f7f7f7; border: 1px solid #999;"></div>Tossup (±0.5%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #e1f5fe;"></div>Tilt Democratic (0.5-1%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #c6dbef;"></div>Lean Democratic (1-5.5%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #9ecae1;"></div>Likely Democratic (5.5-10%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #6baed6;"></div>Safe Democratic (10-20%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #3182bd;"></div>Stronghold Democratic (20-30%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #08519c;"></div>Dominant Democratic (30-40%)</div>
+    <div class="legend-item"><div class="legend-color" style="background: #08306b;"></div>Annihilation Democratic (40%+)</div>
+    </div>
+</div>
+
+    <script>
+    // Highlight competitive counties and show margin badges
+    function highlightCompetitiveCounties(results) {
+        const competitive = [];
+        results.forEach(r => {
+            const margin = Math.abs((r.rep_votes - r.dem_votes) / r.total_votes * 100);
+            if (margin <= 5 && r.County) competitive.push({
+                county: r.County,
+                margin: margin.toFixed(2),
+                dem: r.dem_votes,
+                rep: r.rep_votes,
+                total: r.total_votes
+            });
+        });
+        // Update sidebar spotlight
+        const spotlight = document.getElementById('competitive-spotlight');
+        const list = document.getElementById('competitive-county-list');
+        if (competitive.length > 0) {
+            spotlight.style.display = 'block';
+            list.innerHTML = competitive.map(c =>
+                `<div style="margin-bottom:10px;padding:8px 12px;background:#fffbe6;border-radius:8px;border:1px solid #ffe066;">
+                    <strong>${c.county}</strong> <span class="margin-badge">${c.margin}% margin</span><br>
+                    Dem: ${c.dem} | Rep: ${c.rep} | Total: ${c.total}
+                </div>`
+            ).join('');
+        } else {
+            spotlight.style.display = 'none';
+            list.innerHTML = '';
+        }
+    }
+    // Show margin badge for selected county
+    function showCountyMarginBadge(countyName, results) {
+        const badgeContainer = document.getElementById('margin-badge-container');
+        if (!badgeContainer) return;
+        const countyResult = results.find(r => r.County === countyName);
+        if (countyResult) {
+            const margin = Math.abs((countyResult.rep_votes - countyResult.dem_votes) / countyResult.total_votes * 100).toFixed(2);
+            badgeContainer.innerHTML = `<span class="margin-badge">${margin}% margin</span>`;
+        } else {
+            badgeContainer.innerHTML = '';
+        }
+    }
+    // Call these after loading results and on county select
+    // highlightCompetitiveCounties(electionResults);
+    // showCountyMarginBadge(selectedCounty, electionResults);
+    // ...existing JS code, but update map center/zoom for Tennessee ...
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21kcW8yeDB2MDhvbTJzb29qeGp1aDZmZCJ9.Zw_i6U-dL7_bEKRHTUh7yg';
+    let loadingManager, analyticsManager;
+    document.addEventListener('DOMContentLoaded', () => {
+        loadingManager = new LoadingManager();
+        analyticsManager = new AnalyticsManager();
+        MobileWarning.show();
+        const shareContainer = document.getElementById('share-container');
+        SocialShare.createButtons(shareContainer, window.location.href, document.title);
+    });
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v11',
+        center: [-86.5, 35.8], // Centered on Tennessee
+        zoom: 6.5
+    });
+
+    // --- Add Grand Division Overlay ---
+    map.on('load', function() {
+        map.addSource('grand-divisions', {
+            type: 'geojson',
+            data: 'VTDs/TN_counties_with_grand.geojson' // Update path if needed
+        });
+        map.addLayer({
+            id: 'grand-division-fill',
+            type: 'fill',
+            source: 'grand-divisions',
+            paint: {
+                'fill-color': [
+                    'match', ['get', 'Grand'],
+                    'East', '#3182bd',
+                    'Middle', '#31a354',
+                    'West', '#e6550d',
+                    '#cccccc' // default
+                ],
+                'fill-opacity': 0.18
+            }
+        });
+        map.addLayer({
+            id: 'grand-division-outline',
+            type: 'line',
+            source: 'grand-divisions',
+            paint: {
+                'line-color': '#222',
+                'line-width': 2
+            }
+        });
+    });
+
+    // --- Margin Calculation by Grand Division, County, Statewide ---
+    function calculateMargins(results) {
+        // By Grand Division
+        const grandDivisions = {};
+        results.forEach(r => {
+            const grand = r.Grand || r.GrandDivision;
+            if (!grand) return;
+            if (!grandDivisions[grand]) grandDivisions[grand] = { dem: 0, rep: 0, total: 0 };
+            grandDivisions[grand].dem += r.dem_votes || 0;
+            grandDivisions[grand].rep += r.rep_votes || 0;
+            grandDivisions[grand].total += r.total_votes || 0;
+        });
+
+        // By County
+        const counties = {};
+        results.forEach(r => {
+            const county = r.County || r.NAME;
+            if (!county) return;
+            if (!counties[county]) counties[county] = { dem: 0, rep: 0, total: 0 };
+            counties[county].dem += r.dem_votes || 0;
+            counties[county].rep += r.rep_votes || 0;
+            counties[county].total += r.total_votes || 0;
+        });
+
+        // Statewide
+        let statewide = { dem: 0, rep: 0, total: 0 };
+        results.forEach(r => {
+            statewide.dem += r.dem_votes || 0;
+            statewide.rep += r.rep_votes || 0;
+            statewide.total += r.total_votes || 0;
+        });
+
+        // Calculate margins
+        function margin(obj) {
+            const d = obj.dem, r = obj.rep, t = obj.total;
+            if (t === 0) return 0;
+            return ((r - d) / t * 100).toFixed(2); // Republican margin (negative = Dem lead)
+        }
+
+        // Example output (replace with UI update as needed)
+        Object.entries(grandDivisions).forEach(([grand, obj]) => {
+            console.log(`${grand} margin: ${margin(obj)}%`);
+        });
+        Object.entries(counties).forEach(([county, obj]) => {
+            console.log(`${county} margin: ${margin(obj)}%`);
+        });
+        console.log(`Statewide margin: ${margin(statewide)}%`);
+    }
+    // Usage: call calculateMargins(electionResults) after loading your data
+    // ...rest of the JS code unchanged...
+    </script>
+</body>
+</html>
