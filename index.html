@@ -93,7 +93,7 @@
       const normTarget = normalizeCountyName(countyName);
       const countyFeature = counties.find(f => {
         const props = f.properties || {};
-        const name = normalizeCountyName(props.County || props.COUNTYNAME || props.NAME || '');
+        const name = normalizeCountyName(props.NAME20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || '');
         return name === normTarget;
       });
       if (!countyFeature) return;
@@ -543,16 +543,6 @@ body {
   color: #374151;
 }
 .metric {
-  background: #dbeafe;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #1e40af;
-}
-
-/* End of styles */
-
-.metric {
   background: #eff6ff;
   padding: 4px 8px;
   border-radius: 4px;
@@ -560,7 +550,24 @@ body {
   color: #1d4ed8;
   display: inline-block;
   margin: 2px;
+  border: 1px solid #dbeafe;
 }
+
+/* Special metric styling for election results */
+.metric.result {
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 1.05em;
+  border: 1px solid #fecaca;
+}
+
+.metric.result.dem {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+/* End of styles */
 
 /* Status panel */
 .status-panel {
@@ -739,7 +746,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div style="margin-bottom: 16px;">
           <label for="county-search" style="font-weight:600;">Search County:</label>
-          <input type="text" id="county-search" placeholder="Type to search..." style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;border:1px solid #d1d5db;" />
+          <input type="text" id="county-search" placeholder="Type county name..." autocomplete="off" spellcheck="false" style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;border:1px solid #d1d5db;" />
         </div>
         <h4 id="statewide">🏛️ Tennessee Statewide</h4>
   <div style="margin:18px 0 8px 0; border-bottom:2px solid #e5e7eb;"></div>
@@ -751,42 +758,34 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
         <div class="findings-section">
+          <h4>🔍 Tennessee Political Analysis</h4>
           <div class="finding-card">
-            <h5>Knox County - Urban/Suburban Republican Stronghold</h5>
-            <p><strong>Trend:</strong> Knoxville and its suburbs consistently vote Republican, with strong margins in presidential and statewide contests.</p>
-            <p><strong>Demographics:</strong> Mix of urban, suburban, and university populations, but overall conservative lean.</p>
-            <p><strong>Recent Results:</strong> 2024 President: R+24.1%, Governor: R+21.7%</p>
+            <h5>Shelby County - Memphis Democratic Stronghold</h5>
+            <p><strong>Urban Dominance:</strong> Shelby County (Memphis) remains Tennessee's most reliable Democratic county, consistently delivering large margins for Democratic candidates.</p>
+            <p><strong>Demographics:</strong> Majority African-American population (54%), urban core voting patterns, and strong Democratic organization. <span class="metric">Population: 937,847</span></p>
+            <p><strong>Electoral Impact:</strong> <span class="metric">2024 President: D+35.2%</span> → <span class="metric">2024 Governor: D+28.7%</span> — provides the largest Democratic vote bank in the state.</p>
+            <p><strong>Strategic Importance:</strong> Critical for Democratic statewide viability, but often overwhelmed by rural Republican margins.</p>
           </div>
           <div class="finding-card">
-            <h5>Hamilton County - Chattanooga's Competitive Landscape</h5>
-            <p><strong>Trend:</strong> Hamilton County (Chattanooga) is more competitive, with urban Democratic pockets but overall Republican advantage.</p>
-            <p><strong>Demographics:</strong> Urban core leans Democratic, but suburbs and rural areas favor Republicans.</p>
-            <p><strong>Recent Results:</strong> 2024 President: R+13.5%, Governor: R+11.2%</p>
+            <h5>Williamson County - Affluent Republican Base</h5>
+            <p><strong>Suburban Wealth:</strong> Tennessee's wealthiest county and a reliably Republican stronghold, representing the educated, affluent suburban GOP voter base.</p>
+            <p><strong>Demographics:</strong> Fastest-growing county in Tennessee, high median income ($113,000+), highly educated professionals. <span class="metric">Population Growth: +35% (2010-2020)</span></p>
+            <p><strong>Electoral Pattern:</strong> <span class="metric">2024 President: R+32.8%</span> → <span class="metric">2024 Governor: R+29.4%</span> — consistently strong Republican performance.</p>
+            <p><strong>Geographic Influence:</strong> Anchors the Nashville suburban Republican vote, balancing Democratic gains in Davidson County.</p>
           </div>
           <div class="finding-card">
-            <h5>Haywood County - West Tennessee Democratic Outpost</h5>
-            <p><strong>Trend:</strong> Haywood County is one of the few rural counties in Tennessee that consistently votes Democratic.</p>
-            <p><strong>Demographics:</strong> Large African-American population and historic Democratic loyalty.</p>
-            <p><strong>Recent Results:</strong> 2024 President: D+8.9%, Governor: D+6.2%</p>
-          </div>
-          <h4>🔍 Tennessee County Analysis</h4>
-          <div class="finding-card">
-            <h5>Example: Shelby County - Urban Democratic Stronghold</h5>
-            <p><strong>Trend:</strong> Shelby County consistently votes Democratic in statewide and national contests, reflecting urban voting patterns.</p>
-            <p><strong>Demographics:</strong> Large African-American population, urbanization, and strong party organization contribute to Democratic margins.</p>
-            <p><strong>Recent Results:</strong> 2024 President: D+35.2%, Governor: D+28.7%</p>
+            <h5>Knox County - East Tennessee's Republican Hub</h5>
+            <p><strong>University Town GOP:</strong> Home to the University of Tennessee, but remains solidly Republican despite student population, reflecting East Tennessee's deep conservative roots.</p>
+            <p><strong>Regional Character:</strong> Knoxville metropolitan area with mix of urban, suburban, and rural voters, but unified Republican lean. <span class="metric">Population: 478,971</span></p>
+            <p><strong>Electoral Consistency:</strong> <span class="metric">2024 President: R+24.1%</span> → <span class="metric">Governor: R+21.7%</span> — reliable GOP margins across most contests.</p>
+            <p><strong>East Tennessee Anchor:</strong> Represents the strongly Republican character of East Tennessee, contributing significantly to statewide GOP dominance.</p>
           </div>
           <div class="finding-card">
-            <h5>Example: Williamson County - Affluent Republican Base</h5>
-            <p><strong>Trend:</strong> Williamson County is a reliably Republican, affluent suburban county south of Nashville.</p>
-            <p><strong>Demographics:</strong> High median income, rapid growth, and suburban character drive strong GOP support.</p>
-            <p><strong>Recent Results:</strong> 2024 President: R+32.8%, Governor: R+29.4%</p>
-          </div>
-          <div class="finding-card">
-            <h5>Statewide Patterns</h5>
-            <p><strong>Urban vs. Rural:</strong> Tennessee shows a pronounced urban-rural divide, with cities voting Democratic and rural areas strongly Republican.</p>
-            <p><strong>East vs. West:</strong> East Tennessee remains a GOP stronghold, while West Tennessee has more Democratic pockets.</p>
-            <p><strong>Suburban Shifts:</strong> Some Nashville and Memphis suburbs show gradual Democratic gains, but most remain Republican.</p>
+            <h5>Statewide Patterns & Geographic Divides</h5>
+            <p><strong>Urban-Rural Polarization:</strong> Tennessee exhibits extreme geographic sorting, with four major urban counties (Shelby, Davidson, Hamilton, Knox) more competitive, while 91 rural counties deliver overwhelming Republican margins.</p>
+            <p><strong>Grand Divisions:</strong> <span class="metric">East Tennessee</span> is solidly Republican, <span class="metric">Middle Tennessee</span> is competitive with Nashville area Democratic strength, and <span class="metric">West Tennessee</span> mixes Memphis Democratic votes with rural Republican dominance.</p>
+            <p><strong>Democratic Path:</strong> Statewide Democratic victories require massive Nashville/Memphis turnout + holding suburban losses below 20-25 points + winning small-town/rural counties that are becoming increasingly rare.</p>
+            <p><strong>Population Trends:</strong> Rapid growth in Republican-leaning suburbs (Williamson, Rutherford) versus slower growth in Democratic urban cores creates challenging electoral math for Democrats.</p>
           </div>
         </div>
       </div>
@@ -874,6 +873,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let electionData = null;
     let currentContest = null;
+    let currentView = 'counties'; // Default to county view for Tennessee map
 
 
     function setStatus(text, timeout = 4000) {
@@ -881,7 +881,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const msg = document.getElementById('status-message');
       if (!panel || !msg) return;
       // Only log status messages to the console; do not show the floating status panel
-      console.log(text);
     }
 
     async function loadJSON(path) {
@@ -1141,36 +1140,38 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       });
       document.getElementById(`${mode}-mode`).classList.add('active');
       
-      console.log(`Analysis mode set to: ${mode}`);
     }
 
     function updateStatewideResults(contestType, year, demVotes, repVotes, totalVotes) {
       const statewideContent = document.getElementById('statewide-content');
       const tempBar = document.getElementById('statewide-temperature-bar');
       if (!statewideContent) return;
+      
       if (totalVotes === 0) {
         statewideContent.innerHTML = '<p>No statewide data available for this contest.</p>';
         if (tempBar) tempBar.style.display = 'none';
         return;
       }
+      
       const demPct = (demVotes / totalVotes) * 100;
       const repPct = (repVotes / totalVotes) * 100;
       const marginPct = Math.abs(demPct - repPct);
       const winner = demPct > repPct ? 'Democratic' : 'Republican';
       const loser = demPct > repPct ? 'Republican' : 'Democratic';
-      let officeName = formatContestName(contestType, year);
-      let demKey = `${year}|${officeName}|Democrat`;
-      let repKey = `${year}|${officeName}|Republican`;
-      let demCandidate = getCandidateName(year, officeName, 'Democrat');
-      let repCandidate = getCandidateName(year, officeName, 'Republican');
-      if ((year == 2008 && officeName === 'President of the United States') || (year == 2010 && officeName === 'Governor')) {
-        console.log('DEBUG Candidate Lookup:', { demKey, demCandidate, repKey, repCandidate });
+      
+      // Get candidate names from the current contest data
+      let demCandidate = 'Democratic Candidate';
+      let repCandidate = 'Republican Candidate';
+      
+      if (currentContest && currentContest.data) {
+        // Get candidate names from contest level data
+        demCandidate = currentContest.data.dem_candidate || 'Democratic Candidate';
+        repCandidate = currentContest.data.rep_candidate || 'Republican Candidate';
       }
-      // Show winner, margin, total votes, competitiveness, and split temperature bar styled like Georgia example
+      
       // Calculate competitiveness
       let compLabel = '';
       let compColor = '#6b7280';
-      // Use county analysis sidebar color logic for competitiveness
       if (marginPct >= 40) {
         compLabel = winner === 'Republican' ? "Annihilation Republican (40%+)" : "Annihilation Democratic (40%+)";
         compColor = winner === 'Republican' ? '#450a0a' : '#0c1d56';
@@ -1194,8 +1195,9 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         compColor = winner === 'Republican' ? '#fca5a5' : '#bfdbfe';
       } else {
         compLabel = winner === 'Democratic' ? 'Tossup (Democratic Win)' : 'Tossup (Republican Win)';
-        compColor = winner === 'Democratic' ? '#2563eb' : '#dc2626'; // Blue for Dem win, Red for Rep win
+        compColor = winner === 'Democratic' ? '#2563eb' : '#dc2626';
       }
+      
       statewideContent.innerHTML = `
         <div class="statewide-margin" style="margin-bottom:0;">
           <div class="margin-text" style="color: ${winner === 'Republican' ? '#dc2626' : '#2563eb'};font-size:18px;font-weight:700;text-align:left;">
@@ -1378,7 +1380,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         minimizeBtn.title = 'Expand controls';
       }
     }
-    function toggleSidebar() {
+function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
@@ -1401,6 +1403,8 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
     minimizeBtn.title = 'Expand sidebar';
     if (floatBtn) floatBtn.style.display = 'flex';
   }
+}
+
 // Floating sidebar button click toggles sidebar open
 document.addEventListener('DOMContentLoaded', function() {
   var floatBtn = document.getElementById('sidebar-float-toggle');
@@ -1410,7 +1414,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-}
 
     function showCountyDetails(countyName) {
       // --- NC Map Card-Style Sidebar ---
@@ -1428,28 +1431,23 @@ document.addEventListener('DOMContentLoaded', function() {
       const countyNameElement = document.getElementById('county-name');
       if (countyNameElement) countyNameElement.textContent = countyName + ' County';
       let sidebarContent = '';
-      // Guard: election results must exist
-      if (!currentElectionResults) {
+      
+      // Guard: check if we have a selected contest and election data
+      if (!currentContest || !currentContest.data || !currentContest.data.results) {
         contentEl.innerHTML = '<p>Select a contest to see county results.</p>';
         detailsDiv.style.display = 'block';
         return;
       }
-      // Normalize and find county data
-      function normalizeCountyName(name) {
-        return (name || '')
-          .replace(/St\.? Lucie/i, 'St Lucie')
-          .replace(/St\.? Johns/i, 'St Johns')
-          .replace(/[^a-z0-9 ]/gi, '')
-          .replace(/\s+/g, ' ')
-          .trim()
-          .toUpperCase();
-      }
-      let norm = normalizeCountyName(countyName);
-      let countyData = currentElectionResults[norm];
+      
+      // Normalize county name and find county data
+      const normalizedCountyName = countyName.toUpperCase().replace(/_/g, ' ');
+      let countyData = currentContest.data.results[normalizedCountyName];
+      
       if (!countyData) {
-        for (const key in currentElectionResults) {
-          if (normalizeCountyName(key) === norm) {
-            countyData = currentElectionResults[key];
+        // Try to find with different name variations
+        for (const key in currentContest.data.results) {
+          if (key.toUpperCase().replace(/_/g, ' ') === normalizedCountyName) {
+            countyData = currentContest.data.results[key];
             break;
           }
         }
@@ -1459,37 +1457,43 @@ document.addEventListener('DOMContentLoaded', function() {
         detailsDiv.style.display = 'block';
         return;
       }
-      // Get contest info
-      const contestSelect = document.getElementById('contestSelect');
-      const contestKey = contestSelect && contestSelect.value;
-      if (!contestKey) {
-        contentEl.innerHTML = '<p>Select a contest to see detailed results.</p>';
-        detailsDiv.style.display = 'block';
-        return;
-      }
-      const lastUnderscoreIndex = contestKey.lastIndexOf('_');
-      const contestType = contestKey.substring(0, lastUnderscoreIndex);
-      const year = contestKey.substring(lastUnderscoreIndex + 1);
-      // Votes
-      const demVotes = countyData[`${contestType}_dem`] || 0;
-      const repVotes = countyData[`${contestType}_rep`] || 0;
-      const totalVotes = countyData[`${contestType}_total`] || 0;
+      
+      // Get contest info from the current contest
+      const contestName = currentContest.data.contest_name || 'Contest';
+      const year = currentContest.year;
+      
+      // Get votes from the Tennessee data structure
+      const demVotes = countyData.dem_votes || 0;
+      const repVotes = countyData.rep_votes || 0;
+      const otherVotes = countyData.other_votes || 0;
+      const totalVotes = countyData.total_votes || 0;
+      
       if (totalVotes === 0) {
-        contentEl.innerHTML = `<p>No ${formatContestName(contestType, year)} data available for ${countyName} County in ${year}.</p>`;
+        contentEl.innerHTML = `<p>No ${contestName} data available for ${countyName} County in ${year}.</p>`;
         detailsDiv.style.display = 'block';
         return;
       }
+      
       const demPct = (demVotes / totalVotes * 100);
       const repPct = (repVotes / totalVotes * 100);
-      // Candidate names
-  let demCandidate = getCandidateName(year, formatContestName(contestType, year), 'Democrat');
-  let repCandidate = getCandidateName(year, formatContestName(contestType, year), 'Republican');
-      // Margin
+      const otherPct = (otherVotes / totalVotes * 100);
+      
+      // Get candidate names from the contest data, not the county data
+      const demCandidate = currentContest?.data?.dem_candidate || 'Democratic Candidate';
+      const repCandidate = currentContest?.data?.rep_candidate || 'Republican Candidate';
+      
+      // Margin calculation and winner determination
       const margin = demVotes - repVotes;
-      const marginPct = (Math.abs(margin) / totalVotes * 100).toFixed(2);
-      const winner = margin > 0 ? 'Democratic' : (margin < 0 ? 'Republican' : 'Tie');
-      const winnerCandidate = margin > 0 ? demCandidate : repCandidate;
-      const marginText = margin > 0 ? 'D+' + marginPct + '%' : (margin < 0 ? 'R+' + marginPct + '%' : 'Tied');
+      const marginPct = parseFloat(countyData.margin_pct) || 0;
+      // Determine winner from vote counts since winner field doesn't exist in data
+      const winner = demVotes > repVotes ? 'Democratic' : (repVotes > demVotes ? 'Republican' : 'Tie');
+      const winnerCandidate = winner === 'Democratic' ? demCandidate : repCandidate;
+      const marginText = winner === 'Democratic' ? `D+${marginPct.toFixed(2)}%` : (winner === 'Republican' ? `R+${marginPct.toFixed(2)}%` : 'Tied');
+      
+      // Get competitiveness from the data
+      const countyCompetitiveness = countyData.competitiveness || {};
+      const countyCompColor = countyCompetitiveness.color || '#6b7280';
+      const countyCompLabel = countyCompetitiveness.description || 'Unknown';
       // Accessibility palette for winner color
       function cbColorForMargin(marginPct, winner) {
         if (marginPct >= 40) {
@@ -1548,7 +1552,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (winner !== 'Republican') {
     marginColor = isColorblind ? cbColorForMargin(parseFloat(marginPct), 'D') : '#2563eb';
   }
-  sidebarContent += `<p class="sidebar-margin" style="color: ${marginColor}; font-weight: bold;">${winner === 'Republican' ? 'R+' : 'D+'}${marginPct}%</p>`;
+  sidebarContent += `<p class="sidebar-margin" style="color: ${marginColor}; font-weight: bold;">${winner === 'Republican' ? 'R+' : 'D+'}${marginPct.toFixed(2)}%</p>`;
   sidebarContent += `<p class="sidebar-margin-details" style="color: #6b7280;">(${Math.abs(margin).toLocaleString()} vote margin)</p>`;
   sidebarContent += `</div>`;
   sidebarContent += `<div class="vote-breakdown">`;
@@ -1577,58 +1581,46 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   sidebarContent += `<p class="sidebar-breakdown"><span style="color: ${demColor}; font-weight: bold;">${demCandidate} (D)</span> : ${demPct.toFixed(2)}% (${demVotes.toLocaleString()})</p>`;
   sidebarContent += `<p class="sidebar-breakdown"><span style="color: ${repColor}; font-weight: bold;">${repCandidate} (R)</span> : ${repPct.toFixed(2)}% (${repVotes.toLocaleString()})</p>`;
+  if (otherVotes > 0) {
+    sidebarContent += `<p class="sidebar-breakdown"><span style="color: #6b7280; font-weight: bold;">Other Candidates</span> : ${otherPct.toFixed(2)}% (${otherVotes.toLocaleString()})</p>`;
+  }
   sidebarContent += `</div>`;
-  // Competitiveness
-  let competitiveness;
-  const actualMarginPct = parseFloat(marginPct);
-  if (actualMarginPct >= 40) {
-    competitiveness = winner === 'Republican' ? "Annihilation Republican" : "Annihilation Democratic";
-  } else if (actualMarginPct >= 30) {
-    competitiveness = winner === 'Republican' ? "Dominant Republican" : "Dominant Democratic";
-  } else if (actualMarginPct >= 20) {
-    competitiveness = winner === 'Republican' ? "Stronghold Republican" : "Stronghold Democratic";
-  } else if (actualMarginPct >= 10) {
-    competitiveness = winner === 'Republican' ? "Safe Republican" : "Safe Democratic";
-  } else if (actualMarginPct >= 5.5) {
-
-    competitiveness = winner === 'Republican' ? "Likely Republican" : "Likely Democratic";
-  } else if (actualMarginPct >= 1) {
-    competitiveness = winner === 'Republican' ? "Lean Republican" : "Lean Democratic";
-  } else if (actualMarginPct >= 0.5) {
-    competitiveness = winner === 'Republican' ? "Tilt Republican" : "Tilt Democratic";
+  
+  // Competitiveness (use Florida map approach with JavaScript color calculation)
+  let finalCompColor = '#6b7280'; // Default gray
+  let finalCompLabel = countyCompLabel;
+  
+  // Handle tossup cases with better colors and formatting like FL map
+  if (countyCompLabel.includes('Tossup')) {
+    finalCompLabel = winner === 'Democratic' ? 'Tossup (Democratic Win)' : 'Tossup (Republican Win)';
+    finalCompColor = winner === 'Democratic' ? '#2563eb' : '#dc2626'; // Blue for Dem win, Red for Rep win
   } else {
-    competitiveness = `Tossup (${winner} win)`;
+    // Use Florida map color logic for all other categories
+    if (countyCompLabel.includes('Republican')) {
+      if (countyCompLabel.includes('Annihilation')) finalCompColor = '#450a0a';
+      else if (countyCompLabel.includes('Dominant')) finalCompColor = '#7f1d1d';
+      else if (countyCompLabel.includes('Stronghold')) finalCompColor = '#991b1b';
+      else if (countyCompLabel.includes('Safe')) finalCompColor = '#dc2626';
+      else if (countyCompLabel.includes('Likely')) finalCompColor = '#ef4444';
+      else if (countyCompLabel.includes('Lean')) finalCompColor = '#f87171';
+      else if (countyCompLabel.includes('Tilt')) finalCompColor = '#fca5a5';
+    } else if (countyCompLabel.includes('Democratic')) {
+      if (countyCompLabel.includes('Annihilation')) finalCompColor = '#0c1d56';
+      else if (countyCompLabel.includes('Dominant')) finalCompColor = '#1e3a8a';
+      else if (countyCompLabel.includes('Stronghold')) finalCompColor = '#1e40af';
+      else if (countyCompLabel.includes('Safe')) finalCompColor = '#3b82f6';
+      else if (countyCompLabel.includes('Likely')) finalCompColor = '#60a5fa';
+      else if (countyCompLabel.includes('Lean')) finalCompColor = '#93c5fd';
+      else if (countyCompLabel.includes('Tilt')) finalCompColor = '#bfdbfe';
+    }
   }
-  let compColor = '#6b7280';
-  if (competitiveness.includes('Rep')) {
-    if (competitiveness.includes('Annihilation')) compColor = '#450a0a';
-    else if (competitiveness.includes('Dominant')) compColor = '#7f1d1d';
-    else if (competitiveness.includes('Stronghold')) compColor = '#991b1b';
-    else if (competitiveness.includes('Safe')) compColor = '#dc2626';
-    else if (competitiveness.includes('Likely')) compColor = '#ef4444';
-    else if (competitiveness.includes('Lean')) compColor = '#f87171';
-    else if (competitiveness.includes('Tilt')) compColor = '#fca5a5';
-  } else if (competitiveness.includes('Dem')) {
-    if (competitiveness.includes('Annihilation')) compColor = '#0c1d56';
-    else if (competitiveness.includes('Dominant')) compColor = '#1e3a8a';
-    else if (competitiveness.includes('Stronghold')) compColor = '#1e40af';
-    else if (competitiveness.includes('Safe')) compColor = '#3b82f6';
-    else if (competitiveness.includes('Likely')) compColor = '#60a5fa';
-    else if (competitiveness.includes('Lean')) compColor = '#93c5fd';
-    else if (competitiveness.includes('Tilt')) compColor = '#bfdbfe';
-  }
+  
   sidebarContent += `<div class="competitiveness-section">`;
-  sidebarContent += '<h5>🎯 Competitiveness</h5>';
-  sidebarContent += `<p style="color: ${compColor}; font-weight: bold; font-size: 16px;">${competitiveness}</p>`;
-  if (actualMarginPct <= 0.5) {
-    sidebarContent += `<p style="color: #f59e0b; font-style: italic;">(Extremely close!)</p>`;
-  } else if (actualMarginPct <= 1) {
-    sidebarContent += `<p style="color: #f59e0b; font-style: italic;">(Very close!)</p>`;
-  }
+  sidebarContent += '<h3 class="sidebar-section-title">🎯 Competitiveness</h3>';
+  sidebarContent += `<p style="color: ${finalCompColor}; font-weight: bold;">${finalCompLabel}</p>`;
   sidebarContent += `</div>`;
-  sidebarContent += `</div>`;
+  
   contentEl.innerHTML = sidebarContent;
-  detailsDiv.style.display = 'block';
   detailsDiv.style.display = 'block';
 }
 
@@ -1652,7 +1644,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'symbol',
           source: 'counties',
           layout: {
-            'text-field': ['coalesce', ['get', 'County'], ['get', 'COUNTYNAME'], ['get', 'NAME'], ['get', 'name']],
+            'text-field': ['coalesce', ['get', 'NAME20'], ['get', 'county_name'], ['get', 'County'], ['get', 'COUNTYNAME'], ['get', 'NAME'], ['get', 'name']],
             'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
             'text-size': 13,
             'text-anchor': 'center',
@@ -1671,7 +1663,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add county click event handler
         map.on('click', 'county-fill', (e) => {
           if (e.features && e.features[0] && e.features[0].properties) {
-            const countyName = e.features[0].properties.County || e.features[0].properties.COUNTYNAME || e.features[0].properties.NAME || e.features[0].properties.name;
+            const countyName = e.features[0].properties.NAME20 || e.features[0].properties.county_name || e.features[0].properties.County || e.features[0].properties.COUNTYNAME || e.features[0].properties.NAME || e.features[0].properties.name;
             if (countyName) {
               showCountyDetails(countyName);
               lastSelectedCounty = countyName;
@@ -1835,47 +1827,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const btn = document.getElementById('sidebar-minimize-btn');
       sidebar.classList.add('minimized');
       btn.textContent = '+';
-
-      // Populate county search dropdown/list with county names if available
-      // Wait for map and counties source to be loaded
-      map.on('load', function() {
-        const countiesSource = map.getSource('counties');
-        if (!countiesSource) return;
-        let counties = [];
-        if (countiesSource._data && countiesSource._data.features) {
-          counties = countiesSource._data.features.map(f => f.properties && (f.properties.County || f.properties.COUNTYNAME || f.properties.NAME)).filter(Boolean).sort();
-        }
-        const searchInput = document.getElementById('county-search');
-        if (searchInput && counties.length > 0) {
-          // Create a datalist for autocomplete
-          let datalist = document.getElementById('county-datalist');
-          if (!datalist) {
-            datalist = document.createElement('datalist');
-            datalist.id = 'county-datalist';
-            document.body.appendChild(datalist);
-            searchInput.setAttribute('list', 'county-datalist');
-          }
-          datalist.innerHTML = counties.map(name => `<option value="${name}"></option>`).join('');
-        }
-      });
-
-      // Allow selecting a county by typing and pressing enter
-      const searchInput = document.getElementById('county-search');
-      if (searchInput) {
-        searchInput.addEventListener('change', function() {
-          const val = searchInput.value.trim();
-          if (val) {
-            zoomToCounty(val);
-            showCountyDetails(val);
-            lastSelectedCounty = val;
-            const sidebar = document.getElementById('sidebar');
-            if (sidebar.classList.contains('minimized')) {
-              toggleSidebar();
-            }
-          }
-        });
-      }
-    });
+    }); // <-- Add this closing brace and parenthesis to properly close the DOMContentLoaded handler
 
     function getHistoricalTrends(countyName, isDistrict = false, districtNum = null) {
       const presidentialYears = [2024, 2020, 2016, 2012, 2008];
@@ -1904,7 +1856,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
               trends.push({
                 year: year,
-                display: `${year}: ${winner}+${marginAbs.toFixed(1)}`,
+                display: `${year}: ${winner}+${marginAbs.toFixed(2)}`,
                 margin: margin,
                 type: 'house'
               });
@@ -1943,7 +1895,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
               trends.push({
                 year: year,
-                display: `${year}: ${candidateInfo}+${marginAbs.toFixed(1)}`,
+                display: `${year}: ${candidateInfo}+${marginAbs.toFixed(2)}`,
                 margin: margin,
                 type: 'president'
               });
@@ -1980,7 +1932,7 @@ document.addEventListener('DOMContentLoaded', function() {
             candidateInfo = margin > 0 ? getCandidateName(year, 'Governor', 'Democrat') : getCandidateName(year, 'Governor', 'Republican');
             trends.push({
               year: year,
-              display: `${year}: ${candidateInfo}+${marginAbs.toFixed(1)}`,
+              display: `${year}: ${candidateInfo}+${marginAbs.toFixed(2)}`,
               margin: margin,
               type: 'governor'
             });
@@ -2005,7 +1957,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
               trends.push({
                 year: year,
-                display: `${year}: ${winner}+${marginAbs.toFixed(1)} (House)`,
+                display: `${year}: ${winner}+${marginAbs.toFixed(2)} (House)`,
                 margin: margin,
                 type: 'state_house'
               });
@@ -2128,13 +2080,13 @@ document.addEventListener('DOMContentLoaded', function() {
               <div style="margin-bottom: 16px;">
                 <h5>📈 Margin</h5>
                 <p style="color: ${winner === 'Republican' ? '#dc2626' : '#1e40af'}; font-weight: bold; font-size: 18px;">
-                  ${winner} +${marginPct.toFixed(1)}%
+                  ${winner} +${marginPct.toFixed(2)}%
                 </p>
               </div>
               <div style="margin-bottom: 16px;">
                 <h5>🗳️ Vote Breakdown</h5>
-                <p><span style="color: #1e40af; font-weight: bold;">Democratic: </span>${demPct.toFixed(1)}% (${demVotes.toLocaleString()})</p>
-                <p><span style="color: #dc2626; font-weight: bold;">Republican: </span>${repPct.toFixed(1)}% (${repVotes.toLocaleString()})</p>
+                <p><span style="color: #1e40af; font-weight: bold;">Democratic: </span>${demPct.toFixed(2)}% (${demVotes.toLocaleString()})</p>
+                <p><span style="color: #dc2626; font-weight: bold;">Republican: </span>${repPct.toFixed(2)}% (${repVotes.toLocaleString()})</p>
                 <p><strong>Total Votes:</strong> ${totalVotes.toLocaleString()}</p>
               </div>
             `;
@@ -2294,12 +2246,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let countiesData = null;
 
+    let isInitializing = false;
+    let isInitialized = false;
+    
     async function init() {
+      // Prevent multiple simultaneous initializations
+      if (isInitializing || isInitialized) {
+        return;
+      }
+      
+      isInitializing = true;
+      
       try {
-        console.log('Initializing Tennessee map...');
         
         // Load county boundaries with timeout
-        console.log('Loading counties from:', CONFIG.paths.counties);
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
         
@@ -2313,7 +2273,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         countiesData = await response.json();
-        console.log('Loaded counties:', countiesData.features?.length, 'counties');
         
         // Validate county data
         if (!countiesData.features || countiesData.features.length === 0) {
@@ -2322,6 +2281,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add counties to map safely
         if (map.getSource('counties')) {
+          // Remove all possible layers that use this source first
+          const layersToRemove = ['county-fill', 'county-border', 'county-stroke', 'county-outline', 'counties-fill', 'counties-stroke', 'county-label', 'counties-label'];
+          layersToRemove.forEach(layerId => {
+            if (map.getLayer(layerId)) {
+              map.removeLayer(layerId);
+            }
+          });
+          // Now remove the source
           map.removeSource('counties');
         }
         
@@ -2330,35 +2297,21 @@ document.addEventListener('DOMContentLoaded', function() {
           data: countiesData
         });
         
-        // Add county fill layer
-        map.addLayer({
-          id: 'counties-fill',
-          type: 'fill',
-          source: 'counties',
-          paint: {
-            'fill-color': '#f0f0f0',
-            'fill-opacity': 0.7
-          }
-        });
-        
-        // Add county stroke layer
-        map.addLayer({
-          id: 'counties-stroke',
-          type: 'line',
-          source: 'counties',
-          paint: {
-            'line-color': '#666',
-            'line-width': 1
-          }
-        });
+        // Add county layers
+        addCountyLayers();
         
         // Load election data with timeout
-        console.log('Loading election data from:', CONFIG.paths.election);
         const electionController = new AbortController();
         const electionTimeoutId = setTimeout(() => electionController.abort(), 15000); // 15 second timeout
         
-        const electionResponse = await fetch(CONFIG.paths.election, { 
-          signal: electionController.signal 
+        const electionResponse = await fetch(CONFIG.paths.election + '?v=' + Date.now(), { 
+          signal: electionController.signal,
+          cache: 'no-cache',
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+          }
         });
         clearTimeout(electionTimeoutId);
         
@@ -2367,26 +2320,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         electionData = await electionResponse.json();
-        console.log('Loaded election data with', Object.keys(electionData.results_by_year || {}).length, 'years');
         
         populateContestDropdown();
         
-        // Add click handler for counties
-        map.on('click', 'counties-fill', onCountyClick);
-        map.on('mouseenter', 'counties-fill', () => {
-          map.getCanvas().style.cursor = 'pointer';
-        });
-        map.on('mouseleave', 'counties-fill', () => {
-          map.getCanvas().style.cursor = '';
-        });
-        
         map.fitBounds(CONFIG.fitBounds, { padding: 20 });
-        console.log('Tennessee map initialized successfully');
+        
+        isInitialized = true;
 
       } catch (e) {
         console.error('Error loading data:', e);
         // Show user-friendly error
-        const sidebarContent = document.getElementById('sidebar-content');
+        const sidebarContent = document.getElementById('county-info-content');
         if (sidebarContent) {
           sidebarContent.innerHTML = `<div style="color: red; padding: 20px;">
             <h4>Error Loading Map</h4>
@@ -2394,6 +2338,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Please refresh the page and try again.</p>
           </div>`;
         }
+      } finally {
+        isInitializing = false;
       }
     }
 
@@ -2401,25 +2347,59 @@ document.addEventListener('DOMContentLoaded', function() {
       const select = document.getElementById('contestSelect');
       select.innerHTML = '<option value="">Select a Contest...</option>';
       
-      if (!electionData || !electionData.results_by_year) return;
+      if (!electionData || !electionData.results_by_year) {
+        return;
+      }
       
-      // Only show Governor, US Senate, and President contests
-      const allowedContests = ['governor', 'us_senate', 'president'];
+      // Only show major statewide contests
+      const allowedContests = ['president', 'governor', 'us_senate'];
       
-      // Create options from the election data structure
+      // Build options from years and contests
+      const options = [];
       Object.entries(electionData.results_by_year).forEach(([year, yearData]) => {
         Object.entries(yearData).forEach(([contestType, contests]) => {
           // Filter to only allowed contest types
           if (allowedContests.includes(contestType.toLowerCase())) {
             Object.entries(contests).forEach(([contestId, contestData]) => {
-              const option = document.createElement('option');
-              option.value = `${year}-${contestType}-${contestId}`;
-              option.textContent = `${year} ${contestData.contest_name || contestId}`;
-              select.appendChild(option);
+              // Create normalized contest name
+              let normalizedName = '';
+              if (contestType === 'us_senate') {
+                normalizedName = `US Senate (${year})`;
+              } else if (contestType === 'president') {
+                normalizedName = `President (${year})`;
+              } else if (contestType === 'governor') {
+                normalizedName = `Governor (${year})`;
+              } else {
+                normalizedName = `${contestType.replace('_', ' ').toUpperCase()} (${year})`;
+              }
+              
+              options.push({
+                value: `${year}-${contestType}-${contestId}`,
+                text: normalizedName,
+                year: parseInt(year),
+                contestType: contestType
+              });
             });
           }
         });
       });
+      
+      // Sort by year (newest first) then by contest type
+      options.sort((a, b) => {
+        if (a.year !== b.year) return b.year - a.year;
+        return a.contestType.localeCompare(b.contestType);
+      });
+      
+      // Add options to select
+      options.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.value;
+        opt.textContent = option.text;
+        select.appendChild(opt);
+      });
+      
+      // Set up change handler
+      select.addEventListener('change', onContestChange);
     }
 
     let updateTimeout = null;
@@ -2438,8 +2418,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!value) {
           currentContest = null;
           // Reset map to default colors
-          if (map.getLayer('counties-fill')) {
-            map.setPaintProperty('counties-fill', 'fill-color', '#f0f0f0');
+          if (map.getLayer('county-fill')) {
+            map.setPaintProperty('county-fill', 'fill-color', '#f0f0f0');
+          }
+          // Clear statewide results
+          const statewideContent = document.getElementById('statewide-content');
+          if (statewideContent) {
+            statewideContent.innerHTML = '<p>Select a contest to see statewide results and margin.</p>';
+          }
+          const contestNameEl = document.getElementById('contest-name');
+          if (contestNameEl) {
+            contestNameEl.textContent = 'No Contest Selected';
           }
           return;
         }
@@ -2452,8 +2441,18 @@ document.addEventListener('DOMContentLoaded', function() {
           data: electionData.results_by_year[year][contestType][contestId]
         };
         
-        console.log('Selected contest:', currentContest);
+        setStatus('Loading Tennessee county-level results...', 2000);
         updateMapColors();
+        
+        // Calculate and update statewide results
+        calculateAndUpdateStatewideResults();
+        
+        // Update contest name in statewide section
+        const contestNameEl = document.getElementById('contest-name');
+        if (contestNameEl) {
+          contestNameEl.textContent = `TN ${currentContest.data.contest_name} (${year})`;
+        }
+        
       }, 300); // Wait 300ms before updating
     }
 
@@ -2463,27 +2462,29 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       try {
-        // Check if layer exists
-        if (!map.getLayer('counties-fill')) {
-          console.warn('Counties layer not ready yet');
+        // Check if layer exists, if not try again in a moment
+        if (!map.getLayer('county-fill')) {
+          console.warn('County layer not ready yet, retrying in 500ms...');
+          setTimeout(updateMapColors, 500);
           return;
         }
 
-        // Create a simplified color expression
+        // Create a color expression based on county names
         const colorExpression = ['case'];
         let matchCount = 0;
         
         Object.entries(currentContest.data.results).forEach(([countyName, result]) => {
-          const competitiveness = result.competitiveness_rating;
+          const competitiveness = result.competitiveness;
           if (competitiveness && competitiveness.color) {
-            // Your GeoJSON has counties with NAME like "Hamilton", "Marion", etc.
-            // Your election data has counties like "Hamilton County", "Marion County", etc.
+            // Normalize county names for matching
+            // Election data: "VAN_BUREN", GeoJSON: "Van Buren"
+            // Election data: "MONTGOMERY", GeoJSON: "Montgomery"
+            const normalizedElectionCounty = countyName.toUpperCase().replace(/_/g, ' ');
             
-            // Remove "County" suffix for matching
-            const cleanCountyName = countyName.replace(' County', '').trim();
-            
-            colorExpression.push(['==', ['get', 'NAME'], cleanCountyName]);
+            // Match against NAME20 property (convert to uppercase and replace underscores with spaces)
+            colorExpression.push(['==', ['upcase', ['get', 'NAME20']], normalizedElectionCounty]);
             colorExpression.push(competitiveness.color);
+            
             matchCount++;
           }
         });
@@ -2491,41 +2492,89 @@ document.addEventListener('DOMContentLoaded', function() {
         // Default color
         colorExpression.push('#f0f0f0');
         
-        console.log(`Applying colors for ${matchCount} county matches`);
-        map.setPaintProperty('counties-fill', 'fill-color', colorExpression);
+        // Apply the color expression directly
+        map.setPaintProperty('county-fill', 'fill-color', colorExpression);
+        
+        // Also ensure proper opacity and visibility
+        map.setPaintProperty('county-fill', 'fill-opacity', 0.38);
+        map.setLayoutProperty('county-fill', 'visibility', 'visible');
+        
+        // Verify the property was set
+        try {
+            const newFillColor = map.getPaintProperty('county-fill', 'fill-color');
+            
+            // Force a map repaint
+            map.triggerRepaint();
+            
+        } catch (e) {
+            // Silently handle errors
+        }
         
       } catch (error) {
         console.error('Error updating map colors:', error);
         // Fallback to simple gray
-        map.setPaintProperty('counties-fill', 'fill-color', '#f0f0f0');
+        map.setPaintProperty('county-fill', 'fill-color', '#f0f0f0');
       }
+    }
+
+    function calculateAndUpdateStatewideResults() {
+      if (!currentContest || !currentContest.data.results) {
+        return;
+      }
+
+      // Calculate statewide totals from county results
+      let totalDemVotes = 0;
+      let totalRepVotes = 0;
+      let totalOtherVotes = 0;
+      let totalVotes = 0;
+
+      Object.values(currentContest.data.results).forEach(county => {
+        totalDemVotes += county.dem_votes || 0;
+        totalRepVotes += county.rep_votes || 0;
+        totalOtherVotes += county.other_votes || 0;
+        totalVotes += county.total_votes || 0;
+      });
+
+      // Update the statewide results display
+      updateStatewideResults(currentContest.contestType, currentContest.year, totalDemVotes, totalRepVotes, totalVotes);
     }
 
     function onCountyClick(e) {
       if (!e.features.length) return;
       
       const county = e.features[0];
-      const countyName = county.properties.NAME;
+      const countyName = county.properties.NAME20 || county.properties.county_name || county.properties.name;
       
-      updateSidebar(countyName);
+      if (countyName) {
+        updateSidebar(countyName);
+        
+        // Expand sidebar if minimized
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar && sidebar.classList.contains('minimized')) {
+          toggleSidebar();
+        }
+      }
     }
 
     function updateSidebar(countyName) {
-      const sidebarContent = document.getElementById('sidebar-content');
+      const sidebarContent = document.getElementById('county-info-content');
+      const countyNameEl = document.getElementById('county-name');
+      
+      if (countyNameEl) {
+        countyNameEl.textContent = `${countyName} County`;
+      }
       
       if (!currentContest) {
         sidebarContent.innerHTML = '<p>Select a contest to view county details.</p>';
         return;
       }
       
-      // Your GeoJSON has NAME like "Hamilton", but election data has "Hamilton County"
-      // Try both variations to find the data
-      const countyWithSuffix = countyName.includes('County') ? countyName : `${countyName} County`;
-      const countyWithoutSuffix = countyName.replace(' County', '').trim();
-      
-      const result = currentContest.data.results[countyWithSuffix] || 
-                   currentContest.data.results[countyWithoutSuffix] ||
-                   currentContest.data.results[countyName];
+      // Find county data - try different name variations
+      const countyNameUpper = countyName.toUpperCase();
+      const result = currentContest.data.results[countyNameUpper] || 
+                   currentContest.data.results[countyName] ||
+                   currentContest.data.results[`${countyName} County`] ||
+                   currentContest.data.results[`${countyNameUpper} COUNTY`];
       
       if (!result) {
         sidebarContent.innerHTML = `<h4>${countyName} County</h4><p>No data available for this contest.</p>`;
@@ -2533,7 +2582,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       const html = `
-        <h4>${countyName} County</h4>
         <div style="margin-bottom: 16px;">
           <strong>${currentContest.data.contest_name}</strong><br>
           <small>${currentContest.year}</small>
@@ -2560,9 +2608,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <strong>Total Votes:</strong> ${result.total_votes?.toLocaleString() || 0}
         </div>
         
-        ${result.competitiveness_rating ? `
-        <div style="padding: 12px; border-radius: 6px; background: ${result.competitiveness_rating.color}20; border-left: 4px solid ${result.competitiveness_rating.color};">
-          <strong>Rating:</strong> ${result.competitiveness_rating.category}
+        <div style="margin-bottom: 16px;">
+          <strong>Margin:</strong> ${result.margin_pct?.toFixed(2) || 0}% 
+          (${Math.abs(result.margin || 0).toLocaleString()} votes)
+        </div>
+        
+        ${result.competitiveness ? `
+        <div style="padding: 12px; border-radius: 6px; background: ${result.competitiveness.color}20; border-left: 4px solid ${result.competitiveness.color};">
+          <strong>Rating:</strong> ${result.competitiveness.category} ${result.competitiveness.party}
         </div>
         ` : ''}
       `;
@@ -2624,84 +2677,62 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function applyCountyContest(contestType, year) {
-      // Filter data for this contest and year
-      const contestData = electionData.filter(row => row.year == year);
       
-      console.log(`Applying ${contestType} for ${year}:`, contestData.length, 'counties found');
-      
-      if (contestData.length === 0) {
-        return setStatus('No data found for this contest');
+      // Get contest data from Tennessee JSON structure
+      if (!electionData || !electionData.results_by_year || !electionData.results_by_year[year]) {
+        return setStatus('No data available for this year');
       }
-
-      // Store current results for county details using normalized county names
-      function normalizeCountyName(name) {
-        return (name || '')
-          .replace(/St\.? Lucie/i, 'St Lucie')
-          .replace(/St\.? Johns/i, 'St Johns')
-          .replace(/[^a-z0-9 ]/gi, '')
-          .replace(/\s+/g, ' ')
-          .trim()
-          .toUpperCase();
+      
+      const yearData = electionData.results_by_year[year];
+      if (!yearData[contestType]) {
+        return setStatus('No data available for this contest type');
       }
-      currentElectionResults = {};
-      contestData.forEach(row => {
-        const norm = normalizeCountyName(row.county);
-        currentElectionResults[norm] = row;
-      });
-
-      // Calculate statewide totals
-      let statewidedemVotes = 0;
-      let statewidrepVotes = 0;
-      let statewidTotalVotes = 0;
       
-      contestData.forEach(row => {
-        const demVotes = row[`${contestType}_dem`] || 0;
-        const repVotes = row[`${contestType}_rep`] || 0;
-        statewidedemVotes += demVotes;
-        statewidrepVotes += repVotes;
-        statewidTotalVotes += demVotes + repVotes;
-      });
+      // Find the first contest of this type (e.g., us_senate_2006_1)
+      const contestId = Object.keys(yearData[contestType])[0];
+      const contestData = yearData[contestType][contestId];
       
-      // Update statewide results display
-      updateStatewideResults(contestType, year, statewidedemVotes, statewidrepVotes, statewidTotalVotes);
-
-      // Build expression for county coloring using normalized, uppercase names
+      if (!contestData || !contestData.results) {
+        return setStatus('No contest results found');
+      }
+      
+      // Build color expression for Tennessee counties
       const expr = ['case'];
       let countiesProcessed = 0;
-      // Normalization function (same as mergeGeoElectionData)
-      function normalizeCountyName(name) {
-        if (!name) return '';
-        return name
-          .replace(/St[\.]?\s*Lucie/i, 'St Lucie')
-          .replace(/St[\.]?\s*Johns/i, 'St Johns')
-          .replace(/\./g, '')
-          .replace(/\s+/g, ' ')
-          .trim()
-          .toUpperCase();
-      }
-      contestData.forEach(row => {
-        const countyName = normalizeCountyName(row.county);
-        const demVotes = row[`${contestType}_dem`] || 0;
-        const repVotes = row[`${contestType}_rep`] || 0;
-        const totalVotes = row[`${contestType}_total`] || 0;
-        if (totalVotes === 0) return;
-        const demPct = (demVotes / totalVotes) * 100;
-        const repPct = (repVotes / totalVotes) * 100;
-        const winner = repPct > demPct ? 'R' : 'D';
-        const marginPct = Math.abs(repPct - demPct);
-        const color = categoryColorForMargin(marginPct, winner);
-        // Match on normalized, uppercase name from GeoJSON
-        expr.push(['==', ['upcase', ['get', 'County']], countyName]);
+      
+      Object.entries(contestData.results).forEach(([countyName, countyResult]) => {
+        if (!countyResult.competitiveness || !countyResult.competitiveness.color) {
+          return; // Skip counties without competitiveness data
+        }
+        
+        const color = countyResult.competitiveness.color;
+        
+        // Match county names (Tennessee uses uppercase in data, proper case in GeoJSON)
+        // Tennessee data: "ANDERSON", GeoJSON: "Anderson" 
+        const normalizedCountyName = countyName.replace(/_/g, ' '); // Handle VAN_BUREN -> VAN BUREN
+        
+        expr.push(['==', ['upcase', ['get', 'NAME20']], normalizedCountyName]);
         expr.push(color);
         countiesProcessed++;
       });
-      expr.push('#e0e0e0'); // default color
       
-      console.log(`Color expression built for ${countiesProcessed} counties`);
+      expr.push('#e0e0e0'); // default color for unmatched counties
       
-      map.setPaintProperty('county-fill', 'fill-color', expr);
-  document.getElementById('contest-name').textContent = `FL ${formatContestName(contestType, year)} (${year})`;
-      setStatus(`Applied contest: ${formatContestName(contestType, year)} ${year}`);
+      if (countiesProcessed === 0) {
+        return setStatus('No county data found for this contest');
+      }
+      
+      try {
+        // Apply color expression to map
+        map.setPaintProperty('county-fill', 'fill-color', expr);
+      } catch (error) {
+        console.error('Error applying color expression:', error);
+        return setStatus('Error applying colors to map');
+      }
+      
+      // Update contest display
+      document.getElementById('contest-name').textContent = `TN ${contestData.contest_name} (${year})`;
+      setStatus(`Applied Tennessee contest: ${contestData.contest_name} (${countiesProcessed} counties)`);
     }
 
     function applyDistrictContest(contestType, year) {
@@ -2828,9 +2859,15 @@ document.addEventListener('DOMContentLoaded', function() {
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const btn = document.getElementById('sidebar-minimize-btn');
+    const floatBtn = document.getElementById('sidebar-float-toggle');
     
     sidebar.classList.toggle('minimized');
-    btn.textContent = sidebar.classList.contains('minimized') ? '←' : '→';
+    btn.textContent = sidebar.classList.contains('minimized') ? '+' : '−';
+    
+    // Show/hide float button
+    if (floatBtn) {
+      floatBtn.style.display = sidebar.classList.contains('minimized') ? 'flex' : 'none';
+    }
   }
 
   function toggleLegend() {
@@ -2846,16 +2883,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.mode-toggle').forEach(toggle => {
       toggle.classList.remove('active');
     });
-    document.getElementById(`${mode}-mode`)?.classList.add('active');
+    const modeBtn = document.getElementById(`${mode}-mode`);
+    if (modeBtn) {
+      modeBtn.classList.add('active');
+    }
   }
 
   // Set up Tennessee-specific event listeners
   document.getElementById('contestSelect').addEventListener('change', onContestChange);
-
-  // Initialize map when ready
-  map.on('style.load', function() {
-    init();
-  });
 
   // Make functions global
   window.toggleMainControls = toggleMainControls;
@@ -2863,7 +2898,181 @@ document.addEventListener('DOMContentLoaded', function() {
   window.toggleLegend = toggleLegend;
   window.setAnalysisMode = setAnalysisMode;
 });
-  </script>
+
+// County search functionality
+// Performance optimization variables
+let countySearchCache = null;
+let searchDebounceTimer = null;
+
+// County search functionality with performance optimizations
+function setupCountySearch() {
+  // Use cached county list if available
+  if (!countySearchCache) {
+    const countiesSource = map.getSource('counties');
+    if (!countiesSource) return;
+    
+    if (countiesSource._data && countiesSource._data.features) {
+      countySearchCache = countiesSource._data.features
+        .map(f => f.properties && f.properties.NAME20)
+        .filter(Boolean)
+        .sort();
+    }
+  }
+  
+  const searchInput = document.getElementById('county-search');
+  if (searchInput && countySearchCache && countySearchCache.length > 0) {
+    // Create datalist for autocomplete (only once)
+    let datalist = document.getElementById('county-datalist');
+    if (!datalist) {
+      datalist = document.createElement('datalist');
+      datalist.id = 'county-datalist';
+      document.body.appendChild(datalist);
+      searchInput.setAttribute('list', 'county-datalist');
+      
+      // Populate datalist using DocumentFragment for better performance
+      const fragment = document.createDocumentFragment();
+      countySearchCache.forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        fragment.appendChild(option);
+      });
+      datalist.appendChild(fragment);
+    }
+    
+    // Remove existing listeners to prevent duplicates
+    searchInput.removeEventListener('input', debouncedSearch);
+    searchInput.removeEventListener('change', handleCountySearch);
+    searchInput.removeEventListener('keypress', handleSearchKeypress);
+    
+    // Add optimized event listeners
+    searchInput.addEventListener('input', debouncedSearch);
+    searchInput.addEventListener('change', handleCountySearch);
+    searchInput.addEventListener('keypress', handleSearchKeypress);
+  }
+}
+
+// Debounced search function for better performance
+function debouncedSearch() {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(() => {
+    const val = this.value.trim();
+    if (val.length >= 2) { // Only search after 2+ characters
+      // Find exact or partial matches
+      const matches = countySearchCache.filter(county => 
+        county.toLowerCase().includes(val.toLowerCase())
+      );
+      if (matches.length === 1) {
+        // Auto-select if only one match
+        this.value = matches[0];
+        handleCountySearch.call(this);
+      }
+    }
+  }, 300); // 300ms debounce delay
+}
+
+// Separate keypress handler for better organization
+function handleSearchKeypress(e) {
+  if (e.key === 'Enter') {
+    clearTimeout(searchDebounceTimer); // Cancel debounce on Enter
+    handleCountySearch.call(this);
+  }
+}
+
+function handleCountySearch() {
+  const val = this.value.trim();
+  const searchInput = this;
+  
+  if (val) {
+    // Add visual feedback
+    searchInput.style.borderColor = '#3b82f6';
+    searchInput.style.backgroundColor = '#eff6ff';
+    
+    // Find exact match first, then partial match
+    let matchedCounty = null;
+    if (countySearchCache) {
+      // Exact match (case insensitive)
+      matchedCounty = countySearchCache.find(county => 
+        county.toLowerCase() === val.toLowerCase()
+      );
+      
+      // If no exact match, try partial match
+      if (!matchedCounty) {
+        const partialMatches = countySearchCache.filter(county => 
+          county.toLowerCase().includes(val.toLowerCase())
+        );
+        if (partialMatches.length === 1) {
+          matchedCounty = partialMatches[0];
+          searchInput.value = matchedCounty; // Auto-complete
+        }
+      }
+    }
+    
+    if (matchedCounty) {
+      zoomToCounty(matchedCounty);
+      showCountyDetails(matchedCounty);
+      
+      // Success feedback
+      searchInput.style.borderColor = '#10b981';
+      searchInput.style.backgroundColor = '#ecfdf5';
+      
+      // Auto-open sidebar if minimized
+      const sidebar = document.getElementById('sidebar');
+      if (sidebar && sidebar.classList.contains('minimized')) {
+        toggleSidebar();
+      }
+      
+      // Reset colors after 2 seconds
+      setTimeout(() => {
+        searchInput.style.borderColor = '#d1d5db';
+        searchInput.style.backgroundColor = 'white';
+      }, 2000);
+    } else {
+      // Error feedback for no match
+      searchInput.style.borderColor = '#ef4444';
+      searchInput.style.backgroundColor = '#fef2f2';
+      
+      // Reset colors after 1 second
+      setTimeout(() => {
+        searchInput.style.borderColor = '#d1d5db';
+        searchInput.style.backgroundColor = 'white';
+      }, 1000);
+    }
+  } else {
+    // Reset colors when empty
+    searchInput.style.borderColor = '#d1d5db';
+    searchInput.style.backgroundColor = 'white';
+  }
+}
+
+// Initialize when map is ready with performance optimizations
+map.on('load', async function() {
+  // Use requestIdleCallback for non-critical initialization
+  if (window.requestIdleCallback) {
+    window.requestIdleCallback(async () => {
+      await init();
+      setupCountySearch();
+    });
+  } else {
+    // Fallback for browsers without requestIdleCallback
+    setTimeout(async () => {
+      await init();
+      setupCountySearch();
+    }, 100);
+  }
+});
+
+// Add map performance optimizations
+map.on('styledata', function() {
+  // Optimize rendering performance
+  if (map.getCanvas) {
+    const canvas = map.getCanvas();
+    if (canvas && canvas.style) {
+      canvas.style.imageRendering = 'optimizeSpeed';
+      canvas.style.imageRendering = '-webkit-optimize-contrast';
+    }
+  }
+});
+
+</script>
 </body>
 </html>
-
