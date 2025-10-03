@@ -230,6 +230,7 @@ body {
   background: #2563eb;
   color: white;
   border: 1px solid #1d4ed8;
+  pointer-events: auto !important;
 }
 .sidebar-header {
   display: flex;
@@ -1381,13 +1382,18 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       }
     }
 function toggleSidebar() {
+  console.log('toggleSidebar() called'); // Debug log
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
   const floatBtn = document.getElementById('sidebar-float-toggle');
   
+  console.log('Sidebar element:', sidebar);
+  console.log('Current classes:', sidebar.className);
+  
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
+    console.log('Expanding sidebar');
     sidebar.classList.remove('minimized');
     sidebarContent.style.display = 'block';
     minimizeBtn.textContent = '−';
@@ -1395,6 +1401,7 @@ function toggleSidebar() {
     if (floatBtn) floatBtn.style.display = 'none';
   } else {
     // Minimize sidebar
+    console.log('Minimizing sidebar');
     sidebar.classList.add('minimized');
     sidebarContent.style.display = 'none';
     minimizeBtn.textContent = '+';
@@ -2858,38 +2865,10 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   }
 
-  // Tennessee-specific panel toggle functions
-  function toggleMainControls() {
-    const controls = document.getElementById('main-controls');
-    const btn = document.getElementById('controls-minimize-btn');
-    
-    controls.classList.toggle('minimized');
-    btn.textContent = controls.classList.contains('minimized') ? '+' : '−';
-  }
-
-  function toggleLegend() {
-    const legend = document.getElementById('legend');
-    const btn = document.getElementById('legend-minimize-btn');
-    
-    legend.classList.toggle('minimized');
-    btn.textContent = legend.classList.contains('minimized') ? '+' : '−';
-  }
-
-  function setAnalysisMode(mode) {
-    // Update active mode toggle
-    document.querySelectorAll('.mode-toggle').forEach(toggle => {
-      toggle.classList.remove('active');
-    });
-    const modeBtn = document.getElementById(`${mode}-mode`);
-    if (modeBtn) {
-      modeBtn.classList.add('active');
-    }
-  }
-
   // Set up Tennessee-specific event listeners
   document.getElementById('contestSelect').addEventListener('change', onContestChange);
 
-  // Make functions global
+  // Make functions global (already defined above)
   window.toggleMainControls = toggleMainControls;
   window.toggleSidebar = toggleSidebar;
   window.toggleLegend = toggleLegend;
