@@ -201,11 +201,11 @@ body {
 }
 
 .sidebar.minimized {
-  width: 0 !important;
-  min-width: 0 !important;
-  max-width: 0 !important;
-  overflow: hidden !important;
-  pointer-events: none;
+  width: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
+  overflow: visible !important;
+  pointer-events: auto !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
@@ -216,18 +216,32 @@ body {
   display: none !important;
 }
 .sidebar.minimized .sidebar-header {
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  height: 50px;
+  width: 50px;
+}
+.sidebar.minimized .sidebar-header h3 {
   display: none !important;
 }
 .sidebar.minimized .minimize-btn {
   display: flex !important;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10003;
   background: #2563eb;
   color: white;
   border: 1px solid #1d4ed8;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
   pointer-events: auto !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .sidebar-header {
   display: flex;
@@ -1379,10 +1393,13 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       }
     }
 function toggleSidebar() {
+  console.log('toggleSidebar() called - button clicked!');
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
   const floatBtn = document.getElementById('sidebar-float-toggle');
+  
+  console.log('Sidebar current classes:', sidebar.className);
   
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
