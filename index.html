@@ -105,10 +105,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <meta charset='utf-8'>
-  <title>TN Political Realignment Map (2006-2024)</title>
+  <title>TN Political Realignment Map (2004-2024)</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
-  <meta property="og:title" content="TN Political Realignment Map (2006-2024)">
-  <meta property="og:description" content="Interactive visualization of Tennessee's political trends from 2006 to 2024, showing county-level voting patterns.">
+  <meta property="og:title" content="TN Political Realignment Map (2004-2024)">
+  <meta property="og:description" content="Interactive visualization of Tennessee's political trends from 2004 to 2024, showing county-level voting patterns.">
   <meta property="og:image" content="preview.png">
   <meta name="twitter:card" content="summary_large_image">
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
@@ -226,6 +226,16 @@ body {
 .sidebar.minimized .sidebar-header h3 {
   display: none !important;
 }
+.sidebar:not(.minimized) .sidebar-header {
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px;
+  height: auto;
+  width: auto;
+}
+.sidebar:not(.minimized) .sidebar-header h3 {
+  display: block !important;
+}
 .sidebar.minimized .minimize-btn {
   display: flex !important;
   position: fixed;
@@ -242,6 +252,10 @@ body {
   cursor: pointer;
   pointer-events: auto !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.sidebar:not(.minimized) .minimize-btn {
+  position: static;
+  z-index: auto;
 }
 .sidebar-header {
   display: flex;
@@ -1393,13 +1407,10 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       }
     }
 function toggleSidebar() {
-  console.log('toggleSidebar() called - button clicked!');
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
   const floatBtn = document.getElementById('sidebar-float-toggle');
-  
-  console.log('Sidebar current classes:', sidebar.className);
   
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
