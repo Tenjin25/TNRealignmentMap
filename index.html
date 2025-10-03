@@ -1384,12 +1384,11 @@ function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
-  const mapElement = document.getElementById('map');
   const floatBtn = document.getElementById('sidebar-float-toggle');
+  
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
     sidebar.classList.remove('minimized');
-    mapElement.classList.remove('sidebar-minimized');
     sidebarContent.style.display = 'block';
     minimizeBtn.textContent = '−';
     minimizeBtn.title = 'Minimize sidebar';
@@ -1397,7 +1396,6 @@ function toggleSidebar() {
   } else {
     // Minimize sidebar
     sidebar.classList.add('minimized');
-    mapElement.classList.add('sidebar-minimized');
     sidebarContent.style.display = 'none';
     minimizeBtn.textContent = '+';
     minimizeBtn.title = 'Expand sidebar';
@@ -2316,7 +2314,15 @@ document.addEventListener('DOMContentLoaded', function() {
         clearTimeout(electionTimeoutId);
         
         if (!electionResponse.ok) {
-          throw new Error(`Failed to load election data: ${electionResponse.status}`);
+          throw new Error(`Failed to load election data: ${electionResponse.status} ${electionResponse.statusText}`);
+        }
+        
+        // Check if response is actually JSON
+        const contentType = electionResponse.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          const responseText = await electionResponse.text();
+          console.error('Expected JSON but got:', contentType, 'Response preview:', responseText.substring(0, 100));
+          throw new Error(`Expected JSON but got ${contentType}. Response: ${responseText.substring(0, 100)}...`);
         }
         
         electionData = await electionResponse.json();
@@ -2859,20 +2865,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     controls.classList.toggle('minimized');
     btn.textContent = controls.classList.contains('minimized') ? '+' : '−';
-  }
-
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const btn = document.getElementById('sidebar-minimize-btn');
-    const floatBtn = document.getElementById('sidebar-float-toggle');
-    
-    sidebar.classList.toggle('minimized');
-    btn.textContent = sidebar.classList.contains('minimized') ? '+' : '−';
-    
-    // Show/hide float button
-    if (floatBtn) {
-      floatBtn.style.display = sidebar.classList.contains('minimized') ? 'flex' : 'none';
-    }
   }
 
   function toggleLegend() {
