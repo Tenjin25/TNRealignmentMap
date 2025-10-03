@@ -143,8 +143,14 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  width: 400px;
   height: 100vh;
   z-index: 2;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  border-left: 1px solid #e5e7eb;
+  overflow-y: auto;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
 }
 /* Removed unused #map.sidebar-minimized selector for clarity */
 
@@ -194,15 +200,6 @@ body {
   font-weight: 600;
 }
 
-.sidebar {
-  width: 400px;
-  height: 100vh;
-  background: #fff;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-  border-left: 1px solid #e5e7eb;
-  overflow-y: auto;
-  transition: width 0.3s cubic-bezier(.4,0,.2,1);
-}
 .sidebar.minimized {
   width: 0 !important;
   min-width: 0 !important;
@@ -1382,18 +1379,13 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       }
     }
 function toggleSidebar() {
-  console.log('toggleSidebar() called'); // Debug log
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
   const floatBtn = document.getElementById('sidebar-float-toggle');
   
-  console.log('Sidebar element:', sidebar);
-  console.log('Current classes:', sidebar.className);
-  
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
-    console.log('Expanding sidebar');
     sidebar.classList.remove('minimized');
     sidebarContent.style.display = 'block';
     minimizeBtn.textContent = '−';
@@ -1401,7 +1393,6 @@ function toggleSidebar() {
     if (floatBtn) floatBtn.style.display = 'none';
   } else {
     // Minimize sidebar
-    console.log('Minimizing sidebar');
     sidebar.classList.add('minimized');
     sidebarContent.style.display = 'none';
     minimizeBtn.textContent = '+';
