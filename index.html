@@ -113,9 +113,6 @@
   <meta name="twitter:card" content="summary_large_image">
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
     <style>
-/* Show floating button only when sidebar is minimized */
-#sidebar-float-toggle { display: none; }
-.sidebar.minimized ~ #sidebar-float-toggle { display: flex !important; }
 html, body {
   height: 100vh;
   margin: 0;
@@ -611,31 +608,6 @@ body {
     .sidebar.minimized .sidebar-footer {
       display: none !important;
     }
-    #sidebar-float-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 10001;
-      width: 40px;
-      height: 40px;
-      background: #2563eb;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-      font-size: 24px;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    #sidebar-float-toggle:hover {
-      background: #1746a0;
-    }
-    .sidebar.minimized ~ #sidebar-float-toggle {
-      display: flex !important;
-    }
   /* Removed empty ruleset for #map.sidebar-minimized */
     </style>
 </head>
@@ -819,9 +791,6 @@ document.addEventListener('DOMContentLoaded', function() {
         Created by Shamar Davis
       </div>
     </div>
-  <!-- Floating Sidebar Expand/Collapse Button (smaller size) -->
-  <button id="sidebar-float-toggle" title="Expand Sidebar">+</button>
-
   <!-- Floating Status Panel -->
   <div class="status-panel" id="status-panel" style="display:none;position:fixed;top:20px;right:90px;z-index:10002;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);padding:18px 24px 18px 18px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.12);border:1px solid #e5e7eb;max-width:340px;min-width:200px;font-size:15px;color:#34495e;">
     <span id="status-message"></span>
@@ -1410,7 +1379,6 @@ function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const sidebarContent = document.querySelector('.sidebar-content');
   const minimizeBtn = document.getElementById('sidebar-minimize-btn');
-  const floatBtn = document.getElementById('sidebar-float-toggle');
   
   if (sidebar.classList.contains('minimized')) {
     // Expand sidebar
@@ -1418,26 +1386,14 @@ function toggleSidebar() {
     sidebarContent.style.display = 'block';
     minimizeBtn.textContent = '−';
     minimizeBtn.title = 'Minimize sidebar';
-    if (floatBtn) floatBtn.style.display = 'none';
   } else {
     // Minimize sidebar
     sidebar.classList.add('minimized');
     sidebarContent.style.display = 'none';
     minimizeBtn.textContent = '+';
     minimizeBtn.title = 'Expand sidebar';
-    if (floatBtn) floatBtn.style.display = 'flex';
   }
 }
-
-// Floating sidebar button click toggles sidebar open
-document.addEventListener('DOMContentLoaded', function() {
-  var floatBtn = document.getElementById('sidebar-float-toggle');
-  if (floatBtn) {
-    floatBtn.addEventListener('click', function() {
-      toggleSidebar();
-    });
-  }
-});
 
     function showCountyDetails(countyName) {
       // --- NC Map Card-Style Sidebar ---
@@ -1447,8 +1403,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!contentEl || !detailsDiv) return;
       if (sidebar) {
         sidebar.classList.remove('minimized');
-        const floatBtn = document.getElementById('sidebar-float-toggle');
-        if (floatBtn) floatBtn.style.display = 'none';
         const btn = document.getElementById('sidebar-minimize-btn');
         if (btn) btn.textContent = '−';
       }
@@ -2863,19 +2817,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.onload = init;
-// Floating sidebar expand button logic
+// Status panel and other initialization
 document.addEventListener('DOMContentLoaded', function() {
-  const floatBtn = document.getElementById('sidebar-float-toggle');
-  if (floatBtn) {
-    floatBtn.onclick = function() {
-      toggleSidebar();
-    };
-  }
-  // Hide float button if sidebar is open on load
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar && !sidebar.classList.contains('minimized')) {
-    floatBtn.style.display = 'none';
-  }
   // Status panel close button
   const statusExit = document.getElementById('status-exit');
   if (statusExit) {
