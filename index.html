@@ -1622,7 +1622,7 @@ function toggleSidebar() {
           id: 'county-fill', 
           type: 'fill', 
           source: 'counties', 
-          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.38 } 
+          paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.3 } 
         });
         map.addLayer({ 
           id: 'county-stroke', 
@@ -2501,7 +2501,7 @@ function toggleSidebar() {
         map.setPaintProperty('county-fill', 'fill-color', colorExpression);
         
         // Also ensure proper opacity and visibility
-        map.setPaintProperty('county-fill', 'fill-opacity', 0.38);
+        map.setPaintProperty('county-fill', 'fill-opacity', 0.3);
         map.setLayoutProperty('county-fill', 'visibility', 'visible');
         
         // Verify the property was set
