@@ -1,5 +1,63 @@
 ## TN Political Realignment Map (Clean Version)
 
+### Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/TNRealignments.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd TNRealignments
+   ```
+3. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Overview of Categories
+This project organizes data into several categories to facilitate analysis and visualization. Here's what each category means:
+
+- **Contests**: Represents different political races or elections, such as gubernatorial, presidential, or senate races.
+- **Counties**: Refers to the geographical divisions within Tennessee, each with its own set of election results.
+- **VTDs (Voting Tabulation Districts)**: Smaller subdivisions within counties used for reporting election results.
+- **Grand Divisions**: Historical and geographical divisions of Tennessee (East, Middle, and West).
+- **Election Data**: Includes results for various contests, broken down by county and VTD.
+- **GeoJSON Files**: Used for mapping and spatial analysis, representing the geographical boundaries of counties and VTDs.
+
+Understanding these categories will help you navigate the data and use the tools provided in this project effectively.
+
+### Political Categories Explained
+
+The map uses color-coded categories to represent the competitiveness and margin of victory in each county or precinct. These categories are:
+
+- **Annihilation (40%+ margin):** One party wins by more than 40 percentage points. Indicates a landslide victory and a safe stronghold for the winning party.
+- **Dominant (30-40% margin):** One party wins by 30-40 percentage points. Still a very safe seat, but slightly less extreme than Annihilation.
+- **Stronghold (20-30% margin):** One party wins by 20-30 percentage points. A reliably safe county or precinct for the winning party.
+- **Safe (10-20% margin):** One party wins by 10-20 percentage points. The area is considered safe, but not impenetrable.
+- **Likely (5.5-10% margin):** The winning party has a clear advantage, but the area could become competitive under the right circumstances.
+- **Lean (1-5.5% margin):** The area is competitive, with a modest advantage for the winning party.
+- **Tilt (0.5-1% margin):** The area is extremely competitive, with only a slight edge for the winner.
+- **Tossup (±0.5% margin):** The margin is less than half a percentage point, indicating a true battleground with no clear favorite.
+
+These categories help users quickly identify which areas are safe for each party, which are competitive, and where political realignment is occurring.
+
+### Contribution Guidelines
+We welcome contributions to improve this project! To contribute:
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Make your changes and ensure they are well-documented.
+3. Test your changes thoroughly.
+4. Submit a pull request with a clear description of your changes.
+
+### FAQs
+**Q: What Python version is required?**
+A: Python 3.7 or higher is recommended.
+
+**Q: How do I report issues or suggest features?**
+A: Please use the GitHub Issues tab to report bugs or suggest new features.
+
+**Q: Can I use this project for my own research?**
+A: Yes, this project is licensed under the MIT License, so feel free to use it with proper attribution.
+
 This project is an interactive map visualizing Tennessee's county-level and precinct-level political trends from 2004 to 2024.
 
 ### Features
@@ -134,7 +192,7 @@ The project includes an interactive HTML map (e.g., `ultimate_tn_political_map_C
 
 ---
 
-*Last updated: September 7, 2025*
+*Last updated: October 3, 2025*
 
 ## License
 MIT
