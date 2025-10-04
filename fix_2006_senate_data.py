@@ -8,7 +8,6 @@ Based on historical election results:
 """
 
 import json
-import math
 
 def fix_2006_senate_data():
     # Load current data
@@ -47,12 +46,12 @@ def fix_2006_senate_data():
     total_other_assigned = 0
     
     county_list = list(contest['results'].items())
+    county_list = list(contest['results'].items())
     
-    for i, (county_name, county_data) in enumerate(county_list):
+    for i, (_, county_data) in enumerate(county_list):
         # Scale Republican and Other votes
         original_rep = county_data['rep_votes']
         original_other = county_data['other_votes']
-        
         scaled_rep = round(original_rep * rep_scale_factor)
         scaled_other = round(original_other * other_scale_factor)
         

@@ -1029,17 +1029,30 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
           }
         });
       });
-      // Build options array
+      // Build options array - sorted chronologically
       const options = [];
+      
+      // Get all unique years across all contest types
+      const allYears = new Set();
       contestTypes.forEach(contestType => {
-        if (!contestYearPairs[contestType]) return;
-        const years = Array.from(contestYearPairs[contestType]).sort();
-        years.forEach(year => {
-          if (contestType === 'governor' && year == 2020) return;
-          const opt = document.createElement('option');
-          opt.value = `${contestType}_${year}`;
-          opt.textContent = `${formatContestName(contestType, year)} (${year})`;
-          options.push(opt);
+        if (contestYearPairs[contestType]) {
+          contestYearPairs[contestType].forEach(year => allYears.add(year));
+        }
+      });
+      
+      // Sort years chronologically
+      const sortedYears = Array.from(allYears).sort((a, b) => parseInt(a) - parseInt(b));
+      
+      // For each year, add all available contests for that year
+      sortedYears.forEach(year => {
+        contestTypes.forEach(contestType => {
+          if (contestYearPairs[contestType] && contestYearPairs[contestType].has(year)) {
+            if (contestType === 'governor' && year == 2020) return;
+            const opt = document.createElement('option');
+            opt.value = `${contestType}_${year}`;
+            opt.textContent = `${formatContestName(contestType, year)} (${year})`;
+            options.push(opt);
+          }
         });
       });
       // Use document fragment for performance
