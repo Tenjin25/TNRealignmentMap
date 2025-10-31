@@ -93,8 +93,15 @@
       const normTarget = normalizeCountyName(countyName);
       const countyFeature = counties.find(f => {
         const props = f.properties || {};
-        const name = normalizeCountyName(props.NAME20 || props.NAMELSAD20 || '');
-        return name === normTarget;
+        const name20 = normalizeCountyName(props.NAME20 || '');
+        const namelsad20 = normalizeCountyName(props.NAMELSAD20 || '');
+        // Match exact or partial (substring) for either field
+        return (
+          name20 === normTarget ||
+          namelsad20 === normTarget ||
+          name20.includes(normTarget) ||
+          namelsad20.includes(normTarget)
+        );
       });
       if (!countyFeature) return;
       const bbox = turf.bbox(countyFeature);
