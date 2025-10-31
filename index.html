@@ -2885,7 +2885,11 @@ function setupCountySearch() {
   let counties = [];
   if (countiesSource._data && countiesSource._data.features) {
     counties = countiesSource._data.features
-      .map(f => f.properties && f.properties.NAME20)
+      .map(f => {
+        const props = f.properties || {};
+        return [props.NAME20, props.NAMELSAD20].filter(Boolean);
+      })
+      .flat()
       .filter(Boolean)
       .sort();
   }
@@ -2927,7 +2931,7 @@ function setupCountySearch() {
         return;
       }
       
-      // Find up to 5 matches
+      // Find up to 5 matches (partial match on either NAME20 or NAMELSAD20)
       const matches = counties.filter(county => 
         county.toLowerCase().includes(searchValue)
       ).slice(0, 5);
@@ -2991,31 +2995,27 @@ function handleCountySelection(countyName) {
   
   // Find and zoom to the county
   if (countyName) {
-    // Query map features to find the county geometry
-    const features = map.querySourceFeatures('counties', {
-      filter: ['==', ['get', 'NAME20'], countyName]
+    // Query map features to find the county geometry by NAME20 or NAMELSAD20
+    const features = map.querySourceFeatures('counties');
+    const normTarget = countyName.trim().toLowerCase();
+    const match = features.find(f => {
+      const props = f.properties || {};
+      return (props.NAME20 && props.NAME20.trim().toLowerCase() === normTarget) ||
+             (props.NAMELSAD20 && props.NAMELSAD20.trim().toLowerCase() === normTarget) ||
+             (props.NAME20 && props.NAME20.trim().toLowerCase().includes(normTarget)) ||
+             (props.NAMELSAD20 && props.NAMELSAD20.trim().toLowerCase().includes(normTarget));
     });
-    
-    if (features && features.length > 0) {
-      const feature = features[0];
-      
-      // Store the selected county for auto-updating
-      lastSelectedCounty = feature.properties.NAME20;
-      
-      // Calculate bounds of the county
-      const coordinates = feature.geometry.coordinates[0];
+    if (match) {
+      lastSelectedCounty = match.properties.NAME20;
+      const coordinates = match.geometry.coordinates[0];
       const bounds = coordinates.reduce((bounds, coord) => {
         return bounds.extend(coord);
       }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
-      
-      // Zoom to county with padding
       map.fitBounds(bounds, {
         padding: 50,
         duration: 1000
       });
-      
-      // Show county details
-      showCountyDetails(feature.properties.NAME20);
+      showCountyDetails(match.properties.NAME20);
     }
   }
 }
