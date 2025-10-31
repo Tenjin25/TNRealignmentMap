@@ -93,7 +93,7 @@
       const normTarget = normalizeCountyName(countyName);
       const countyFeature = counties.find(f => {
         const props = f.properties || {};
-        const name = normalizeCountyName(props.NAME20 || props.county_name || props.County || props.COUNTYNAME || props.NAME || '');
+        const name = normalizeCountyName(props.NAME20 || props.NAMELSAD20 || '');
         return name === normTarget;
       });
       if (!countyFeature) return;
