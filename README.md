@@ -28,18 +28,18 @@ Understanding these categories will help you navigate the data and use the tools
 
 ### Political Categories Explained
 
-The map uses color-coded categories to represent the competitiveness and margin of victory in each county or precinct. These categories are:
+The map uses color-coded categories to represent the competitiveness and margin of victory in each county or precinct. These categories are based on **precise margin ranges**:
 
-- **Annihilation (40%+ margin):** One party wins by more than 40 percentage points. Indicates a landslide victory and a safe stronghold for the winning party.
-- **Dominant (30-40% margin):** One party wins by 30-40 percentage points. Still a very safe seat, but slightly less extreme than Annihilation.
-- **Stronghold (20-30% margin):** One party wins by 20-30 percentage points. A reliably safe county or precinct for the winning party.
-- **Safe (10-20% margin):** One party wins by 10-20 percentage points. The area is considered safe, but not impenetrable.
-- **Likely (5.5-10% margin):** The winning party has a clear advantage, but the area could become competitive under the right circumstances.
-- **Lean (1-5.5% margin):** The area is competitive, with a modest advantage for the winning party.
-- **Tilt (0.5-1% margin):** The area is extremely competitive, with only a slight edge for the winner.
-- **Tossup (±0.5% margin):** The margin is less than half a percentage point, indicating a true battleground with no clear favorite.
+- **Annihilation (≥40% margin):** One party wins by 40 percentage points or more. Indicates a landslide victory and an absolute stronghold for the winning party.
+- **Dominant (30-39.99% margin):** One party wins by 30-39.99 percentage points. A very safe seat with overwhelming support.
+- **Stronghold (20-29.99% margin):** One party wins by 20-29.99 percentage points. A reliably safe county or precinct for the winning party.
+- **Safe (10-19.99% margin):** One party wins by 10-19.99 percentage points. The area is considered safe, but not impenetrable.
+- **Likely (5.5-9.99% margin):** The winning party has a clear advantage, but the area could become competitive under the right circumstances.
+- **Lean (1-5.49% margin):** The area is competitive, with a modest advantage for the winning party.
+- **Tilt (0.5-0.99% margin):** The area is extremely competitive, with only a slight edge for the winner.
+- **Tossup (<0.5% margin):** The margin is less than half a percentage point, indicating a true battleground with no clear favorite.
 
-These categories help users quickly identify which areas are safe for each party, which are competitive, and where political realignment is occurring.
+These categories help users quickly identify which areas are safe for each party, which are competitive, and where political realignment is occurring. **All color assignments have been validated to match these precise margin ranges across all years (2004-2024).**
 
 ### Contribution Guidelines
 We welcome contributions to improve this project! To contribute:
