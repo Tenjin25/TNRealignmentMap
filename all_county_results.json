@@ -41,7 +41,7 @@
       "Tossup": [
         {
           "category": "Tossup",
-          "range": "\u00c2\u00b10.5%",
+          "range": "Â±0.5%",
           "color": "#f7f7f7"
         }
       ],
@@ -191,11 +191,11 @@
               "margin_pct": 10.07112375533428,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Safe",
+                "category": "Likely",
                 "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
+                "code": "DEM_LIKELY",
+                "color": "#9ecae1",
+                "description": "Likely Democratic"
               },
               "all_parties": {
                 "DEM": 3869,
@@ -7327,10 +7327,11 @@
               "margin_pct": 30.7828786870703,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 3121,
@@ -7516,10 +7517,11 @@
               "margin_pct": 30.14763014763015,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Democratic",
-                "code": "DEM_DOMINANT",
-                "color": "#08519c"
+                "code": "DEM_STRONGHOLD",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
               },
               "all_parties": {
                 "DEM": 1675,
@@ -11213,11 +11215,11 @@
               "margin_pct": 40.34197574712061,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Democratic",
-                "code": "DEM_ANNIHILATION",
-                "color": "#08306b",
-                "description": "Annihilation Democratic"
+                "code": "DEM_DOMINANT",
+                "color": "#08519c",
+                "description": "Dominant Democratic"
               },
               "all_parties": {
                 "DEM": 13830,
@@ -11549,11 +11551,11 @@
               "margin_pct": 30.17458544172088,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Democratic",
-                "code": "DEM_DOMINANT",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
+                "code": "DEM_STRONGHOLD",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
               },
               "all_parties": {
                 "DEM": 29713,
@@ -13392,11 +13394,11 @@
               "margin_pct": 30.38915609969392,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 3980,
@@ -13588,11 +13590,11 @@
               "margin_pct": 30.01668138553626,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 7132,
@@ -14792,11 +14794,11 @@
               "margin_pct": 40.19427954668105,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 5541,
@@ -16061,11 +16063,11 @@
               "margin_pct": 40.45890212024397,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3075,
@@ -16201,11 +16203,11 @@
               "margin_pct": 31.151515151515152,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 852,
@@ -16425,11 +16427,11 @@
               "margin_pct": 30.091817289368826,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 6053,
@@ -16677,11 +16679,11 @@
               "margin_pct": 20.233561817720233,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 1571,
@@ -17153,11 +17155,11 @@
               "margin_pct": 20.48752176436448,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 685,
@@ -17573,11 +17575,11 @@
               "margin_pct": 30.993262793300808,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 16337,
@@ -17657,11 +17659,11 @@
               "margin_pct": 40.82685079975526,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3385,
@@ -17713,11 +17715,11 @@
               "margin_pct": 20.618955512572533,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 1026,
@@ -17769,11 +17771,11 @@
               "margin_pct": 40.467894474863115,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1794,
@@ -17797,11 +17799,11 @@
               "margin_pct": 40.81036453702528,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 6990,
@@ -20166,10 +20168,11 @@
               "margin_pct": 10.170749814402376,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Safe",
+                "category": "Likely",
                 "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#6baed6"
+                "code": "DEM_LIKELY",
+                "color": "#9ecae1",
+                "description": "Likely Democratic"
               },
               "all_parties": {
                 "DEM": 1484,
@@ -22395,10 +22398,11 @@
               "margin_pct": 32.34296786694655,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 2095,
@@ -24519,10 +24523,11 @@
               "margin_pct": 5.641216751292681,
               "winner": "REP",
               "competitiveness": {
-                "category": "Likely",
+                "category": "Lean",
                 "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#fb6a4a"
+                "code": "REP_LEAN",
+                "color": "#fcae91",
+                "description": "Lean Republican"
               },
               "all_parties": {
                 "DEM": 10128,
@@ -24805,10 +24810,11 @@
               "margin_pct": 100.0,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "REP": 2149,
@@ -25223,11 +25229,11 @@
               "margin_pct": 40.536751452032846,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2969,
@@ -26343,11 +26349,11 @@
               "margin_pct": 30.244755244755243,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 1197,
@@ -26595,11 +26601,11 @@
               "margin_pct": 30.05970149253731,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 2343,
@@ -27015,11 +27021,11 @@
               "margin_pct": 40.20463687803576,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 17912,
@@ -29994,10 +30000,11 @@
               "margin_pct": 32.9605428499623,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 5335,
@@ -30264,10 +30271,11 @@
               "margin_pct": 30.008210180623973,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 3410,
@@ -31614,10 +31622,11 @@
               "margin_pct": 40.08695652173913,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 689,
@@ -32127,10 +32136,11 @@
               "margin_pct": 20.37288793940571,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 2050,
@@ -33033,10 +33043,11 @@
               "margin_pct": 22.437888198757765,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#3182bd"
+                "code": "DEM_SAFE",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
               },
               "all_parties": {
                 "DEM": 1577,
@@ -33369,10 +33380,11 @@
               "margin_pct": 20.486350080293644,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#3182bd"
+                "code": "DEM_SAFE",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
               },
               "all_parties": {
                 "DEM": 2626,
@@ -35663,10 +35675,11 @@
               "margin_pct": 21.14120138192355,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 14152,
@@ -36187,10 +36200,11 @@
               "margin_pct": 33.71888877414024,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 9627,
@@ -36223,11 +36237,11 @@
               "margin_pct": 30.40907528360261,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 10122,
@@ -37903,11 +37917,11 @@
               "margin_pct": 40.313061329227615,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1163,
@@ -38351,11 +38365,11 @@
               "margin_pct": 40.79522862823062,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1489,
@@ -38547,11 +38561,11 @@
               "margin_pct": 40.07141356857803,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 7133,
@@ -39256,11 +39270,11 @@
               "margin_pct": 40.2510460251046,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 714,
@@ -39424,11 +39438,11 @@
               "margin_pct": 41.2706611570248,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1137,
@@ -39984,11 +39998,11 @@
               "margin_pct": 41.615350290049086,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3271,
@@ -40012,11 +40026,11 @@
               "margin_pct": 40.81325301204819,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1965,
@@ -40460,11 +40474,11 @@
               "margin_pct": 40.20100502512563,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2856,
@@ -40740,11 +40754,11 @@
               "margin_pct": 41.74096287891068,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1797,
@@ -40768,11 +40782,11 @@
               "margin_pct": 40.01831501831502,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 655,
@@ -41440,11 +41454,11 @@
               "margin_pct": 41.950916984141045,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3276,
@@ -41721,10 +41735,11 @@
               "margin_pct": 40.284269770103975,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3130,
@@ -41774,10 +41789,11 @@
               "margin_pct": 41.234365388558544,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2866,
@@ -42175,10 +42191,11 @@
               "margin_pct": 41.243852331444934,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 4719,
@@ -43192,10 +43209,11 @@
               "margin_pct": 40.18889109041675,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 4528,
@@ -43405,10 +43423,11 @@
               "margin_pct": 30.918044319380932,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 1964,
@@ -43990,10 +44009,11 @@
               "margin_pct": 40.78842931475439,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 3357,
@@ -45139,10 +45159,11 @@
               "margin_pct": 10.222729868646487,
               "winner": "DEM",
               "competitiveness": {
-                "category": "Safe",
+                "category": "Likely",
                 "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#6baed6"
+                "code": "DEM_LIKELY",
+                "color": "#9ecae1",
+                "description": "Likely Democratic"
               },
               "all_parties": {
                 "DEM": 3860,
@@ -48208,11 +48229,11 @@
               "margin_pct": 41.808573106283035,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 991,
@@ -48656,11 +48677,11 @@
               "margin_pct": 20.338541885322297,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 47438,
@@ -48992,11 +49013,11 @@
               "margin_pct": 41.39027714675147,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 645,
@@ -49356,11 +49377,11 @@
               "margin_pct": 40.737148399612025,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 611,
@@ -49468,11 +49489,11 @@
               "margin_pct": 21.19460500963391,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 409,
@@ -50000,11 +50021,11 @@
               "margin_pct": 43.65035733919736,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1025,
@@ -50504,11 +50525,11 @@
               "margin_pct": 42.22549742078113,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 392,
@@ -50588,11 +50609,11 @@
               "margin_pct": 30.303030303030305,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 483,
@@ -61889,10 +61910,11 @@
               "margin_pct": 42.835931700074234,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 385,
@@ -62266,10 +62288,11 @@
               "margin_pct": 41.163352536703215,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1583,
@@ -63232,10 +63255,11 @@
               "margin_pct": 40.07470651013874,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1123,
@@ -63367,10 +63391,11 @@
               "margin_pct": 41.3716814159292,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1590,
@@ -64507,10 +64532,11 @@
               "margin_pct": 40.625,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 627,
@@ -64766,10 +64792,11 @@
               "margin_pct": 40.776439089692104,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1106,
@@ -66699,10 +66726,11 @@
               "margin_pct": 32.098237206914256,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 7935,
@@ -68847,11 +68875,11 @@
               "margin_pct": 40.33092037228542,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 577,
@@ -69127,11 +69155,11 @@
               "margin_pct": 40.66849898040606,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 10038,
@@ -70200,10 +70228,11 @@
               "margin_pct": 41.03880416729579,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 7810,
@@ -71220,10 +71249,11 @@
               "margin_pct": 41.3314346742613,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 824,
@@ -73321,10 +73351,11 @@
               "margin_pct": 41.310659477395276,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2830,
@@ -73814,10 +73845,11 @@
               "margin_pct": 40.09208057667622,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 48535,
@@ -74234,10 +74266,11 @@
               "margin_pct": 33.158874979371475,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 14176,
@@ -78706,11 +78739,11 @@
               "margin_pct": 40.17421748009836,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 7177,
@@ -78902,11 +78935,11 @@
               "margin_pct": 40.01354096140826,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1329,
@@ -79443,11 +79476,11 @@
               "margin_pct": 30.212321615036547,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 16040,
@@ -80171,11 +80204,11 @@
               "margin_pct": 40.29284164859002,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 1101,
@@ -81375,11 +81408,11 @@
               "margin_pct": 30.194859734587602,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 8311,
@@ -83295,10 +83328,11 @@
               "margin_pct": 30.445246690734056,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 2023,
@@ -83511,10 +83545,11 @@
               "margin_pct": 40.52309404563161,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2672,
@@ -83538,10 +83573,11 @@
               "margin_pct": 30.1524968911578,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 10672,
@@ -84402,10 +84438,11 @@
               "margin_pct": 40.218253042951076,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 12819,
@@ -97033,10 +97070,11 @@
               "margin_pct": 31.47547639248182,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 65825,
@@ -100193,11 +100231,11 @@
               "margin_pct": 30.127526161928568,
               "winner": "REP",
               "competitiveness": {
-                "category": "Dominant",
+                "category": "Stronghold",
                 "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "code": "REP_STRONGHOLD",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               },
               "all_parties": {
                 "DEM": 8246,
@@ -113688,10 +113726,11 @@
               "margin_pct": 40.96656954915447,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 9827,
@@ -122133,11 +122172,11 @@
               "margin_pct": 40.32278889606197,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 2311,
@@ -122525,11 +122564,11 @@
               "margin_pct": 20.104724317142743,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 30669,
@@ -123458,10 +123497,11 @@
               "margin_pct": 40.279874579026824,
               "winner": "REP",
               "competitiveness": {
-                "category": "Annihilation",
+                "category": "Dominant",
                 "party": "Republican",
-                "code": "REP_ANNIHILATION",
-                "color": "#67000d"
+                "code": "REP_DOMINANT",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               },
               "all_parties": {
                 "DEM": 10285,
@@ -125120,10 +125160,11 @@
               "margin_pct": 20.286364598771968,
               "winner": "REP",
               "competitiveness": {
-                "category": "Stronghold",
+                "category": "Safe",
                 "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#cb181d"
+                "code": "REP_SAFE",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
               },
               "all_parties": {
                 "DEM": 30119,
