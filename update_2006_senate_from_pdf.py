@@ -11,58 +11,45 @@ def calculate_competitiveness(dem_votes, rep_votes):
     dem_pct = (dem_votes / total_votes) * 100
     rep_pct = (rep_votes / total_votes) * 100
     margin = abs(dem_pct - rep_pct)
-    winner = 'DEM' if dem_votes > rep_votes else 'REP'
+    winner = 'D' if dem_votes > rep_votes else 'R'
     
-    # Define competitiveness categories with proper political colors
+    # Define competitiveness categories with proper political colors (matching existing data)
     if margin < 0.5:
         category = "Tossup"
-        base_color = "#2563eb" if winner == 'DEM' else "#dc2626"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_TOSSUP"
+        base_color = "#4292c6" if winner == 'D' else "#fc9272"
     elif margin < 1:
         category = "Tilt"
-        base_color = "#bfdbfe" if winner == 'DEM' else "#fca5a5"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_TILT"
+        base_color = "#2171b5" if winner == 'D' else "#fb6a4a"
     elif margin < 5.5:
         category = "Lean"
-        base_color = "#93c5fd" if winner == 'DEM' else "#f87171"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_LEAN"
+        base_color = "#c6dbef" if winner == 'D' else "#fee0d2"
     elif margin < 10:
         category = "Likely"
-        base_color = "#60a5fa" if winner == 'DEM' else "#ef4444"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_LIKELY"
+        base_color = "#9ecae1" if winner == 'D' else "#fb6a4a"
     elif margin < 20:
         category = "Safe"
-        base_color = "#3b82f6" if winner == 'DEM' else "#dc2626"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_SAFE"
+        base_color = "#6baed6" if winner == 'D' else "#ef3b2c"
     elif margin < 30:
         category = "Stronghold"
-        base_color = "#1e40af" if winner == 'DEM' else "#991b1b"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_STRONGHOLD"
+        base_color = "#3182bd" if winner == 'D' else "#cb181d"
     elif margin < 40:
         category = "Dominant"
-        base_color = "#1e3a8a" if winner == 'DEM' else "#7f1d1d"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_DOMINANT"
+        base_color = "#08519c" if winner == 'D' else "#a50f15"
     else:
         category = "Annihilation"
-        base_color = "#0c1d56" if winner == 'DEM' else "#450a0a"
-        party = "Democratic" if winner == 'DEM' else "Republican"
-        code = f"{winner}_ANNIHILATION"
+        base_color = "#08306b" if winner == 'D' else "#67000d"
     
-    description = f"{category} {party}"
+    # Create proper party name and description
+    party_name = "Democratic" if winner == 'D' else "Republican"
+    
+    # Special handling for tossup format
     if category == "Tossup":
-        description = f"Tossup ({party} Win)"
+        description = f"Tossup ({party_name} Win)"
+    else:
+        description = f"{category} {party_name}"
     
     return {
         'category': category,
-        'party': party,
-        'code': code,
         'color': base_color,
         'description': description
     }

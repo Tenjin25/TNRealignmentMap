@@ -11927,9 +11927,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -11955,9 +11953,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -11983,9 +11979,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -12011,9 +12005,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12039,9 +12031,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12067,9 +12057,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -12095,9 +12083,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -12123,9 +12109,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Democratic",
-                "code": "DEM_LIKELY",
-                "color": "#60a5fa",
+                "color": "#9ecae1",
                 "description": "Likely Democratic"
               },
               "all_parties": {
@@ -12151,9 +12135,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -12179,9 +12161,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -12207,9 +12187,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -12235,9 +12213,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12263,9 +12239,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -12291,9 +12265,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -12319,9 +12291,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12347,9 +12317,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -12375,9 +12343,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Tilt",
-                "party": "Democratic",
-                "code": "DEM_TILT",
-                "color": "#bfdbfe",
+                "color": "#2171b5",
                 "description": "Tilt Democratic"
               },
               "all_parties": {
@@ -12403,9 +12369,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12431,9 +12395,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -12459,9 +12421,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -12487,9 +12447,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -12515,9 +12473,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -12543,9 +12499,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12571,9 +12525,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12599,9 +12551,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12627,9 +12577,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -12655,9 +12603,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -12683,9 +12629,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -12711,9 +12655,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12739,9 +12681,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12767,9 +12707,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -12795,9 +12733,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12823,9 +12759,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -12851,9 +12785,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -12879,9 +12811,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -12907,9 +12837,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12935,9 +12863,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -12963,9 +12889,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -12991,9 +12915,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -13019,9 +12941,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -13047,9 +12967,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -13075,9 +12993,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Democratic",
-                "code": "DEM_DOMINANT",
-                "color": "#1e3a8a",
+                "color": "#08519c",
                 "description": "Dominant Democratic"
               },
               "all_parties": {
@@ -13103,9 +13019,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -13131,9 +13045,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Democratic",
-                "code": "DEM_DOMINANT",
-                "color": "#1e3a8a",
+                "color": "#08519c",
                 "description": "Dominant Democratic"
               },
               "all_parties": {
@@ -13159,9 +13071,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -13187,9 +13097,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -13215,9 +13123,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13243,9 +13149,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -13271,9 +13175,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -13299,9 +13201,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -13327,9 +13227,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -13355,9 +13253,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13383,9 +13279,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -13411,9 +13305,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13439,9 +13331,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13467,9 +13357,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Democratic",
-                "code": "DEM_LIKELY",
-                "color": "#60a5fa",
+                "color": "#9ecae1",
                 "description": "Likely Democratic"
               },
               "all_parties": {
@@ -13495,9 +13383,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -13523,9 +13409,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13551,9 +13435,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -13579,9 +13461,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13607,9 +13487,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13635,9 +13513,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -13663,9 +13539,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -13691,9 +13565,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -13719,9 +13591,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13747,9 +13617,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13775,9 +13643,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -13803,9 +13669,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -13831,9 +13695,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -13859,9 +13721,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13887,9 +13747,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Republican",
-                "code": "REP_LEAN",
-                "color": "#f87171",
+                "color": "#fee0d2",
                 "description": "Lean Republican"
               },
               "all_parties": {
@@ -13915,9 +13773,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -13943,9 +13799,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -13971,9 +13825,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -13999,9 +13851,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -14027,9 +13877,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -14055,9 +13903,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -14083,9 +13929,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -14111,9 +13955,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -14139,9 +13981,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -14167,9 +14007,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Democratic",
-                "code": "DEM_STRONGHOLD",
-                "color": "#1e40af",
+                "color": "#3182bd",
                 "description": "Stronghold Democratic"
               },
               "all_parties": {
@@ -14195,9 +14033,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -14223,9 +14059,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -14251,9 +14085,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
@@ -14279,9 +14111,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Democratic",
-                "code": "DEM_DOMINANT",
-                "color": "#1e3a8a",
+                "color": "#08519c",
                 "description": "Dominant Democratic"
               },
               "all_parties": {
@@ -14307,9 +14137,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -14335,9 +14163,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -14363,9 +14189,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -14391,9 +14215,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Democratic",
-                "code": "DEM_SAFE",
-                "color": "#3b82f6",
+                "color": "#6baed6",
                 "description": "Safe Democratic"
               },
               "all_parties": {
@@ -14419,9 +14241,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -14447,9 +14267,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Stronghold",
-                "party": "Republican",
-                "code": "REP_STRONGHOLD",
-                "color": "#991b1b",
+                "color": "#cb181d",
                 "description": "Stronghold Republican"
               },
               "all_parties": {
@@ -14475,9 +14293,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "party": "Republican",
-                "code": "REP_LIKELY",
-                "color": "#ef4444",
+                "color": "#fb6a4a",
                 "description": "Likely Republican"
               },
               "all_parties": {
@@ -14503,9 +14319,7 @@
               "winner": "DEM",
               "competitiveness": {
                 "category": "Lean",
-                "party": "Democratic",
-                "code": "DEM_LEAN",
-                "color": "#93c5fd",
+                "color": "#c6dbef",
                 "description": "Lean Democratic"
               },
               "all_parties": {
@@ -14531,9 +14345,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "party": "Republican",
-                "code": "REP_DOMINANT",
-                "color": "#7f1d1d",
+                "color": "#a50f15",
                 "description": "Dominant Republican"
               },
               "all_parties": {
@@ -14559,9 +14371,7 @@
               "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "party": "Republican",
-                "code": "REP_SAFE",
-                "color": "#dc2626",
+                "color": "#ef3b2c",
                 "description": "Safe Republican"
               },
               "all_parties": {
