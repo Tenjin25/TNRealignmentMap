@@ -1233,10 +1233,8 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
               <div style="color:#dc2626;font-size:15px;font-weight:700;">
                 R: ${repVotes.toLocaleString()} (${repPct.toFixed(2)}%)
               </div>
+              ${otherPct > 0 ? `<div style="color:#6b7280;font-size:15px;font-weight:700;">Other: ${otherVotes.toLocaleString()} (${otherPct.toFixed(2)}%)</div>` : ''}
             </div>
-            ${otherPct > 0 ? `<div style="text-align:right;margin-top:4px;color:#6b7280;font-size:14px;font-weight:600;">
-              Other: ${otherVotes.toLocaleString()} (${otherPct.toFixed(2)}%)
-            </div>` : ''}
           </div>
           <div style="margin-top:10px;font-size:15px;color:#374151;font-weight:600;">
             Total Votes: ${totalVotes.toLocaleString()}
