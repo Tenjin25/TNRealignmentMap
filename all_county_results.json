@@ -41,7 +41,7 @@
       "Tossup": [
         {
           "category": "Tossup",
-          "range": "Â±0.5%",
+          "range": "\u00c3\u201a\u00c2\u00b10.5%",
           "color": "#f7f7f7"
         }
       ],
@@ -11911,290 +11911,121 @@
           "dem_candidate": "Harold Ford Jr.",
           "rep_candidate": "Bob Corker",
           "results": {
-            "BRADLEY": {
-              "dem_votes": 8057,
-              "rep_votes": 18161,
-              "total_votes": 26218,
-              "dem_pct": 30.73,
-              "rep_pct": 69.27,
-              "margin_pct": 38.54,
+            "SHELBY": {
+              "dem_votes": 136528,
+              "rep_votes": 40871,
+              "total_votes": 177399,
+              "dem_pct": 76.96,
+              "rep_pct": 23.04,
+              "margin_pct": 53.92,
               "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
+                "category": "Annihilation",
+                "color": "#08306b",
+                "description": "Annihilation Democratic"
               }
             },
-            "GRUNDY": {
-              "dem_votes": 2367,
-              "rep_votes": 1466,
-              "total_votes": 3833,
-              "dem_pct": 61.75,
-              "rep_pct": 38.25,
-              "margin_pct": 23.51,
+            "WASHINGTON": {
+              "dem_votes": 12894,
+              "rep_votes": 21147,
+              "total_votes": 34041,
+              "dem_pct": 37.88,
+              "rep_pct": 62.12,
+              "margin_pct": 24.24,
               "competitiveness": {
                 "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
               }
             },
-            "DEKALB": {
-              "dem_votes": 2999,
-              "rep_votes": 2450,
-              "total_votes": 5449,
-              "dem_pct": 55.04,
-              "rep_pct": 44.96,
-              "margin_pct": 10.08,
+            "COFFEE": {
+              "dem_votes": 7147,
+              "rep_votes": 8069,
+              "total_votes": 15216,
+              "dem_pct": 46.97,
+              "rep_pct": 53.03,
+              "margin_pct": 6.06,
               "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
               }
             },
-            "WILLIAMSON": {
-              "dem_votes": 19682,
-              "rep_votes": 40852,
-              "total_votes": 60534,
-              "dem_pct": 32.51,
-              "rep_pct": 67.49,
-              "margin_pct": 34.97,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "GILES": {
-              "dem_votes": 4336,
-              "rep_votes": 4017,
-              "total_votes": 8353,
-              "dem_pct": 51.91,
-              "rep_pct": 48.09,
-              "margin_pct": 3.82,
+            "WHITE": {
+              "dem_votes": 3894,
+              "rep_votes": 3601,
+              "total_votes": 7495,
+              "dem_pct": 51.95,
+              "rep_pct": 48.05,
+              "margin_pct": 3.91,
               "competitiveness": {
                 "category": "Lean",
                 "color": "#c6dbef",
                 "description": "Lean Democratic"
               }
             },
-            "VAN BUREN": {
-              "dem_votes": 1116,
-              "rep_votes": 766,
-              "total_votes": 1882,
-              "dem_pct": 59.3,
-              "rep_pct": 40.7,
-              "margin_pct": 18.6,
+            "BLOUNT": {
+              "dem_votes": 13372,
+              "rep_votes": 22046,
+              "total_votes": 35418,
+              "dem_pct": 37.75,
+              "rep_pct": 62.25,
+              "margin_pct": 24.49,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "HICKMAN": {
+              "dem_votes": 3743,
+              "rep_votes": 2852,
+              "total_votes": 6595,
+              "dem_pct": 56.76,
+              "rep_pct": 43.24,
+              "margin_pct": 13.51,
               "competitiveness": {
                 "category": "Safe",
                 "color": "#6baed6",
                 "description": "Safe Democratic"
               }
             },
-            "LAUDERDALE": {
-              "dem_votes": 3954,
-              "rep_votes": 2953,
-              "total_votes": 6907,
-              "dem_pct": 57.25,
-              "rep_pct": 42.75,
-              "margin_pct": 14.49,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "JACKSON": {
-              "dem_votes": 2531,
-              "rep_votes": 1350,
-              "total_votes": 3881,
-              "dem_pct": 65.22,
-              "rep_pct": 34.78,
-              "margin_pct": 30.43,
+            "LOUDON": {
+              "dem_votes": 5369,
+              "rep_votes": 10812,
+              "total_votes": 16181,
+              "dem_pct": 33.18,
+              "rep_pct": 66.82,
+              "margin_pct": 33.64,
               "competitiveness": {
                 "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
+                "color": "#a50f15",
+                "description": "Dominant Republican"
               }
             },
-            "WARREN": {
-              "dem_votes": 6255,
-              "rep_votes": 4940,
-              "total_votes": 11195,
-              "dem_pct": 55.87,
-              "rep_pct": 44.13,
-              "margin_pct": 11.75,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "SEQUATCHIE": {
-              "dem_votes": 1986,
-              "rep_votes": 2227,
-              "total_votes": 4213,
-              "dem_pct": 47.14,
-              "rep_pct": 52.86,
-              "margin_pct": 5.72,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "FENTRESS": {
-              "dem_votes": 2237,
-              "rep_votes": 2918,
-              "total_votes": 5155,
-              "dem_pct": 43.39,
-              "rep_pct": 56.61,
-              "margin_pct": 13.21,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "PUTNAM": {
-              "dem_votes": 9670,
-              "rep_votes": 10127,
-              "total_votes": 19797,
-              "dem_pct": 48.85,
-              "rep_pct": 51.15,
-              "margin_pct": 2.31,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "CROCKETT": {
-              "dem_votes": 2246,
-              "rep_votes": 2212,
-              "total_votes": 4458,
-              "dem_pct": 50.38,
-              "rep_pct": 49.62,
-              "margin_pct": 0.76,
-              "competitiveness": {
-                "category": "Tilt",
-                "color": "#e1f5fe",
-                "description": "Tilt Democratic"
-              }
-            },
-            "MEIGS": {
-              "dem_votes": 1465,
-              "rep_votes": 1808,
-              "total_votes": 3273,
-              "dem_pct": 44.76,
-              "rep_pct": 55.24,
-              "margin_pct": 10.48,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "ROBERTSON": {
-              "dem_votes": 8587,
-              "rep_votes": 10008,
-              "total_votes": 18595,
-              "dem_pct": 46.18,
-              "rep_pct": 53.82,
-              "margin_pct": 7.64,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "GREENE": {
-              "dem_votes": 6419,
-              "rep_votes": 11852,
-              "total_votes": 18271,
-              "dem_pct": 35.13,
-              "rep_pct": 64.87,
-              "margin_pct": 29.74,
+            "HAYWOOD": {
+              "dem_votes": 3763,
+              "rep_votes": 2130,
+              "total_votes": 5893,
+              "dem_pct": 63.86,
+              "rep_pct": 36.14,
+              "margin_pct": 27.71,
               "competitiveness": {
                 "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
               }
             },
-            "MORGAN": {
-              "dem_votes": 2413,
-              "rep_votes": 2627,
-              "total_votes": 5040,
-              "dem_pct": 47.88,
-              "rep_pct": 52.12,
-              "margin_pct": 4.25,
+            "HENRY": {
+              "dem_votes": 4947,
+              "rep_votes": 4689,
+              "total_votes": 9636,
+              "dem_pct": 51.34,
+              "rep_pct": 48.66,
+              "margin_pct": 2.68,
               "competitiveness": {
                 "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "FAYETTE": {
-              "dem_votes": 5275,
-              "rep_votes": 7296,
-              "total_votes": 12571,
-              "dem_pct": 41.96,
-              "rep_pct": 58.04,
-              "margin_pct": 16.08,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "JEFFERSON": {
-              "dem_votes": 4906,
-              "rep_votes": 8219,
-              "total_votes": 13125,
-              "dem_pct": 37.38,
-              "rep_pct": 62.62,
-              "margin_pct": 25.24,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CAMPBELL": {
-              "dem_votes": 4896,
-              "rep_votes": 5051,
-              "total_votes": 9947,
-              "dem_pct": 49.22,
-              "rep_pct": 50.78,
-              "margin_pct": 1.56,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "MONROE": {
-              "dem_votes": 4856,
-              "rep_votes": 7535,
-              "total_votes": 12391,
-              "dem_pct": 39.19,
-              "rep_pct": 60.81,
-              "margin_pct": 21.62,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "BENTON": {
-              "dem_votes": 3232,
-              "rep_votes": 2176,
-              "total_votes": 5408,
-              "dem_pct": 59.76,
-              "rep_pct": 40.24,
-              "margin_pct": 19.53,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
               }
             },
             "UNION": {
@@ -12210,227 +12041,6 @@
                 "description": "Likely Republican"
               }
             },
-            "CARTER": {
-              "dem_votes": 5664,
-              "rep_votes": 10577,
-              "total_votes": 16241,
-              "dem_pct": 34.87,
-              "rep_pct": 65.13,
-              "margin_pct": 30.25,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "FRANKLIN": {
-              "dem_votes": 6477,
-              "rep_votes": 6142,
-              "total_votes": 12619,
-              "dem_pct": 51.33,
-              "rep_pct": 48.67,
-              "margin_pct": 2.65,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "DYER": {
-              "dem_votes": 4848,
-              "rep_votes": 6115,
-              "total_votes": 10963,
-              "dem_pct": 44.22,
-              "rep_pct": 55.78,
-              "margin_pct": 11.56,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "POLK": {
-              "dem_votes": 2412,
-              "rep_votes": 2655,
-              "total_votes": 5067,
-              "dem_pct": 47.6,
-              "rep_pct": 52.4,
-              "margin_pct": 4.8,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "BLEDSOE": {
-              "dem_votes": 1692,
-              "rep_votes": 2210,
-              "total_votes": 3902,
-              "dem_pct": 43.36,
-              "rep_pct": 56.64,
-              "margin_pct": 13.28,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "HAWKINS": {
-              "dem_votes": 5943,
-              "rep_votes": 8636,
-              "total_votes": 14579,
-              "dem_pct": 40.76,
-              "rep_pct": 59.24,
-              "margin_pct": 18.47,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "MADISON": {
-              "dem_votes": 14549,
-              "rep_votes": 15367,
-              "total_votes": 29916,
-              "dem_pct": 48.63,
-              "rep_pct": 51.37,
-              "margin_pct": 2.73,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "MOORE": {
-              "dem_votes": 966,
-              "rep_votes": 1165,
-              "total_votes": 2131,
-              "dem_pct": 45.33,
-              "rep_pct": 54.67,
-              "margin_pct": 9.34,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MARION": {
-              "dem_votes": 4775,
-              "rep_votes": 3944,
-              "total_votes": 8719,
-              "dem_pct": 54.77,
-              "rep_pct": 45.23,
-              "margin_pct": 9.53,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#9ecae1",
-                "description": "Likely Democratic"
-              }
-            },
-            "HOUSTON": {
-              "dem_votes": 1734,
-              "rep_votes": 931,
-              "total_votes": 2665,
-              "dem_pct": 65.07,
-              "rep_pct": 34.93,
-              "margin_pct": 30.13,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
-              }
-            },
-            "DECATUR": {
-              "dem_votes": 1902,
-              "rep_votes": 1941,
-              "total_votes": 3843,
-              "dem_pct": 49.49,
-              "rep_pct": 50.51,
-              "margin_pct": 1.01,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "LINCOLN": {
-              "dem_votes": 3470,
-              "rep_votes": 4535,
-              "total_votes": 8005,
-              "dem_pct": 43.35,
-              "rep_pct": 56.65,
-              "margin_pct": 13.3,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "CARROLL": {
-              "dem_votes": 4256,
-              "rep_votes": 4742,
-              "total_votes": 8998,
-              "dem_pct": 47.3,
-              "rep_pct": 52.7,
-              "margin_pct": 5.4,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "TIPTON": {
-              "dem_votes": 6775,
-              "rep_votes": 9717,
-              "total_votes": 16492,
-              "dem_pct": 41.08,
-              "rep_pct": 58.92,
-              "margin_pct": 17.84,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "GIBSON": {
-              "dem_votes": 7471,
-              "rep_votes": 8003,
-              "total_votes": 15474,
-              "dem_pct": 48.28,
-              "rep_pct": 51.72,
-              "margin_pct": 3.44,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "RUTHERFORD": {
-              "dem_votes": 26829,
-              "rep_votes": 33809,
-              "total_votes": 60638,
-              "dem_pct": 44.24,
-              "rep_pct": 55.76,
-              "margin_pct": 11.51,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "MONTGOMERY": {
-              "dem_votes": 17999,
-              "rep_votes": 17045,
-              "total_votes": 35044,
-              "dem_pct": 51.36,
-              "rep_pct": 48.64,
-              "margin_pct": 2.72,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
             "MAURY": {
               "dem_votes": 11128,
               "rep_votes": 11994,
@@ -12444,13 +12054,26 @@
                 "description": "Lean Republican"
               }
             },
-            "PERRY": {
-              "dem_votes": 1326,
-              "rep_votes": 964,
-              "total_votes": 2290,
-              "dem_pct": 57.9,
-              "rep_pct": 42.1,
-              "margin_pct": 15.81,
+            "CHESTER": {
+              "dem_votes": 1646,
+              "rep_votes": 2696,
+              "total_votes": 4342,
+              "dem_pct": 37.91,
+              "rep_pct": 62.09,
+              "margin_pct": 24.18,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "CLAY": {
+              "dem_votes": 1425,
+              "rep_votes": 1015,
+              "total_votes": 2440,
+              "dem_pct": 58.4,
+              "rep_pct": 41.6,
+              "margin_pct": 16.8,
               "competitiveness": {
                 "category": "Safe",
                 "color": "#6baed6",
@@ -12470,6 +12093,32 @@
                 "description": "Stronghold Republican"
               }
             },
+            "FAYETTE": {
+              "dem_votes": 5275,
+              "rep_votes": 7296,
+              "total_votes": 12571,
+              "dem_pct": 41.96,
+              "rep_pct": 58.04,
+              "margin_pct": 16.08,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "DYER": {
+              "dem_votes": 4848,
+              "rep_votes": 6115,
+              "total_votes": 10963,
+              "dem_pct": 44.22,
+              "rep_pct": 55.78,
+              "margin_pct": 11.56,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
             "PICKETT": {
               "dem_votes": 977,
               "rep_votes": 1124,
@@ -12483,13 +12132,143 @@
                 "description": "Likely Republican"
               }
             },
-            "SUMNER": {
-              "dem_votes": 18976,
-              "rep_votes": 26996,
-              "total_votes": 45972,
-              "dem_pct": 41.28,
-              "rep_pct": 58.72,
-              "margin_pct": 17.45,
+            "LINCOLN": {
+              "dem_votes": 3470,
+              "rep_votes": 4535,
+              "total_votes": 8005,
+              "dem_pct": 43.35,
+              "rep_pct": 56.65,
+              "margin_pct": 13.3,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "TIPTON": {
+              "dem_votes": 6775,
+              "rep_votes": 9717,
+              "total_votes": 16492,
+              "dem_pct": 41.08,
+              "rep_pct": 58.92,
+              "margin_pct": 17.84,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "JACKSON": {
+              "dem_votes": 2531,
+              "rep_votes": 1350,
+              "total_votes": 3881,
+              "dem_pct": 65.22,
+              "rep_pct": 34.78,
+              "margin_pct": 30.43,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#08519c",
+                "description": "Dominant Democratic"
+              }
+            },
+            "TROUSDALE": {
+              "dem_votes": 1674,
+              "rep_votes": 891,
+              "total_votes": 2565,
+              "dem_pct": 65.26,
+              "rep_pct": 34.74,
+              "margin_pct": 30.53,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#08519c",
+                "description": "Dominant Democratic"
+              }
+            },
+            "HARDIN": {
+              "dem_votes": 3029,
+              "rep_votes": 4278,
+              "total_votes": 7307,
+              "dem_pct": 41.45,
+              "rep_pct": 58.55,
+              "margin_pct": 17.09,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "BRADLEY": {
+              "dem_votes": 8057,
+              "rep_votes": 18161,
+              "total_votes": 26218,
+              "dem_pct": 30.73,
+              "rep_pct": 69.27,
+              "margin_pct": 38.54,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "MACON": {
+              "dem_votes": 2410,
+              "rep_votes": 3033,
+              "total_votes": 5443,
+              "dem_pct": 44.28,
+              "rep_pct": 55.72,
+              "margin_pct": 11.45,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "WILLIAMSON": {
+              "dem_votes": 19682,
+              "rep_votes": 40852,
+              "total_votes": 60534,
+              "dem_pct": 32.51,
+              "rep_pct": 67.49,
+              "margin_pct": 34.97,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "GREENE": {
+              "dem_votes": 6419,
+              "rep_votes": 11852,
+              "total_votes": 18271,
+              "dem_pct": 35.13,
+              "rep_pct": 64.87,
+              "margin_pct": 29.74,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "SCOTT": {
+              "dem_votes": 2504,
+              "rep_votes": 2798,
+              "total_votes": 5302,
+              "dem_pct": 47.23,
+              "rep_pct": 52.77,
+              "margin_pct": 5.55,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "MCNAIRY": {
+              "dem_votes": 3360,
+              "rep_votes": 4292,
+              "total_votes": 7652,
+              "dem_pct": 43.91,
+              "rep_pct": 56.09,
+              "margin_pct": 12.18,
               "competitiveness": {
                 "category": "Safe",
                 "color": "#ef3b2c",
@@ -12509,481 +12288,26 @@
                 "description": "Likely Republican"
               }
             },
-            "WILSON": {
-              "dem_votes": 14520,
-              "rep_votes": 20662,
-              "total_votes": 35182,
-              "dem_pct": 41.27,
-              "rep_pct": 58.73,
-              "margin_pct": 17.46,
+            "DEKALB": {
+              "dem_votes": 2999,
+              "rep_votes": 2450,
+              "total_votes": 5449,
+              "dem_pct": 55.04,
+              "rep_pct": 44.96,
+              "margin_pct": 10.08,
               "competitiveness": {
                 "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
+                "color": "#6baed6",
+                "description": "Safe Democratic"
               }
             },
-            "GRAINGER": {
-              "dem_votes": 2211,
-              "rep_votes": 3198,
-              "total_votes": 5409,
-              "dem_pct": 40.88,
-              "rep_pct": 59.12,
-              "margin_pct": 18.25,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "SHELBY": {
-              "dem_votes": 136528,
-              "rep_votes": 40871,
-              "total_votes": 177399,
-              "dem_pct": 76.96,
-              "rep_pct": 23.04,
-              "margin_pct": 53.92,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#08306b",
-                "description": "Annihilation Democratic"
-              }
-            },
-            "DICKSON": {
-              "dem_votes": 7232,
-              "rep_votes": 7014,
-              "total_votes": 14246,
-              "dem_pct": 50.77,
-              "rep_pct": 49.23,
-              "margin_pct": 1.53,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "HAMILTON": {
-              "dem_votes": 49904,
-              "rep_votes": 57411,
-              "total_votes": 107315,
-              "dem_pct": 46.5,
-              "rep_pct": 53.5,
-              "margin_pct": 7.0,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "HARDIN": {
-              "dem_votes": 3029,
-              "rep_votes": 4278,
-              "total_votes": 7307,
-              "dem_pct": 41.45,
-              "rep_pct": 58.55,
-              "margin_pct": 17.09,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "MCNAIRY": {
-              "dem_votes": 3360,
-              "rep_votes": 4292,
-              "total_votes": 7652,
-              "dem_pct": 43.91,
-              "rep_pct": 56.09,
-              "margin_pct": 12.18,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "STEWART": {
-              "dem_votes": 2608,
-              "rep_votes": 1675,
-              "total_votes": 4283,
-              "dem_pct": 60.89,
-              "rep_pct": 39.11,
-              "margin_pct": 21.78,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "TROUSDALE": {
-              "dem_votes": 1674,
-              "rep_votes": 891,
-              "total_votes": 2565,
-              "dem_pct": 65.26,
-              "rep_pct": 34.74,
-              "margin_pct": 30.53,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
-              }
-            },
-            "CUMBERLAND": {
-              "dem_votes": 7471,
-              "rep_votes": 11515,
-              "total_votes": 18986,
-              "dem_pct": 39.35,
-              "rep_pct": 60.65,
-              "margin_pct": 21.3,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "MACON": {
-              "dem_votes": 2410,
-              "rep_votes": 3033,
-              "total_votes": 5443,
-              "dem_pct": 44.28,
-              "rep_pct": 55.72,
-              "margin_pct": 11.45,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "HAMBLEN": {
-              "dem_votes": 6366,
-              "rep_votes": 10186,
-              "total_votes": 16552,
-              "dem_pct": 38.46,
-              "rep_pct": 61.54,
-              "margin_pct": 23.08,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CLAIBORNE": {
-              "dem_votes": 3426,
-              "rep_votes": 4112,
-              "total_votes": 7538,
-              "dem_pct": 45.45,
-              "rep_pct": 54.55,
-              "margin_pct": 9.1,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "JOHNSON": {
-              "dem_votes": 1626,
-              "rep_votes": 3148,
-              "total_votes": 4774,
-              "dem_pct": 34.06,
-              "rep_pct": 65.94,
-              "margin_pct": 31.88,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "SCOTT": {
-              "dem_votes": 2504,
-              "rep_votes": 2798,
-              "total_votes": 5302,
-              "dem_pct": 47.23,
-              "rep_pct": 52.77,
-              "margin_pct": 5.55,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "ROANE": {
-              "dem_votes": 7669,
-              "rep_votes": 9645,
-              "total_votes": 17314,
-              "dem_pct": 44.29,
-              "rep_pct": 55.71,
-              "margin_pct": 11.41,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "LAKE": {
-              "dem_votes": 981,
-              "rep_votes": 571,
-              "total_votes": 1552,
-              "dem_pct": 63.21,
-              "rep_pct": 36.79,
-              "margin_pct": 26.42,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "HANCOCK": {
-              "dem_votes": 729,
-              "rep_votes": 1130,
-              "total_votes": 1859,
-              "dem_pct": 39.21,
-              "rep_pct": 60.79,
-              "margin_pct": 21.57,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "BEDFORD": {
-              "dem_votes": 4931,
-              "rep_votes": 5602,
-              "total_votes": 10533,
-              "dem_pct": 46.81,
-              "rep_pct": 53.19,
-              "margin_pct": 6.37,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "KNOX": {
-              "dem_votes": 53293,
-              "rep_votes": 69129,
-              "total_votes": 122422,
-              "dem_pct": 43.53,
-              "rep_pct": 56.47,
-              "margin_pct": 12.94,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "LEWIS": {
-              "dem_votes": 1969,
-              "rep_votes": 1893,
-              "total_votes": 3862,
-              "dem_pct": 50.98,
-              "rep_pct": 49.02,
-              "margin_pct": 1.97,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "CANNON": {
-              "dem_votes": 2282,
-              "rep_votes": 1925,
-              "total_votes": 4207,
-              "dem_pct": 54.24,
-              "rep_pct": 45.76,
-              "margin_pct": 8.49,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#9ecae1",
-                "description": "Likely Democratic"
-              }
-            },
-            "CHESTER": {
-              "dem_votes": 1646,
-              "rep_votes": 2696,
-              "total_votes": 4342,
-              "dem_pct": 37.91,
-              "rep_pct": 62.09,
-              "margin_pct": 24.18,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "LOUDON": {
-              "dem_votes": 5369,
-              "rep_votes": 10812,
-              "total_votes": 16181,
-              "dem_pct": 33.18,
-              "rep_pct": 66.82,
-              "margin_pct": 33.64,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "MARSHALL": {
-              "dem_votes": 3762,
-              "rep_votes": 3391,
-              "total_votes": 7153,
-              "dem_pct": 52.59,
-              "rep_pct": 47.41,
-              "margin_pct": 5.19,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "COFFEE": {
-              "dem_votes": 7147,
-              "rep_votes": 8069,
-              "total_votes": 15216,
-              "dem_pct": 46.97,
-              "rep_pct": 53.03,
-              "margin_pct": 6.06,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MCMINN": {
-              "dem_votes": 5214,
-              "rep_votes": 8762,
-              "total_votes": 13976,
-              "dem_pct": 37.31,
-              "rep_pct": 62.69,
-              "margin_pct": 25.39,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "WHITE": {
-              "dem_votes": 3894,
-              "rep_votes": 3601,
-              "total_votes": 7495,
-              "dem_pct": 51.95,
-              "rep_pct": 48.05,
-              "margin_pct": 3.91,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "HENDERSON": {
-              "dem_votes": 3126,
-              "rep_votes": 5360,
-              "total_votes": 8486,
-              "dem_pct": 36.84,
-              "rep_pct": 63.16,
-              "margin_pct": 26.33,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "LAWRENCE": {
-              "dem_votes": 5550,
-              "rep_votes": 6715,
-              "total_votes": 12265,
-              "dem_pct": 45.25,
-              "rep_pct": 54.75,
-              "margin_pct": 9.5,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "RHEA": {
-              "dem_votes": 3278,
-              "rep_votes": 5146,
-              "total_votes": 8424,
-              "dem_pct": 38.91,
-              "rep_pct": 61.09,
-              "margin_pct": 22.17,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "DAVIDSON": {
-              "dem_votes": 106847,
-              "rep_votes": 67136,
-              "total_votes": 173983,
-              "dem_pct": 61.41,
-              "rep_pct": 38.59,
-              "margin_pct": 22.82,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "HUMPHREYS": {
-              "dem_votes": 3915,
-              "rep_votes": 2236,
-              "total_votes": 6151,
-              "dem_pct": 63.65,
-              "rep_pct": 36.35,
-              "margin_pct": 27.3,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "BLOUNT": {
-              "dem_votes": 13372,
-              "rep_votes": 22046,
-              "total_votes": 35418,
-              "dem_pct": 37.75,
-              "rep_pct": 62.25,
-              "margin_pct": 24.49,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HAYWOOD": {
-              "dem_votes": 3763,
-              "rep_votes": 2130,
-              "total_votes": 5893,
-              "dem_pct": 63.86,
-              "rep_pct": 36.14,
-              "margin_pct": 27.71,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "SULLIVAN": {
-              "dem_votes": 16814,
-              "rep_votes": 27872,
-              "total_votes": 44686,
-              "dem_pct": 37.63,
-              "rep_pct": 62.37,
-              "margin_pct": 24.75,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HICKMAN": {
-              "dem_votes": 3743,
-              "rep_votes": 2852,
-              "total_votes": 6595,
-              "dem_pct": 56.76,
-              "rep_pct": 43.24,
-              "margin_pct": 13.51,
+            "PERRY": {
+              "dem_votes": 1326,
+              "rep_votes": 964,
+              "total_votes": 2290,
+              "dem_pct": 57.9,
+              "rep_pct": 42.1,
+              "margin_pct": 15.81,
               "competitiveness": {
                 "category": "Safe",
                 "color": "#6baed6",
@@ -13016,26 +12340,390 @@
                 "description": "Safe Democratic"
               }
             },
-            "WEAKLEY": {
-              "dem_votes": 4542,
-              "rep_votes": 5412,
-              "total_votes": 9954,
-              "dem_pct": 45.63,
-              "rep_pct": 54.37,
-              "margin_pct": 8.74,
+            "DICKSON": {
+              "dem_votes": 7232,
+              "rep_votes": 7014,
+              "total_votes": 14246,
+              "dem_pct": 50.77,
+              "rep_pct": 49.23,
+              "margin_pct": 1.53,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
+              }
+            },
+            "OBION": {
+              "dem_votes": 4734,
+              "rep_votes": 4936,
+              "total_votes": 9670,
+              "dem_pct": 48.96,
+              "rep_pct": 51.04,
+              "margin_pct": 2.09,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "SULLIVAN": {
+              "dem_votes": 16814,
+              "rep_votes": 27872,
+              "total_votes": 44686,
+              "dem_pct": 37.63,
+              "rep_pct": 62.37,
+              "margin_pct": 24.75,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "GRAINGER": {
+              "dem_votes": 2211,
+              "rep_votes": 3198,
+              "total_votes": 5409,
+              "dem_pct": 40.88,
+              "rep_pct": 59.12,
+              "margin_pct": 18.25,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "COCKE": {
+              "dem_votes": 3563,
+              "rep_votes": 5952,
+              "total_votes": 9515,
+              "dem_pct": 37.45,
+              "rep_pct": 62.55,
+              "margin_pct": 25.11,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "WILSON": {
+              "dem_votes": 14520,
+              "rep_votes": 20662,
+              "total_votes": 35182,
+              "dem_pct": 41.27,
+              "rep_pct": 58.73,
+              "margin_pct": 17.46,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "CUMBERLAND": {
+              "dem_votes": 7471,
+              "rep_votes": 11515,
+              "total_votes": 18986,
+              "dem_pct": 39.35,
+              "rep_pct": 60.65,
+              "margin_pct": 21.3,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "POLK": {
+              "dem_votes": 2412,
+              "rep_votes": 2655,
+              "total_votes": 5067,
+              "dem_pct": 47.6,
+              "rep_pct": 52.4,
+              "margin_pct": 4.8,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "FRANKLIN": {
+              "dem_votes": 6477,
+              "rep_votes": 6142,
+              "total_votes": 12619,
+              "dem_pct": 51.33,
+              "rep_pct": 48.67,
+              "margin_pct": 2.65,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
+              }
+            },
+            "CARTER": {
+              "dem_votes": 5664,
+              "rep_votes": 10577,
+              "total_votes": 16241,
+              "dem_pct": 34.87,
+              "rep_pct": 65.13,
+              "margin_pct": 30.25,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "MADISON": {
+              "dem_votes": 14549,
+              "rep_votes": 15367,
+              "total_votes": 29916,
+              "dem_pct": 48.63,
+              "rep_pct": 51.37,
+              "margin_pct": 2.73,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "FENTRESS": {
+              "dem_votes": 2237,
+              "rep_votes": 2918,
+              "total_votes": 5155,
+              "dem_pct": 43.39,
+              "rep_pct": 56.61,
+              "margin_pct": 13.21,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "HUMPHREYS": {
+              "dem_votes": 3915,
+              "rep_votes": 2236,
+              "total_votes": 6151,
+              "dem_pct": 63.65,
+              "rep_pct": 36.35,
+              "margin_pct": 27.3,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
+              }
+            },
+            "KNOX": {
+              "dem_votes": 53293,
+              "rep_votes": 69129,
+              "total_votes": 122422,
+              "dem_pct": 43.53,
+              "rep_pct": 56.47,
+              "margin_pct": 12.94,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "MCMINN": {
+              "dem_votes": 5214,
+              "rep_votes": 8762,
+              "total_votes": 13976,
+              "dem_pct": 37.31,
+              "rep_pct": 62.69,
+              "margin_pct": 25.39,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "HAWKINS": {
+              "dem_votes": 5943,
+              "rep_votes": 8636,
+              "total_votes": 14579,
+              "dem_pct": 40.76,
+              "rep_pct": 59.24,
+              "margin_pct": 18.47,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "CLAIBORNE": {
+              "dem_votes": 3426,
+              "rep_votes": 4112,
+              "total_votes": 7538,
+              "dem_pct": 45.45,
+              "rep_pct": 54.55,
+              "margin_pct": 9.1,
               "competitiveness": {
                 "category": "Likely",
                 "color": "#fb6a4a",
                 "description": "Likely Republican"
               }
             },
-            "WASHINGTON": {
-              "dem_votes": 12894,
-              "rep_votes": 21147,
-              "total_votes": 34041,
-              "dem_pct": 37.88,
-              "rep_pct": 62.12,
-              "margin_pct": 24.24,
+            "GRUNDY": {
+              "dem_votes": 2367,
+              "rep_votes": 1466,
+              "total_votes": 3833,
+              "dem_pct": 61.75,
+              "rep_pct": 38.25,
+              "margin_pct": 23.51,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
+              }
+            },
+            "CROCKETT": {
+              "dem_votes": 2246,
+              "rep_votes": 2212,
+              "total_votes": 4458,
+              "dem_pct": 50.38,
+              "rep_pct": 49.62,
+              "margin_pct": 0.76,
+              "competitiveness": {
+                "category": "Tilt",
+                "color": "#e1f5fe",
+                "description": "Tilt Democratic"
+              }
+            },
+            "DAVIDSON": {
+              "dem_votes": 106847,
+              "rep_votes": 67136,
+              "total_votes": 173983,
+              "dem_pct": 61.41,
+              "rep_pct": 38.59,
+              "margin_pct": 22.82,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
+              }
+            },
+            "HOUSTON": {
+              "dem_votes": 1734,
+              "rep_votes": 931,
+              "total_votes": 2665,
+              "dem_pct": 65.07,
+              "rep_pct": 34.93,
+              "margin_pct": 30.13,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#08519c",
+                "description": "Dominant Democratic"
+              }
+            },
+            "ROBERTSON": {
+              "dem_votes": 8587,
+              "rep_votes": 10008,
+              "total_votes": 18595,
+              "dem_pct": 46.18,
+              "rep_pct": 53.82,
+              "margin_pct": 7.64,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "BENTON": {
+              "dem_votes": 3232,
+              "rep_votes": 2176,
+              "total_votes": 5408,
+              "dem_pct": 59.76,
+              "rep_pct": 40.24,
+              "margin_pct": 19.53,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
+              }
+            },
+            "HAMILTON": {
+              "dem_votes": 49904,
+              "rep_votes": 57411,
+              "total_votes": 107315,
+              "dem_pct": 46.5,
+              "rep_pct": 53.5,
+              "margin_pct": 7.0,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "MARION": {
+              "dem_votes": 4775,
+              "rep_votes": 3944,
+              "total_votes": 8719,
+              "dem_pct": 54.77,
+              "rep_pct": 45.23,
+              "margin_pct": 9.53,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#9ecae1",
+                "description": "Likely Democratic"
+              }
+            },
+            "MEIGS": {
+              "dem_votes": 1465,
+              "rep_votes": 1808,
+              "total_votes": 3273,
+              "dem_pct": 44.76,
+              "rep_pct": 55.24,
+              "margin_pct": 10.48,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "BEDFORD": {
+              "dem_votes": 4931,
+              "rep_votes": 5602,
+              "total_votes": 10533,
+              "dem_pct": 46.81,
+              "rep_pct": 53.19,
+              "margin_pct": 6.37,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "HAMBLEN": {
+              "dem_votes": 6366,
+              "rep_votes": 10186,
+              "total_votes": 16552,
+              "dem_pct": 38.46,
+              "rep_pct": 61.54,
+              "margin_pct": 23.08,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "MONTGOMERY": {
+              "dem_votes": 17999,
+              "rep_votes": 17045,
+              "total_votes": 35044,
+              "dem_pct": 51.36,
+              "rep_pct": 48.64,
+              "margin_pct": 2.72,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
+              }
+            },
+            "JEFFERSON": {
+              "dem_votes": 4906,
+              "rep_votes": 8219,
+              "total_votes": 13125,
+              "dem_pct": 37.38,
+              "rep_pct": 62.62,
+              "margin_pct": 25.24,
               "competitiveness": {
                 "category": "Stronghold",
                 "color": "#cb181d",
@@ -13055,58 +12743,6 @@
                 "description": "Likely Republican"
               }
             },
-            "SEVIER": {
-              "dem_votes": 7326,
-              "rep_votes": 15361,
-              "total_votes": 22687,
-              "dem_pct": 32.29,
-              "rep_pct": 67.71,
-              "margin_pct": 35.42,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "CLAY": {
-              "dem_votes": 1425,
-              "rep_votes": 1015,
-              "total_votes": 2440,
-              "dem_pct": 58.4,
-              "rep_pct": 41.6,
-              "margin_pct": 16.8,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "COCKE": {
-              "dem_votes": 3563,
-              "rep_votes": 5952,
-              "total_votes": 9515,
-              "dem_pct": 37.45,
-              "rep_pct": 62.55,
-              "margin_pct": 25.11,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "OBION": {
-              "dem_votes": 4734,
-              "rep_votes": 4936,
-              "total_votes": 9670,
-              "dem_pct": 48.96,
-              "rep_pct": 51.04,
-              "margin_pct": 2.09,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
             "UNICOI": {
               "dem_votes": 2015,
               "rep_votes": 3491,
@@ -13118,6 +12754,97 @@
                 "category": "Stronghold",
                 "color": "#cb181d",
                 "description": "Stronghold Republican"
+              }
+            },
+            "HANCOCK": {
+              "dem_votes": 729,
+              "rep_votes": 1130,
+              "total_votes": 1859,
+              "dem_pct": 39.21,
+              "rep_pct": 60.79,
+              "margin_pct": 21.57,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "MONROE": {
+              "dem_votes": 4856,
+              "rep_votes": 7535,
+              "total_votes": 12391,
+              "dem_pct": 39.19,
+              "rep_pct": 60.81,
+              "margin_pct": 21.62,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "CANNON": {
+              "dem_votes": 2282,
+              "rep_votes": 1925,
+              "total_votes": 4207,
+              "dem_pct": 54.24,
+              "rep_pct": 45.76,
+              "margin_pct": 8.49,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#9ecae1",
+                "description": "Likely Democratic"
+              }
+            },
+            "LAUDERDALE": {
+              "dem_votes": 3954,
+              "rep_votes": 2953,
+              "total_votes": 6907,
+              "dem_pct": 57.25,
+              "rep_pct": 42.75,
+              "margin_pct": 14.49,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
+              }
+            },
+            "STEWART": {
+              "dem_votes": 2608,
+              "rep_votes": 1675,
+              "total_votes": 4283,
+              "dem_pct": 60.89,
+              "rep_pct": 39.11,
+              "margin_pct": 21.78,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
+              }
+            },
+            "SEQUATCHIE": {
+              "dem_votes": 1986,
+              "rep_votes": 2227,
+              "total_votes": 4213,
+              "dem_pct": 47.14,
+              "rep_pct": 52.86,
+              "margin_pct": 5.72,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "LEWIS": {
+              "dem_votes": 1969,
+              "rep_votes": 1893,
+              "total_votes": 3862,
+              "dem_pct": 50.98,
+              "rep_pct": 49.02,
+              "margin_pct": 1.97,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
               }
             },
             "HARDEMAN": {
@@ -13133,17 +12860,290 @@
                 "description": "Safe Democratic"
               }
             },
-            "HENRY": {
-              "dem_votes": 4947,
-              "rep_votes": 4689,
-              "total_votes": 9636,
-              "dem_pct": 51.34,
-              "rep_pct": 48.66,
-              "margin_pct": 2.68,
+            "GILES": {
+              "dem_votes": 4336,
+              "rep_votes": 4017,
+              "total_votes": 8353,
+              "dem_pct": 51.91,
+              "rep_pct": 48.09,
+              "margin_pct": 3.82,
               "competitiveness": {
                 "category": "Lean",
                 "color": "#c6dbef",
                 "description": "Lean Democratic"
+              }
+            },
+            "BLEDSOE": {
+              "dem_votes": 1692,
+              "rep_votes": 2210,
+              "total_votes": 3902,
+              "dem_pct": 43.36,
+              "rep_pct": 56.64,
+              "margin_pct": 13.28,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "JOHNSON": {
+              "dem_votes": 1626,
+              "rep_votes": 3148,
+              "total_votes": 4774,
+              "dem_pct": 34.06,
+              "rep_pct": 65.94,
+              "margin_pct": 31.88,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "MARSHALL": {
+              "dem_votes": 3762,
+              "rep_votes": 3391,
+              "total_votes": 7153,
+              "dem_pct": 52.59,
+              "rep_pct": 47.41,
+              "margin_pct": 5.19,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#c6dbef",
+                "description": "Lean Democratic"
+              }
+            },
+            "LAWRENCE": {
+              "dem_votes": 5550,
+              "rep_votes": 6715,
+              "total_votes": 12265,
+              "dem_pct": 45.25,
+              "rep_pct": 54.75,
+              "margin_pct": 9.5,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "RUTHERFORD": {
+              "dem_votes": 26829,
+              "rep_votes": 33809,
+              "total_votes": 60638,
+              "dem_pct": 44.24,
+              "rep_pct": 55.76,
+              "margin_pct": 11.51,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "HENDERSON": {
+              "dem_votes": 3126,
+              "rep_votes": 5360,
+              "total_votes": 8486,
+              "dem_pct": 36.84,
+              "rep_pct": 63.16,
+              "margin_pct": 26.33,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "WEAKLEY": {
+              "dem_votes": 4542,
+              "rep_votes": 5412,
+              "total_votes": 9954,
+              "dem_pct": 45.63,
+              "rep_pct": 54.37,
+              "margin_pct": 8.74,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "RHEA": {
+              "dem_votes": 3278,
+              "rep_votes": 5146,
+              "total_votes": 8424,
+              "dem_pct": 38.91,
+              "rep_pct": 61.09,
+              "margin_pct": 22.17,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "CARROLL": {
+              "dem_votes": 4256,
+              "rep_votes": 4742,
+              "total_votes": 8998,
+              "dem_pct": 47.3,
+              "rep_pct": 52.7,
+              "margin_pct": 5.4,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "CAMPBELL": {
+              "dem_votes": 4896,
+              "rep_votes": 5051,
+              "total_votes": 9947,
+              "dem_pct": 49.22,
+              "rep_pct": 50.78,
+              "margin_pct": 1.56,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "SUMNER": {
+              "dem_votes": 18976,
+              "rep_votes": 26996,
+              "total_votes": 45972,
+              "dem_pct": 41.28,
+              "rep_pct": 58.72,
+              "margin_pct": 17.45,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "MORGAN": {
+              "dem_votes": 2413,
+              "rep_votes": 2627,
+              "total_votes": 5040,
+              "dem_pct": 47.88,
+              "rep_pct": 52.12,
+              "margin_pct": 4.25,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "ROANE": {
+              "dem_votes": 7669,
+              "rep_votes": 9645,
+              "total_votes": 17314,
+              "dem_pct": 44.29,
+              "rep_pct": 55.71,
+              "margin_pct": 11.41,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "SEVIER": {
+              "dem_votes": 7326,
+              "rep_votes": 15361,
+              "total_votes": 22687,
+              "dem_pct": 32.29,
+              "rep_pct": 67.71,
+              "margin_pct": 35.42,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "WARREN": {
+              "dem_votes": 6255,
+              "rep_votes": 4940,
+              "total_votes": 11195,
+              "dem_pct": 55.87,
+              "rep_pct": 44.13,
+              "margin_pct": 11.75,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
+              }
+            },
+            "GIBSON": {
+              "dem_votes": 7471,
+              "rep_votes": 8003,
+              "total_votes": 15474,
+              "dem_pct": 48.28,
+              "rep_pct": 51.72,
+              "margin_pct": 3.44,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "PUTNAM": {
+              "dem_votes": 9670,
+              "rep_votes": 10127,
+              "total_votes": 19797,
+              "dem_pct": 48.85,
+              "rep_pct": 51.15,
+              "margin_pct": 2.31,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
+              }
+            },
+            "VAN BUREN": {
+              "dem_votes": 1116,
+              "rep_votes": 766,
+              "total_votes": 1882,
+              "dem_pct": 59.3,
+              "rep_pct": 40.7,
+              "margin_pct": 18.6,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#6baed6",
+                "description": "Safe Democratic"
+              }
+            },
+            "LAKE": {
+              "dem_votes": 981,
+              "rep_votes": 571,
+              "total_votes": 1552,
+              "dem_pct": 63.21,
+              "rep_pct": 36.79,
+              "margin_pct": 26.42,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#3182bd",
+                "description": "Stronghold Democratic"
+              }
+            },
+            "MOORE": {
+              "dem_votes": 966,
+              "rep_votes": 1165,
+              "total_votes": 2131,
+              "dem_pct": 45.33,
+              "rep_pct": 54.67,
+              "margin_pct": 9.34,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "DECATUR": {
+              "dem_votes": 1902,
+              "rep_votes": 1941,
+              "total_votes": 3843,
+              "dem_pct": 49.49,
+              "rep_pct": 50.51,
+              "margin_pct": 1.01,
+              "competitiveness": {
+                "category": "Lean",
+                "color": "#fcae91",
+                "description": "Lean Republican"
               }
             }
           }
@@ -60357,58 +60357,6 @@
           "dem_candidate": "Gordon Ball",
           "rep_candidate": "Lamar Alexander",
           "results": {
-            "HUMPHREYS": {
-              "dem_votes": 1561,
-              "rep_votes": 2227,
-              "total_votes": 3788,
-              "dem_pct": 41.21,
-              "rep_pct": 58.79,
-              "margin_pct": 17.58,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "SUMNER": {
-              "dem_votes": 9292,
-              "rep_votes": 25615,
-              "total_votes": 34907,
-              "dem_pct": 26.62,
-              "rep_pct": 73.38,
-              "margin_pct": 46.76,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "RHEA": {
-              "dem_votes": 1071,
-              "rep_votes": 4601,
-              "total_votes": 5672,
-              "dem_pct": 18.88,
-              "rep_pct": 81.12,
-              "margin_pct": 62.24,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MCMINN": {
-              "dem_votes": 2177,
-              "rep_votes": 7717,
-              "total_votes": 9894,
-              "dem_pct": 22.0,
-              "rep_pct": 78.0,
-              "margin_pct": 55.99,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
             "CHEATHAM": {
               "dem_votes": 2366,
               "rep_votes": 5542,
@@ -60416,422 +60364,6 @@
               "dem_pct": 29.92,
               "rep_pct": 70.08,
               "margin_pct": 40.16,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "LEWIS": {
-              "dem_votes": 736,
-              "rep_votes": 1655,
-              "total_votes": 2391,
-              "dem_pct": 30.78,
-              "rep_pct": 69.22,
-              "margin_pct": 38.44,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "WEAKLEY": {
-              "dem_votes": 1852,
-              "rep_votes": 5067,
-              "total_votes": 6919,
-              "dem_pct": 26.77,
-              "rep_pct": 73.23,
-              "margin_pct": 46.47,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "LAKE": {
-              "dem_votes": 418,
-              "rep_votes": 619,
-              "total_votes": 1037,
-              "dem_pct": 40.31,
-              "rep_pct": 59.69,
-              "margin_pct": 19.38,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "FAYETTE": {
-              "dem_votes": 2517,
-              "rep_votes": 7402,
-              "total_votes": 9919,
-              "dem_pct": 25.38,
-              "rep_pct": 74.62,
-              "margin_pct": 49.25,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HANCOCK": {
-              "dem_votes": 231,
-              "rep_votes": 650,
-              "total_votes": 881,
-              "dem_pct": 26.22,
-              "rep_pct": 73.78,
-              "margin_pct": 47.56,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MORGAN": {
-              "dem_votes": 982,
-              "rep_votes": 2426,
-              "total_votes": 3408,
-              "dem_pct": 28.81,
-              "rep_pct": 71.19,
-              "margin_pct": 42.37,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "DEKALB": {
-              "dem_votes": 1191,
-              "rep_votes": 2165,
-              "total_votes": 3356,
-              "dem_pct": 35.49,
-              "rep_pct": 64.51,
-              "margin_pct": 29.02,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CROCKETT": {
-              "dem_votes": 737,
-              "rep_votes": 1980,
-              "total_votes": 2717,
-              "dem_pct": 27.13,
-              "rep_pct": 72.87,
-              "margin_pct": 45.75,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "GRUNDY": {
-              "dem_votes": 817,
-              "rep_votes": 1372,
-              "total_votes": 2189,
-              "dem_pct": 37.32,
-              "rep_pct": 62.68,
-              "margin_pct": 25.35,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "RUTHERFORD": {
-              "dem_votes": 16761,
-              "rep_votes": 33612,
-              "total_votes": 50373,
-              "dem_pct": 33.27,
-              "rep_pct": 66.73,
-              "margin_pct": 33.45,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "KNOX": {
-              "dem_votes": 30802,
-              "rep_votes": 66093,
-              "total_votes": 96895,
-              "dem_pct": 31.79,
-              "rep_pct": 68.21,
-              "margin_pct": 36.42,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "HAMILTON": {
-              "dem_votes": 25373,
-              "rep_votes": 51347,
-              "total_votes": 76720,
-              "dem_pct": 33.07,
-              "rep_pct": 66.93,
-              "margin_pct": 33.86,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "CLAY": {
-              "dem_votes": 468,
-              "rep_votes": 905,
-              "total_votes": 1373,
-              "dem_pct": 34.09,
-              "rep_pct": 65.91,
-              "margin_pct": 31.83,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "DECATUR": {
-              "dem_votes": 693,
-              "rep_votes": 1450,
-              "total_votes": 2143,
-              "dem_pct": 32.34,
-              "rep_pct": 67.66,
-              "margin_pct": 35.32,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "PICKETT": {
-              "dem_votes": 426,
-              "rep_votes": 1105,
-              "total_votes": 1531,
-              "dem_pct": 27.82,
-              "rep_pct": 72.18,
-              "margin_pct": 44.35,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MONROE": {
-              "dem_votes": 2516,
-              "rep_votes": 6838,
-              "total_votes": 9354,
-              "dem_pct": 26.9,
-              "rep_pct": 73.1,
-              "margin_pct": 46.2,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "LINCOLN": {
-              "dem_votes": 1239,
-              "rep_votes": 4569,
-              "total_votes": 5808,
-              "dem_pct": 21.33,
-              "rep_pct": 78.67,
-              "margin_pct": 57.33,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "CANNON": {
-              "dem_votes": 826,
-              "rep_votes": 1771,
-              "total_votes": 2597,
-              "dem_pct": 31.81,
-              "rep_pct": 68.19,
-              "margin_pct": 36.39,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "WAYNE": {
-              "dem_votes": 535,
-              "rep_votes": 2017,
-              "total_votes": 2552,
-              "dem_pct": 20.96,
-              "rep_pct": 79.04,
-              "margin_pct": 58.07,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "FRANKLIN": {
-              "dem_votes": 2998,
-              "rep_votes": 5889,
-              "total_votes": 8887,
-              "dem_pct": 33.73,
-              "rep_pct": 66.27,
-              "margin_pct": 32.53,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "WHITE": {
-              "dem_votes": 1678,
-              "rep_votes": 3721,
-              "total_votes": 5399,
-              "dem_pct": 31.08,
-              "rep_pct": 68.92,
-              "margin_pct": 37.84,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "MEIGS": {
-              "dem_votes": 550,
-              "rep_votes": 1579,
-              "total_votes": 2129,
-              "dem_pct": 25.83,
-              "rep_pct": 74.17,
-              "margin_pct": 48.33,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "POLK": {
-              "dem_votes": 958,
-              "rep_votes": 2411,
-              "total_votes": 3369,
-              "dem_pct": 28.44,
-              "rep_pct": 71.56,
-              "margin_pct": 43.13,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "JOHNSON": {
-              "dem_votes": 595,
-              "rep_votes": 2400,
-              "total_votes": 2995,
-              "dem_pct": 19.87,
-              "rep_pct": 80.13,
-              "margin_pct": 60.27,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "CUMBERLAND": {
-              "dem_votes": 3737,
-              "rep_votes": 11439,
-              "total_votes": 15176,
-              "dem_pct": 24.62,
-              "rep_pct": 75.38,
-              "margin_pct": 50.75,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "LOUDON": {
-              "dem_votes": 3031,
-              "rep_votes": 10751,
-              "total_votes": 13782,
-              "dem_pct": 21.99,
-              "rep_pct": 78.01,
-              "margin_pct": 56.02,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "OVERTON": {
-              "dem_votes": 1321,
-              "rep_votes": 2334,
-              "total_votes": 3655,
-              "dem_pct": 36.14,
-              "rep_pct": 63.86,
-              "margin_pct": 27.72,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HARDIN": {
-              "dem_votes": 1057,
-              "rep_votes": 3803,
-              "total_votes": 4860,
-              "dem_pct": 21.75,
-              "rep_pct": 78.25,
-              "margin_pct": 56.5,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "CAMPBELL": {
-              "dem_votes": 1549,
-              "rep_votes": 4522,
-              "total_votes": 6071,
-              "dem_pct": 25.51,
-              "rep_pct": 74.49,
-              "margin_pct": 48.97,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "WARREN": {
-              "dem_votes": 2352,
-              "rep_votes": 4761,
-              "total_votes": 7113,
-              "dem_pct": 33.07,
-              "rep_pct": 66.93,
-              "margin_pct": 33.87,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "ANDERSON": {
-              "dem_votes": 5262,
-              "rep_votes": 11612,
-              "total_votes": 16874,
-              "dem_pct": 31.18,
-              "rep_pct": 68.82,
-              "margin_pct": 37.63,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "GREENE": {
-              "dem_votes": 2775,
-              "rep_votes": 9688,
-              "total_votes": 12463,
-              "dem_pct": 22.27,
-              "rep_pct": 77.73,
-              "margin_pct": 55.47,
               "competitiveness": {
                 "category": "Annihilation",
                 "color": "#67000d",
@@ -60851,6 +60383,19 @@
                 "description": "Annihilation Republican"
               }
             },
+            "SUMNER": {
+              "dem_votes": 9292,
+              "rep_votes": 25615,
+              "total_votes": 34907,
+              "dem_pct": 26.62,
+              "rep_pct": 73.38,
+              "margin_pct": 46.76,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
             "WILLIAMSON": {
               "dem_votes": 12660,
               "rep_votes": 42501,
@@ -60864,130 +60409,26 @@
                 "description": "Annihilation Republican"
               }
             },
-            "UNICOI": {
-              "dem_votes": 759,
-              "rep_votes": 2876,
-              "total_votes": 3635,
-              "dem_pct": 20.88,
-              "rep_pct": 79.12,
-              "margin_pct": 58.24,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "BEDFORD": {
-              "dem_votes": 1995,
-              "rep_votes": 5044,
-              "total_votes": 7039,
-              "dem_pct": 28.34,
-              "rep_pct": 71.66,
-              "margin_pct": 43.32,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "BRADLEY": {
-              "dem_votes": 3277,
-              "rep_votes": 16137,
-              "total_votes": 19414,
-              "dem_pct": 16.88,
-              "rep_pct": 83.12,
-              "margin_pct": 66.24,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HOUSTON": {
-              "dem_votes": 735,
-              "rep_votes": 947,
-              "total_votes": 1682,
-              "dem_pct": 43.7,
-              "rep_pct": 56.3,
-              "margin_pct": 12.6,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "SEQUATCHIE": {
-              "dem_votes": 652,
-              "rep_votes": 2258,
-              "total_votes": 2910,
-              "dem_pct": 22.41,
-              "rep_pct": 77.59,
-              "margin_pct": 55.19,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "JEFFERSON": {
-              "dem_votes": 2448,
-              "rep_votes": 7429,
-              "total_votes": 9877,
-              "dem_pct": 24.78,
-              "rep_pct": 75.22,
-              "margin_pct": 50.43,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HARDEMAN": {
-              "dem_votes": 1993,
-              "rep_votes": 2623,
-              "total_votes": 4616,
-              "dem_pct": 43.18,
-              "rep_pct": 56.82,
-              "margin_pct": 13.65,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "PERRY": {
-              "dem_votes": 447,
-              "rep_votes": 838,
-              "total_votes": 1285,
-              "dem_pct": 34.79,
-              "rep_pct": 65.21,
-              "margin_pct": 30.43,
+            "ANDERSON": {
+              "dem_votes": 5262,
+              "rep_votes": 11612,
+              "total_votes": 16874,
+              "dem_pct": 31.18,
+              "rep_pct": 68.82,
+              "margin_pct": 37.63,
               "competitiveness": {
                 "category": "Dominant",
                 "color": "#a50f15",
                 "description": "Dominant Republican"
               }
             },
-            "CHESTER": {
-              "dem_votes": 646,
-              "rep_votes": 2408,
-              "total_votes": 3054,
-              "dem_pct": 21.15,
-              "rep_pct": 78.85,
-              "margin_pct": 57.69,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HENRY": {
-              "dem_votes": 1968,
-              "rep_votes": 4816,
-              "total_votes": 6784,
-              "dem_pct": 29.01,
-              "rep_pct": 70.99,
-              "margin_pct": 41.98,
+            "MACON": {
+              "dem_votes": 725,
+              "rep_votes": 2312,
+              "total_votes": 3037,
+              "dem_pct": 23.87,
+              "rep_pct": 76.13,
+              "margin_pct": 52.26,
               "competitiveness": {
                 "category": "Annihilation",
                 "color": "#67000d",
@@ -61007,52 +60448,39 @@
                 "description": "Dominant Republican"
               }
             },
-            "ROANE": {
-              "dem_votes": 3477,
-              "rep_votes": 9194,
-              "total_votes": 12671,
-              "dem_pct": 27.44,
-              "rep_pct": 72.56,
-              "margin_pct": 45.12,
+            "LAKE": {
+              "dem_votes": 418,
+              "rep_votes": 619,
+              "total_votes": 1037,
+              "dem_pct": 40.31,
+              "rep_pct": 59.69,
+              "margin_pct": 19.38,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "GREENE": {
+              "dem_votes": 2775,
+              "rep_votes": 9688,
+              "total_votes": 12463,
+              "dem_pct": 22.27,
+              "rep_pct": 77.73,
+              "margin_pct": 55.47,
               "competitiveness": {
                 "category": "Annihilation",
                 "color": "#67000d",
                 "description": "Annihilation Republican"
               }
             },
-            "MACON": {
-              "dem_votes": 725,
-              "rep_votes": 2312,
-              "total_votes": 3037,
-              "dem_pct": 23.87,
-              "rep_pct": 76.13,
-              "margin_pct": 52.26,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HENDERSON": {
-              "dem_votes": 962,
-              "rep_votes": 3576,
-              "total_votes": 4538,
-              "dem_pct": 21.2,
-              "rep_pct": 78.8,
-              "margin_pct": 57.6,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "COFFEE": {
-              "dem_votes": 3037,
-              "rep_votes": 7414,
-              "total_votes": 10451,
-              "dem_pct": 29.06,
-              "rep_pct": 70.94,
-              "margin_pct": 41.88,
+            "LINCOLN": {
+              "dem_votes": 1239,
+              "rep_votes": 4569,
+              "total_votes": 5808,
+              "dem_pct": 21.33,
+              "rep_pct": 78.67,
+              "margin_pct": 57.33,
               "competitiveness": {
                 "category": "Annihilation",
                 "color": "#67000d",
@@ -61072,32 +60500,6 @@
                 "description": "Annihilation Republican"
               }
             },
-            "GILES": {
-              "dem_votes": 1710,
-              "rep_votes": 3474,
-              "total_votes": 5184,
-              "dem_pct": 32.99,
-              "rep_pct": 67.01,
-              "margin_pct": 34.03,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "BLOUNT": {
-              "dem_votes": 7160,
-              "rep_votes": 20560,
-              "total_votes": 27720,
-              "dem_pct": 25.83,
-              "rep_pct": 74.17,
-              "margin_pct": 48.34,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
             "MARSHALL": {
               "dem_votes": 1898,
               "rep_votes": 3650,
@@ -61111,435 +60513,6 @@
                 "description": "Dominant Republican"
               }
             },
-            "BENTON": {
-              "dem_votes": 1293,
-              "rep_votes": 2202,
-              "total_votes": 3495,
-              "dem_pct": 37.0,
-              "rep_pct": 63.0,
-              "margin_pct": 26.01,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "FENTRESS": {
-              "dem_votes": 744,
-              "rep_votes": 2250,
-              "total_votes": 2994,
-              "dem_pct": 24.85,
-              "rep_pct": 75.15,
-              "margin_pct": 50.3,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "SMITH": {
-              "dem_votes": 1427,
-              "rep_votes": 2559,
-              "total_votes": 3986,
-              "dem_pct": 35.8,
-              "rep_pct": 64.2,
-              "margin_pct": 28.4,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "TROUSDALE": {
-              "dem_votes": 554,
-              "rep_votes": 856,
-              "total_votes": 1410,
-              "dem_pct": 39.29,
-              "rep_pct": 60.71,
-              "margin_pct": 21.42,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "LAWRENCE": {
-              "dem_votes": 2306,
-              "rep_votes": 5888,
-              "total_votes": 8194,
-              "dem_pct": 28.14,
-              "rep_pct": 71.86,
-              "margin_pct": 43.71,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MAURY": {
-              "dem_votes": 5831,
-              "rep_votes": 11489,
-              "total_votes": 17320,
-              "dem_pct": 33.67,
-              "rep_pct": 66.33,
-              "margin_pct": 32.67,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "HAYWOOD": {
-              "dem_votes": 1544,
-              "rep_votes": 1727,
-              "total_votes": 3271,
-              "dem_pct": 47.2,
-              "rep_pct": 52.8,
-              "margin_pct": 5.59,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MOORE": {
-              "dem_votes": 445,
-              "rep_votes": 1152,
-              "total_votes": 1597,
-              "dem_pct": 27.86,
-              "rep_pct": 72.14,
-              "margin_pct": 44.27,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "DYER": {
-              "dem_votes": 1574,
-              "rep_votes": 5093,
-              "total_votes": 6667,
-              "dem_pct": 23.61,
-              "rep_pct": 76.39,
-              "margin_pct": 52.78,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "HICKMAN": {
-              "dem_votes": 1387,
-              "rep_votes": 2584,
-              "total_votes": 3971,
-              "dem_pct": 34.93,
-              "rep_pct": 65.07,
-              "margin_pct": 30.14,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "TIPTON": {
-              "dem_votes": 2825,
-              "rep_votes": 8550,
-              "total_votes": 11375,
-              "dem_pct": 24.84,
-              "rep_pct": 75.16,
-              "margin_pct": 50.33,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "PUTNAM": {
-              "dem_votes": 3892,
-              "rep_votes": 9127,
-              "total_votes": 13019,
-              "dem_pct": 29.89,
-              "rep_pct": 70.11,
-              "margin_pct": 40.21,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "STEWART": {
-              "dem_votes": 968,
-              "rep_votes": 1815,
-              "total_votes": 2783,
-              "dem_pct": 34.78,
-              "rep_pct": 65.22,
-              "margin_pct": 30.43,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "OBION": {
-              "dem_votes": 1500,
-              "rep_votes": 4631,
-              "total_votes": 6131,
-              "dem_pct": 24.47,
-              "rep_pct": 75.53,
-              "margin_pct": 51.07,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "CARROLL": {
-              "dem_votes": 1677,
-              "rep_votes": 4091,
-              "total_votes": 5768,
-              "dem_pct": 29.07,
-              "rep_pct": 70.93,
-              "margin_pct": 41.85,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "SEVIER": {
-              "dem_votes": 3627,
-              "rep_votes": 14073,
-              "total_votes": 17700,
-              "dem_pct": 20.49,
-              "rep_pct": 79.51,
-              "margin_pct": 59.02,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MADISON": {
-              "dem_votes": 7871,
-              "rep_votes": 13377,
-              "total_votes": 21248,
-              "dem_pct": 37.04,
-              "rep_pct": 62.96,
-              "margin_pct": 25.91,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "ROBERTSON": {
-              "dem_votes": 3751,
-              "rep_votes": 9028,
-              "total_votes": 12779,
-              "dem_pct": 29.35,
-              "rep_pct": 70.65,
-              "margin_pct": 41.29,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "DICKSON": {
-              "dem_votes": 3175,
-              "rep_votes": 6282,
-              "total_votes": 9457,
-              "dem_pct": 33.57,
-              "rep_pct": 66.43,
-              "margin_pct": 32.85,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "HAMBLEN": {
-              "dem_votes": 2484,
-              "rep_votes": 8157,
-              "total_votes": 10641,
-              "dem_pct": 23.34,
-              "rep_pct": 76.66,
-              "margin_pct": 53.31,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "GRAINGER": {
-              "dem_votes": 987,
-              "rep_votes": 2950,
-              "total_votes": 3937,
-              "dem_pct": 25.07,
-              "rep_pct": 74.93,
-              "margin_pct": 49.86,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "SHELBY": {
-              "dem_votes": 88921,
-              "rep_votes": 90415,
-              "total_votes": 179336,
-              "dem_pct": 49.58,
-              "rep_pct": 50.42,
-              "margin_pct": 0.83,
-              "competitiveness": {
-                "category": "Tilt",
-                "color": "#fee8c8",
-                "description": "Tilt Republican"
-              }
-            },
-            "CLAIBORNE": {
-              "dem_votes": 1326,
-              "rep_votes": 3695,
-              "total_votes": 5021,
-              "dem_pct": 26.41,
-              "rep_pct": 73.59,
-              "margin_pct": 47.18,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "MCNAIRY": {
-              "dem_votes": 1343,
-              "rep_votes": 3696,
-              "total_votes": 5039,
-              "dem_pct": 26.65,
-              "rep_pct": 73.35,
-              "margin_pct": 46.7,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "SCOTT": {
-              "dem_votes": 755,
-              "rep_votes": 2143,
-              "total_votes": 2898,
-              "dem_pct": 26.05,
-              "rep_pct": 73.95,
-              "margin_pct": 47.9,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "VAN BUREN": {
-              "dem_votes": 531,
-              "rep_votes": 888,
-              "total_votes": 1419,
-              "dem_pct": 37.42,
-              "rep_pct": 62.58,
-              "margin_pct": 25.16,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HAWKINS": {
-              "dem_votes": 2288,
-              "rep_votes": 8037,
-              "total_votes": 10325,
-              "dem_pct": 22.16,
-              "rep_pct": 77.84,
-              "margin_pct": 55.68,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "COCKE": {
-              "dem_votes": 2499,
-              "rep_votes": 4391,
-              "total_votes": 6890,
-              "dem_pct": 36.27,
-              "rep_pct": 63.73,
-              "margin_pct": 27.46,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "WILSON": {
-              "dem_votes": 7903,
-              "rep_votes": 20260,
-              "total_votes": 28163,
-              "dem_pct": 28.06,
-              "rep_pct": 71.94,
-              "margin_pct": 43.88,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "JACKSON": {
-              "dem_votes": 838,
-              "rep_votes": 1326,
-              "total_votes": 2164,
-              "dem_pct": 38.72,
-              "rep_pct": 61.28,
-              "margin_pct": 22.55,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "LAUDERDALE": {
-              "dem_votes": 1393,
-              "rep_votes": 2411,
-              "total_votes": 3804,
-              "dem_pct": 36.62,
-              "rep_pct": 63.38,
-              "margin_pct": 26.76,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "SULLIVAN": {
-              "dem_votes": 6243,
-              "rep_votes": 24425,
-              "total_votes": 30668,
-              "dem_pct": 20.36,
-              "rep_pct": 79.64,
-              "margin_pct": 59.29,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "GIBSON": {
-              "dem_votes": 2825,
-              "rep_votes": 7235,
-              "total_votes": 10060,
-              "dem_pct": 28.08,
-              "rep_pct": 71.92,
-              "margin_pct": 43.84,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
             "CARTER": {
               "dem_votes": 2053,
               "rep_votes": 7983,
@@ -61547,19 +60520,6 @@
               "dem_pct": 20.46,
               "rep_pct": 79.54,
               "margin_pct": 59.09,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#67000d",
-                "description": "Annihilation Republican"
-              }
-            },
-            "BLEDSOE": {
-              "dem_votes": 635,
-              "rep_votes": 1812,
-              "total_votes": 2447,
-              "dem_pct": 25.95,
-              "rep_pct": 74.05,
-              "margin_pct": 48.1,
               "competitiveness": {
                 "category": "Annihilation",
                 "color": "#67000d",
@@ -61579,6 +60539,396 @@
                 "description": "Stronghold Republican"
               }
             },
+            "COCKE": {
+              "dem_votes": 2499,
+              "rep_votes": 4391,
+              "total_votes": 6890,
+              "dem_pct": 36.27,
+              "rep_pct": 63.73,
+              "margin_pct": 27.46,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "HUMPHREYS": {
+              "dem_votes": 1561,
+              "rep_votes": 2227,
+              "total_votes": 3788,
+              "dem_pct": 41.21,
+              "rep_pct": 58.79,
+              "margin_pct": 17.58,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "BLOUNT": {
+              "dem_votes": 7160,
+              "rep_votes": 20560,
+              "total_votes": 27720,
+              "dem_pct": 25.83,
+              "rep_pct": 74.17,
+              "margin_pct": 48.34,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "BRADLEY": {
+              "dem_votes": 3277,
+              "rep_votes": 16137,
+              "total_votes": 19414,
+              "dem_pct": 16.88,
+              "rep_pct": 83.12,
+              "margin_pct": 66.24,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "VAN BUREN": {
+              "dem_votes": 531,
+              "rep_votes": 888,
+              "total_votes": 1419,
+              "dem_pct": 37.42,
+              "rep_pct": 62.58,
+              "margin_pct": 25.16,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "WARREN": {
+              "dem_votes": 2352,
+              "rep_votes": 4761,
+              "total_votes": 7113,
+              "dem_pct": 33.07,
+              "rep_pct": 66.93,
+              "margin_pct": 33.87,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "SEVIER": {
+              "dem_votes": 3627,
+              "rep_votes": 14073,
+              "total_votes": 17700,
+              "dem_pct": 20.49,
+              "rep_pct": 79.51,
+              "margin_pct": 59.02,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "WILSON": {
+              "dem_votes": 7903,
+              "rep_votes": 20260,
+              "total_votes": 28163,
+              "dem_pct": 28.06,
+              "rep_pct": 71.94,
+              "margin_pct": 43.88,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "OVERTON": {
+              "dem_votes": 1321,
+              "rep_votes": 2334,
+              "total_votes": 3655,
+              "dem_pct": 36.14,
+              "rep_pct": 63.86,
+              "margin_pct": 27.72,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "OBION": {
+              "dem_votes": 1500,
+              "rep_votes": 4631,
+              "total_votes": 6131,
+              "dem_pct": 24.47,
+              "rep_pct": 75.53,
+              "margin_pct": 51.07,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "PUTNAM": {
+              "dem_votes": 3892,
+              "rep_votes": 9127,
+              "total_votes": 13019,
+              "dem_pct": 29.89,
+              "rep_pct": 70.11,
+              "margin_pct": 40.21,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "WEAKLEY": {
+              "dem_votes": 1852,
+              "rep_votes": 5067,
+              "total_votes": 6919,
+              "dem_pct": 26.77,
+              "rep_pct": 73.23,
+              "margin_pct": 46.47,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "PERRY": {
+              "dem_votes": 447,
+              "rep_votes": 838,
+              "total_votes": 1285,
+              "dem_pct": 34.79,
+              "rep_pct": 65.21,
+              "margin_pct": 30.43,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "UNICOI": {
+              "dem_votes": 759,
+              "rep_votes": 2876,
+              "total_votes": 3635,
+              "dem_pct": 20.88,
+              "rep_pct": 79.12,
+              "margin_pct": 58.24,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "LAWRENCE": {
+              "dem_votes": 2306,
+              "rep_votes": 5888,
+              "total_votes": 8194,
+              "dem_pct": 28.14,
+              "rep_pct": 71.86,
+              "margin_pct": 43.71,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "COFFEE": {
+              "dem_votes": 3037,
+              "rep_votes": 7414,
+              "total_votes": 10451,
+              "dem_pct": 29.06,
+              "rep_pct": 70.94,
+              "margin_pct": 41.88,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "MORGAN": {
+              "dem_votes": 982,
+              "rep_votes": 2426,
+              "total_votes": 3408,
+              "dem_pct": 28.81,
+              "rep_pct": 71.19,
+              "margin_pct": 42.37,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "DICKSON": {
+              "dem_votes": 3175,
+              "rep_votes": 6282,
+              "total_votes": 9457,
+              "dem_pct": 33.57,
+              "rep_pct": 66.43,
+              "margin_pct": 32.85,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "ROBERTSON": {
+              "dem_votes": 3751,
+              "rep_votes": 9028,
+              "total_votes": 12779,
+              "dem_pct": 29.35,
+              "rep_pct": 70.65,
+              "margin_pct": 41.29,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "TIPTON": {
+              "dem_votes": 2825,
+              "rep_votes": 8550,
+              "total_votes": 11375,
+              "dem_pct": 24.84,
+              "rep_pct": 75.16,
+              "margin_pct": 50.33,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "SULLIVAN": {
+              "dem_votes": 6243,
+              "rep_votes": 24425,
+              "total_votes": 30668,
+              "dem_pct": 20.36,
+              "rep_pct": 79.64,
+              "margin_pct": 59.29,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HAYWOOD": {
+              "dem_votes": 1544,
+              "rep_votes": 1727,
+              "total_votes": 3271,
+              "dem_pct": 47.2,
+              "rep_pct": 52.8,
+              "margin_pct": 5.59,
+              "competitiveness": {
+                "category": "Likely",
+                "color": "#fb6a4a",
+                "description": "Likely Republican"
+              }
+            },
+            "MAURY": {
+              "dem_votes": 5831,
+              "rep_votes": 11489,
+              "total_votes": 17320,
+              "dem_pct": 33.67,
+              "rep_pct": 66.33,
+              "margin_pct": 32.67,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "FAYETTE": {
+              "dem_votes": 2517,
+              "rep_votes": 7402,
+              "total_votes": 9919,
+              "dem_pct": 25.38,
+              "rep_pct": 74.62,
+              "margin_pct": 49.25,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "FENTRESS": {
+              "dem_votes": 744,
+              "rep_votes": 2250,
+              "total_votes": 2994,
+              "dem_pct": 24.85,
+              "rep_pct": 75.15,
+              "margin_pct": 50.3,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HARDIN": {
+              "dem_votes": 1057,
+              "rep_votes": 3803,
+              "total_votes": 4860,
+              "dem_pct": 21.75,
+              "rep_pct": 78.25,
+              "margin_pct": 56.5,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "DEKALB": {
+              "dem_votes": 1191,
+              "rep_votes": 2165,
+              "total_votes": 3356,
+              "dem_pct": 35.49,
+              "rep_pct": 64.51,
+              "margin_pct": 29.02,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "CANNON": {
+              "dem_votes": 826,
+              "rep_votes": 1771,
+              "total_votes": 2597,
+              "dem_pct": 31.81,
+              "rep_pct": 68.19,
+              "margin_pct": 36.39,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "BEDFORD": {
+              "dem_votes": 1995,
+              "rep_votes": 5044,
+              "total_votes": 7039,
+              "dem_pct": 28.34,
+              "rep_pct": 71.66,
+              "margin_pct": 43.32,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "RHEA": {
+              "dem_votes": 1071,
+              "rep_votes": 4601,
+              "total_votes": 5672,
+              "dem_pct": 18.88,
+              "rep_pct": 81.12,
+              "margin_pct": 62.24,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
             "DAVIDSON": {
               "dem_votes": 69665,
               "rep_votes": 59972,
@@ -61590,6 +60940,656 @@
                 "category": "Likely",
                 "color": "#9ecae1",
                 "description": "Likely Democratic"
+              }
+            },
+            "LAUDERDALE": {
+              "dem_votes": 1393,
+              "rep_votes": 2411,
+              "total_votes": 3804,
+              "dem_pct": 36.62,
+              "rep_pct": 63.38,
+              "margin_pct": 26.76,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "SMITH": {
+              "dem_votes": 1427,
+              "rep_votes": 2559,
+              "total_votes": 3986,
+              "dem_pct": 35.8,
+              "rep_pct": 64.2,
+              "margin_pct": 28.4,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "HAMBLEN": {
+              "dem_votes": 2484,
+              "rep_votes": 8157,
+              "total_votes": 10641,
+              "dem_pct": 23.34,
+              "rep_pct": 76.66,
+              "margin_pct": 53.31,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HOUSTON": {
+              "dem_votes": 735,
+              "rep_votes": 947,
+              "total_votes": 1682,
+              "dem_pct": 43.7,
+              "rep_pct": 56.3,
+              "margin_pct": 12.6,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "GRUNDY": {
+              "dem_votes": 817,
+              "rep_votes": 1372,
+              "total_votes": 2189,
+              "dem_pct": 37.32,
+              "rep_pct": 62.68,
+              "margin_pct": 25.35,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "JACKSON": {
+              "dem_votes": 838,
+              "rep_votes": 1326,
+              "total_votes": 2164,
+              "dem_pct": 38.72,
+              "rep_pct": 61.28,
+              "margin_pct": 22.55,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "MONROE": {
+              "dem_votes": 2516,
+              "rep_votes": 6838,
+              "total_votes": 9354,
+              "dem_pct": 26.9,
+              "rep_pct": 73.1,
+              "margin_pct": 46.2,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HAWKINS": {
+              "dem_votes": 2288,
+              "rep_votes": 8037,
+              "total_votes": 10325,
+              "dem_pct": 22.16,
+              "rep_pct": 77.84,
+              "margin_pct": 55.68,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CAMPBELL": {
+              "dem_votes": 1549,
+              "rep_votes": 4522,
+              "total_votes": 6071,
+              "dem_pct": 25.51,
+              "rep_pct": 74.49,
+              "margin_pct": 48.97,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "BLEDSOE": {
+              "dem_votes": 635,
+              "rep_votes": 1812,
+              "total_votes": 2447,
+              "dem_pct": 25.95,
+              "rep_pct": 74.05,
+              "margin_pct": 48.1,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "STEWART": {
+              "dem_votes": 968,
+              "rep_votes": 1815,
+              "total_votes": 2783,
+              "dem_pct": 34.78,
+              "rep_pct": 65.22,
+              "margin_pct": 30.43,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "JEFFERSON": {
+              "dem_votes": 2448,
+              "rep_votes": 7429,
+              "total_votes": 9877,
+              "dem_pct": 24.78,
+              "rep_pct": 75.22,
+              "margin_pct": 50.43,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "FRANKLIN": {
+              "dem_votes": 2998,
+              "rep_votes": 5889,
+              "total_votes": 8887,
+              "dem_pct": 33.73,
+              "rep_pct": 66.27,
+              "margin_pct": 32.53,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "SCOTT": {
+              "dem_votes": 755,
+              "rep_votes": 2143,
+              "total_votes": 2898,
+              "dem_pct": 26.05,
+              "rep_pct": 73.95,
+              "margin_pct": 47.9,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "ROANE": {
+              "dem_votes": 3477,
+              "rep_votes": 9194,
+              "total_votes": 12671,
+              "dem_pct": 27.44,
+              "rep_pct": 72.56,
+              "margin_pct": 45.12,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "WAYNE": {
+              "dem_votes": 535,
+              "rep_votes": 2017,
+              "total_votes": 2552,
+              "dem_pct": 20.96,
+              "rep_pct": 79.04,
+              "margin_pct": 58.07,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "MEIGS": {
+              "dem_votes": 550,
+              "rep_votes": 1579,
+              "total_votes": 2129,
+              "dem_pct": 25.83,
+              "rep_pct": 74.17,
+              "margin_pct": 48.33,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HAMILTON": {
+              "dem_votes": 25373,
+              "rep_votes": 51347,
+              "total_votes": 76720,
+              "dem_pct": 33.07,
+              "rep_pct": 66.93,
+              "margin_pct": 33.86,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "MOORE": {
+              "dem_votes": 445,
+              "rep_votes": 1152,
+              "total_votes": 1597,
+              "dem_pct": 27.86,
+              "rep_pct": 72.14,
+              "margin_pct": 44.27,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CLAIBORNE": {
+              "dem_votes": 1326,
+              "rep_votes": 3695,
+              "total_votes": 5021,
+              "dem_pct": 26.41,
+              "rep_pct": 73.59,
+              "margin_pct": 47.18,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "RUTHERFORD": {
+              "dem_votes": 16761,
+              "rep_votes": 33612,
+              "total_votes": 50373,
+              "dem_pct": 33.27,
+              "rep_pct": 66.73,
+              "margin_pct": 33.45,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "HANCOCK": {
+              "dem_votes": 231,
+              "rep_votes": 650,
+              "total_votes": 881,
+              "dem_pct": 26.22,
+              "rep_pct": 73.78,
+              "margin_pct": 47.56,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "LEWIS": {
+              "dem_votes": 736,
+              "rep_votes": 1655,
+              "total_votes": 2391,
+              "dem_pct": 30.78,
+              "rep_pct": 69.22,
+              "margin_pct": 38.44,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "CUMBERLAND": {
+              "dem_votes": 3737,
+              "rep_votes": 11439,
+              "total_votes": 15176,
+              "dem_pct": 24.62,
+              "rep_pct": 75.38,
+              "margin_pct": 50.75,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "KNOX": {
+              "dem_votes": 30802,
+              "rep_votes": 66093,
+              "total_votes": 96895,
+              "dem_pct": 31.79,
+              "rep_pct": 68.21,
+              "margin_pct": 36.42,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "DYER": {
+              "dem_votes": 1574,
+              "rep_votes": 5093,
+              "total_votes": 6667,
+              "dem_pct": 23.61,
+              "rep_pct": 76.39,
+              "margin_pct": 52.78,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "DECATUR": {
+              "dem_votes": 693,
+              "rep_votes": 1450,
+              "total_votes": 2143,
+              "dem_pct": 32.34,
+              "rep_pct": 67.66,
+              "margin_pct": 35.32,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "POLK": {
+              "dem_votes": 958,
+              "rep_votes": 2411,
+              "total_votes": 3369,
+              "dem_pct": 28.44,
+              "rep_pct": 71.56,
+              "margin_pct": 43.13,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CARROLL": {
+              "dem_votes": 1677,
+              "rep_votes": 4091,
+              "total_votes": 5768,
+              "dem_pct": 29.07,
+              "rep_pct": 70.93,
+              "margin_pct": 41.85,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "GILES": {
+              "dem_votes": 1710,
+              "rep_votes": 3474,
+              "total_votes": 5184,
+              "dem_pct": 32.99,
+              "rep_pct": 67.01,
+              "margin_pct": 34.03,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "LOUDON": {
+              "dem_votes": 3031,
+              "rep_votes": 10751,
+              "total_votes": 13782,
+              "dem_pct": 21.99,
+              "rep_pct": 78.01,
+              "margin_pct": 56.02,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "BENTON": {
+              "dem_votes": 1293,
+              "rep_votes": 2202,
+              "total_votes": 3495,
+              "dem_pct": 37.0,
+              "rep_pct": 63.0,
+              "margin_pct": 26.01,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "MCMINN": {
+              "dem_votes": 2177,
+              "rep_votes": 7717,
+              "total_votes": 9894,
+              "dem_pct": 22.0,
+              "rep_pct": 78.0,
+              "margin_pct": 55.99,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HARDEMAN": {
+              "dem_votes": 1993,
+              "rep_votes": 2623,
+              "total_votes": 4616,
+              "dem_pct": 43.18,
+              "rep_pct": 56.82,
+              "margin_pct": 13.65,
+              "competitiveness": {
+                "category": "Safe",
+                "color": "#ef3b2c",
+                "description": "Safe Republican"
+              }
+            },
+            "MCNAIRY": {
+              "dem_votes": 1343,
+              "rep_votes": 3696,
+              "total_votes": 5039,
+              "dem_pct": 26.65,
+              "rep_pct": 73.35,
+              "margin_pct": 46.7,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "GRAINGER": {
+              "dem_votes": 987,
+              "rep_votes": 2950,
+              "total_votes": 3937,
+              "dem_pct": 25.07,
+              "rep_pct": 74.93,
+              "margin_pct": 49.86,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "MADISON": {
+              "dem_votes": 7871,
+              "rep_votes": 13377,
+              "total_votes": 21248,
+              "dem_pct": 37.04,
+              "rep_pct": 62.96,
+              "margin_pct": 25.91,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "PICKETT": {
+              "dem_votes": 426,
+              "rep_votes": 1105,
+              "total_votes": 1531,
+              "dem_pct": 27.82,
+              "rep_pct": 72.18,
+              "margin_pct": 44.35,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "SEQUATCHIE": {
+              "dem_votes": 652,
+              "rep_votes": 2258,
+              "total_votes": 2910,
+              "dem_pct": 22.41,
+              "rep_pct": 77.59,
+              "margin_pct": 55.19,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HENRY": {
+              "dem_votes": 1968,
+              "rep_votes": 4816,
+              "total_votes": 6784,
+              "dem_pct": 29.01,
+              "rep_pct": 70.99,
+              "margin_pct": 41.98,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CROCKETT": {
+              "dem_votes": 737,
+              "rep_votes": 1980,
+              "total_votes": 2717,
+              "dem_pct": 27.13,
+              "rep_pct": 72.87,
+              "margin_pct": 45.75,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "TROUSDALE": {
+              "dem_votes": 554,
+              "rep_votes": 856,
+              "total_votes": 1410,
+              "dem_pct": 39.29,
+              "rep_pct": 60.71,
+              "margin_pct": 21.42,
+              "competitiveness": {
+                "category": "Stronghold",
+                "color": "#cb181d",
+                "description": "Stronghold Republican"
+              }
+            },
+            "GIBSON": {
+              "dem_votes": 2825,
+              "rep_votes": 7235,
+              "total_votes": 10060,
+              "dem_pct": 28.08,
+              "rep_pct": 71.92,
+              "margin_pct": 43.84,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CLAY": {
+              "dem_votes": 468,
+              "rep_votes": 905,
+              "total_votes": 1373,
+              "dem_pct": 34.09,
+              "rep_pct": 65.91,
+              "margin_pct": 31.83,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "HENDERSON": {
+              "dem_votes": 962,
+              "rep_votes": 3576,
+              "total_votes": 4538,
+              "dem_pct": 21.2,
+              "rep_pct": 78.8,
+              "margin_pct": 57.6,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "JOHNSON": {
+              "dem_votes": 595,
+              "rep_votes": 2400,
+              "total_votes": 2995,
+              "dem_pct": 19.87,
+              "rep_pct": 80.13,
+              "margin_pct": 60.27,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "CHESTER": {
+              "dem_votes": 646,
+              "rep_votes": 2408,
+              "total_votes": 3054,
+              "dem_pct": 21.15,
+              "rep_pct": 78.85,
+              "margin_pct": 57.69,
+              "competitiveness": {
+                "category": "Annihilation",
+                "color": "#67000d",
+                "description": "Annihilation Republican"
+              }
+            },
+            "HICKMAN": {
+              "dem_votes": 1387,
+              "rep_votes": 2584,
+              "total_votes": 3971,
+              "dem_pct": 34.93,
+              "rep_pct": 65.07,
+              "margin_pct": 30.14,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "WHITE": {
+              "dem_votes": 1678,
+              "rep_votes": 3721,
+              "total_votes": 5399,
+              "dem_pct": 31.08,
+              "rep_pct": 68.92,
+              "margin_pct": 37.84,
+              "competitiveness": {
+                "category": "Dominant",
+                "color": "#a50f15",
+                "description": "Dominant Republican"
+              }
+            },
+            "SHELBY": {
+              "dem_votes": 88921,
+              "rep_votes": 90415,
+              "total_votes": 179336,
+              "dem_pct": 49.58,
+              "rep_pct": 50.42,
+              "margin_pct": 0.83,
+              "competitiveness": {
+                "category": "Tilt",
+                "color": "#fee8c8",
+                "description": "Tilt Republican"
               }
             }
           }

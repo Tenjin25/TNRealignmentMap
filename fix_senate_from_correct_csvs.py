@@ -71,10 +71,10 @@ def load_2006_senate_from_csv():
     df = pd.read_csv('Election_Data/CSVs/20061107__tn__general__senate__precinct.csv')
     
     # Filter for main candidates
-    harold_ford = df[df['candidate'] == 'Harold Ford, Jr.'].copy()
+    harold_ford = df[df['candidate'] == 'Harold Ford Jr.'].copy()
     bob_corker = df[df['candidate'] == 'Bob Corker'].copy()
     
-    print(f"Found {len(harold_ford)} Harold Ford, Jr. records")
+    print(f"Found {len(harold_ford)} Harold Ford Jr. records")
     print(f"Found {len(bob_corker)} Bob Corker records")
     
     # Aggregate by county

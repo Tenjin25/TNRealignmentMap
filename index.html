@@ -1157,7 +1157,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       
     }
 
-    function updateStatewideResults(contestType, year, demVotes, repVotes, totalVotes) {
+    function updateStatewideResults(contestType, year, demVotes, repVotes, totalVotes, otherVotes = 0) {
       const statewideContent = document.getElementById('statewide-content');
       const tempBar = document.getElementById('statewide-temperature-bar');
       if (!statewideContent) return;
@@ -1170,6 +1170,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       
       const demPct = (demVotes / totalVotes) * 100;
       const repPct = (repVotes / totalVotes) * 100;
+      const otherPct = (otherVotes / totalVotes) * 100;
       const marginPct = Math.abs(demPct - repPct);
       const winner = demPct > repPct ? 'Democratic' : 'Republican';
       const loser = demPct > repPct ? 'Republican' : 'Democratic';
@@ -1223,14 +1224,18 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
             <div id="statewide-temperature-bar" style="width:100%;height:32px;border-radius:16px;display:flex;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
               <div style="width:${demPct}%;background:#2563eb;"></div>
               <div style="width:${repPct}%;background:#dc2626;"></div>
+              ${otherPct > 0 ? `<div style="width:${otherPct}%;background:#6b7280;"></div>` : ''}
             </div>
-            <div style="display:flex;justify-content:space-between;margin-top:6px;">
+            <div style="display:flex;justify-content:space-between;margin-top:6px;flex-wrap:wrap;gap:8px;">
               <div style="color:#2563eb;font-size:15px;font-weight:700;">
                 D: ${demVotes.toLocaleString()} (${demPct.toFixed(2)}%)
               </div>
               <div style="color:#dc2626;font-size:15px;font-weight:700;">
                 R: ${repVotes.toLocaleString()} (${repPct.toFixed(2)}%)
               </div>
+              ${otherPct > 0 ? `<div style="color:#6b7280;font-size:15px;font-weight:700;">
+                Other: ${otherVotes.toLocaleString()} (${otherPct.toFixed(2)}%)
+              </div>` : ''}
             </div>
           </div>
           <div style="margin-top:10px;font-size:15px;color:#374151;font-weight:600;">
@@ -2562,7 +2567,7 @@ function toggleSidebar() {
       });
 
       // Update the statewide results display
-      updateStatewideResults(currentContest.contestType, currentContest.year, totalDemVotes, totalRepVotes, totalVotes);
+      updateStatewideResults(currentContest.contestType, currentContest.year, totalDemVotes, totalRepVotes, totalVotes, totalOtherVotes);
     }
 
     function onCountyClick(e) {
