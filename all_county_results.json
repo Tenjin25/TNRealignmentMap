@@ -11907,1244 +11907,2669 @@
       },
       "us_senate": {
         "us_senate_2006_1": {
-          "contest_name": "2006 US Senate - Harold Ford Jr. (D) vs Bob Corker (R)",
+          "contest_name": "US Senate - Harold Ford Jr. (D) vs Bob Corker (R)",
           "dem_candidate": "Harold Ford Jr.",
           "rep_candidate": "Bob Corker",
           "results": {
-            "SHELBY": {
-              "dem_votes": 136528,
-              "rep_votes": 40871,
-              "total_votes": 177399,
-              "dem_pct": 76.96,
-              "rep_pct": 23.04,
-              "margin_pct": 53.92,
-              "competitiveness": {
-                "category": "Annihilation",
-                "color": "#08306b",
-                "description": "Annihilation Democratic"
-              }
-            },
-            "WASHINGTON": {
-              "dem_votes": 12894,
-              "rep_votes": 21147,
-              "total_votes": 34041,
-              "dem_pct": 37.88,
-              "rep_pct": 62.12,
-              "margin_pct": 24.24,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "COFFEE": {
-              "dem_votes": 7147,
-              "rep_votes": 8069,
-              "total_votes": 15216,
-              "dem_pct": 46.97,
-              "rep_pct": 53.03,
-              "margin_pct": 6.06,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "WHITE": {
-              "dem_votes": 3894,
-              "rep_votes": 3601,
-              "total_votes": 7495,
-              "dem_pct": 51.95,
-              "rep_pct": 48.05,
-              "margin_pct": 3.91,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "BLOUNT": {
-              "dem_votes": 13372,
-              "rep_votes": 22046,
-              "total_votes": 35418,
-              "dem_pct": 37.75,
-              "rep_pct": 62.25,
-              "margin_pct": 24.49,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HICKMAN": {
-              "dem_votes": 3743,
-              "rep_votes": 2852,
-              "total_votes": 6595,
-              "dem_pct": 56.76,
-              "rep_pct": 43.24,
-              "margin_pct": 13.51,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "LOUDON": {
-              "dem_votes": 5369,
-              "rep_votes": 10812,
-              "total_votes": 16181,
-              "dem_pct": 33.18,
-              "rep_pct": 66.82,
-              "margin_pct": 33.64,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "HAYWOOD": {
-              "dem_votes": 3763,
-              "rep_votes": 2130,
-              "total_votes": 5893,
-              "dem_pct": 63.86,
-              "rep_pct": 36.14,
-              "margin_pct": 27.71,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "HENRY": {
-              "dem_votes": 4947,
-              "rep_votes": 4689,
-              "total_votes": 9636,
-              "dem_pct": 51.34,
-              "rep_pct": 48.66,
-              "margin_pct": 2.68,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "UNION": {
-              "dem_votes": 2025,
-              "rep_votes": 2418,
-              "total_votes": 4443,
-              "dem_pct": 45.58,
-              "rep_pct": 54.42,
-              "margin_pct": 8.85,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MAURY": {
-              "dem_votes": 11128,
-              "rep_votes": 11994,
-              "total_votes": 23122,
-              "dem_pct": 48.13,
-              "rep_pct": 51.87,
-              "margin_pct": 3.75,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "CHESTER": {
-              "dem_votes": 1646,
-              "rep_votes": 2696,
-              "total_votes": 4342,
-              "dem_pct": 37.91,
-              "rep_pct": 62.09,
-              "margin_pct": 24.18,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CLAY": {
-              "dem_votes": 1425,
-              "rep_votes": 1015,
-              "total_votes": 2440,
-              "dem_pct": 58.4,
-              "rep_pct": 41.6,
-              "margin_pct": 16.8,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "WAYNE": {
-              "dem_votes": 1583,
-              "rep_votes": 2496,
-              "total_votes": 4079,
-              "dem_pct": 38.81,
-              "rep_pct": 61.19,
-              "margin_pct": 22.38,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "FAYETTE": {
-              "dem_votes": 5275,
-              "rep_votes": 7296,
-              "total_votes": 12571,
-              "dem_pct": 41.96,
-              "rep_pct": 58.04,
-              "margin_pct": 16.08,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "DYER": {
-              "dem_votes": 4848,
-              "rep_votes": 6115,
-              "total_votes": 10963,
-              "dem_pct": 44.22,
-              "rep_pct": 55.78,
-              "margin_pct": 11.56,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "PICKETT": {
-              "dem_votes": 977,
-              "rep_votes": 1124,
-              "total_votes": 2101,
-              "dem_pct": 46.5,
-              "rep_pct": 53.5,
-              "margin_pct": 7.0,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "LINCOLN": {
-              "dem_votes": 3470,
-              "rep_votes": 4535,
-              "total_votes": 8005,
-              "dem_pct": 43.35,
-              "rep_pct": 56.65,
-              "margin_pct": 13.3,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "TIPTON": {
-              "dem_votes": 6775,
-              "rep_votes": 9717,
-              "total_votes": 16492,
-              "dem_pct": 41.08,
-              "rep_pct": 58.92,
-              "margin_pct": 17.84,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "JACKSON": {
-              "dem_votes": 2531,
-              "rep_votes": 1350,
-              "total_votes": 3881,
-              "dem_pct": 65.22,
-              "rep_pct": 34.78,
-              "margin_pct": 30.43,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
-              }
-            },
-            "TROUSDALE": {
-              "dem_votes": 1674,
-              "rep_votes": 891,
-              "total_votes": 2565,
-              "dem_pct": 65.26,
-              "rep_pct": 34.74,
-              "margin_pct": 30.53,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
-              }
-            },
-            "HARDIN": {
-              "dem_votes": 3029,
-              "rep_votes": 4278,
-              "total_votes": 7307,
-              "dem_pct": 41.45,
-              "rep_pct": 58.55,
-              "margin_pct": 17.09,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "BRADLEY": {
-              "dem_votes": 8057,
-              "rep_votes": 18161,
-              "total_votes": 26218,
-              "dem_pct": 30.73,
-              "rep_pct": 69.27,
-              "margin_pct": 38.54,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "MACON": {
-              "dem_votes": 2410,
-              "rep_votes": 3033,
-              "total_votes": 5443,
-              "dem_pct": 44.28,
-              "rep_pct": 55.72,
-              "margin_pct": 11.45,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "WILLIAMSON": {
-              "dem_votes": 19682,
-              "rep_votes": 40852,
-              "total_votes": 60534,
-              "dem_pct": 32.51,
-              "rep_pct": 67.49,
-              "margin_pct": 34.97,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "GREENE": {
-              "dem_votes": 6419,
-              "rep_votes": 11852,
-              "total_votes": 18271,
-              "dem_pct": 35.13,
-              "rep_pct": 64.87,
-              "margin_pct": 29.74,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "SCOTT": {
-              "dem_votes": 2504,
-              "rep_votes": 2798,
-              "total_votes": 5302,
-              "dem_pct": 47.23,
-              "rep_pct": 52.77,
-              "margin_pct": 5.55,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MCNAIRY": {
-              "dem_votes": 3360,
-              "rep_votes": 4292,
-              "total_votes": 7652,
-              "dem_pct": 43.91,
-              "rep_pct": 56.09,
-              "margin_pct": 12.18,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "CHEATHAM": {
-              "dem_votes": 5146,
-              "rep_votes": 6134,
-              "total_votes": 11280,
-              "dem_pct": 45.62,
-              "rep_pct": 54.38,
-              "margin_pct": 8.76,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "DEKALB": {
-              "dem_votes": 2999,
-              "rep_votes": 2450,
-              "total_votes": 5449,
-              "dem_pct": 55.04,
-              "rep_pct": 44.96,
-              "margin_pct": 10.08,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "PERRY": {
-              "dem_votes": 1326,
-              "rep_votes": 964,
-              "total_votes": 2290,
-              "dem_pct": 57.9,
-              "rep_pct": 42.1,
-              "margin_pct": 15.81,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "SMITH": {
-              "dem_votes": 3622,
-              "rep_votes": 2610,
-              "total_votes": 6232,
-              "dem_pct": 58.12,
-              "rep_pct": 41.88,
-              "margin_pct": 16.24,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "OVERTON": {
-              "dem_votes": 3895,
-              "rep_votes": 2602,
-              "total_votes": 6497,
-              "dem_pct": 59.95,
-              "rep_pct": 40.05,
-              "margin_pct": 19.9,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "DICKSON": {
-              "dem_votes": 7232,
-              "rep_votes": 7014,
-              "total_votes": 14246,
-              "dem_pct": 50.77,
-              "rep_pct": 49.23,
-              "margin_pct": 1.53,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "OBION": {
-              "dem_votes": 4734,
-              "rep_votes": 4936,
-              "total_votes": 9670,
-              "dem_pct": 48.96,
-              "rep_pct": 51.04,
-              "margin_pct": 2.09,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "SULLIVAN": {
-              "dem_votes": 16814,
-              "rep_votes": 27872,
-              "total_votes": 44686,
-              "dem_pct": 37.63,
-              "rep_pct": 62.37,
-              "margin_pct": 24.75,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "GRAINGER": {
-              "dem_votes": 2211,
-              "rep_votes": 3198,
-              "total_votes": 5409,
-              "dem_pct": 40.88,
-              "rep_pct": 59.12,
-              "margin_pct": 18.25,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "COCKE": {
-              "dem_votes": 3563,
-              "rep_votes": 5952,
-              "total_votes": 9515,
-              "dem_pct": 37.45,
-              "rep_pct": 62.55,
-              "margin_pct": 25.11,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "WILSON": {
-              "dem_votes": 14520,
-              "rep_votes": 20662,
-              "total_votes": 35182,
-              "dem_pct": 41.27,
-              "rep_pct": 58.73,
-              "margin_pct": 17.46,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "CUMBERLAND": {
-              "dem_votes": 7471,
-              "rep_votes": 11515,
-              "total_votes": 18986,
-              "dem_pct": 39.35,
-              "rep_pct": 60.65,
-              "margin_pct": 21.3,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "POLK": {
-              "dem_votes": 2412,
-              "rep_votes": 2655,
-              "total_votes": 5067,
-              "dem_pct": 47.6,
-              "rep_pct": 52.4,
-              "margin_pct": 4.8,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "FRANKLIN": {
-              "dem_votes": 6477,
-              "rep_votes": 6142,
-              "total_votes": 12619,
-              "dem_pct": 51.33,
-              "rep_pct": 48.67,
-              "margin_pct": 2.65,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "CARTER": {
-              "dem_votes": 5664,
-              "rep_votes": 10577,
-              "total_votes": 16241,
-              "dem_pct": 34.87,
-              "rep_pct": 65.13,
-              "margin_pct": 30.25,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "MADISON": {
-              "dem_votes": 14549,
-              "rep_votes": 15367,
-              "total_votes": 29916,
-              "dem_pct": 48.63,
-              "rep_pct": 51.37,
-              "margin_pct": 2.73,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "FENTRESS": {
-              "dem_votes": 2237,
-              "rep_votes": 2918,
-              "total_votes": 5155,
-              "dem_pct": 43.39,
-              "rep_pct": 56.61,
-              "margin_pct": 13.21,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "HUMPHREYS": {
-              "dem_votes": 3915,
-              "rep_votes": 2236,
-              "total_votes": 6151,
-              "dem_pct": 63.65,
-              "rep_pct": 36.35,
-              "margin_pct": 27.3,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "KNOX": {
-              "dem_votes": 53293,
-              "rep_votes": 69129,
-              "total_votes": 122422,
-              "dem_pct": 43.53,
-              "rep_pct": 56.47,
-              "margin_pct": 12.94,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "MCMINN": {
-              "dem_votes": 5214,
-              "rep_votes": 8762,
-              "total_votes": 13976,
-              "dem_pct": 37.31,
-              "rep_pct": 62.69,
-              "margin_pct": 25.39,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HAWKINS": {
-              "dem_votes": 5943,
-              "rep_votes": 8636,
-              "total_votes": 14579,
-              "dem_pct": 40.76,
-              "rep_pct": 59.24,
-              "margin_pct": 18.47,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "CLAIBORNE": {
-              "dem_votes": 3426,
-              "rep_votes": 4112,
-              "total_votes": 7538,
-              "dem_pct": 45.45,
-              "rep_pct": 54.55,
-              "margin_pct": 9.1,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "GRUNDY": {
-              "dem_votes": 2367,
-              "rep_votes": 1466,
-              "total_votes": 3833,
-              "dem_pct": 61.75,
-              "rep_pct": 38.25,
-              "margin_pct": 23.51,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "CROCKETT": {
-              "dem_votes": 2246,
-              "rep_votes": 2212,
-              "total_votes": 4458,
-              "dem_pct": 50.38,
-              "rep_pct": 49.62,
-              "margin_pct": 0.76,
-              "competitiveness": {
-                "category": "Tilt",
-                "color": "#e1f5fe",
-                "description": "Tilt Democratic"
-              }
-            },
-            "DAVIDSON": {
-              "dem_votes": 106847,
-              "rep_votes": 67136,
-              "total_votes": 173983,
-              "dem_pct": 61.41,
-              "rep_pct": 38.59,
-              "margin_pct": 22.82,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "HOUSTON": {
-              "dem_votes": 1734,
-              "rep_votes": 931,
-              "total_votes": 2665,
-              "dem_pct": 65.07,
-              "rep_pct": 34.93,
-              "margin_pct": 30.13,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#08519c",
-                "description": "Dominant Democratic"
-              }
-            },
-            "ROBERTSON": {
-              "dem_votes": 8587,
-              "rep_votes": 10008,
-              "total_votes": 18595,
-              "dem_pct": 46.18,
-              "rep_pct": 53.82,
-              "margin_pct": 7.64,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "BENTON": {
-              "dem_votes": 3232,
-              "rep_votes": 2176,
-              "total_votes": 5408,
-              "dem_pct": 59.76,
-              "rep_pct": 40.24,
-              "margin_pct": 19.53,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "HAMILTON": {
-              "dem_votes": 49904,
-              "rep_votes": 57411,
-              "total_votes": 107315,
-              "dem_pct": 46.5,
-              "rep_pct": 53.5,
-              "margin_pct": 7.0,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "MARION": {
-              "dem_votes": 4775,
-              "rep_votes": 3944,
-              "total_votes": 8719,
-              "dem_pct": 54.77,
-              "rep_pct": 45.23,
-              "margin_pct": 9.53,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#9ecae1",
-                "description": "Likely Democratic"
-              }
-            },
-            "MEIGS": {
-              "dem_votes": 1465,
-              "rep_votes": 1808,
-              "total_votes": 3273,
-              "dem_pct": 44.76,
-              "rep_pct": 55.24,
-              "margin_pct": 10.48,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "BEDFORD": {
-              "dem_votes": 4931,
-              "rep_votes": 5602,
-              "total_votes": 10533,
-              "dem_pct": 46.81,
-              "rep_pct": 53.19,
-              "margin_pct": 6.37,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "HAMBLEN": {
-              "dem_votes": 6366,
-              "rep_votes": 10186,
-              "total_votes": 16552,
-              "dem_pct": 38.46,
-              "rep_pct": 61.54,
-              "margin_pct": 23.08,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "MONTGOMERY": {
-              "dem_votes": 17999,
-              "rep_votes": 17045,
-              "total_votes": 35044,
-              "dem_pct": 51.36,
-              "rep_pct": 48.64,
-              "margin_pct": 2.72,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "JEFFERSON": {
-              "dem_votes": 4906,
-              "rep_votes": 8219,
-              "total_votes": 13125,
-              "dem_pct": 37.38,
-              "rep_pct": 62.62,
-              "margin_pct": 25.24,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
             "ANDERSON": {
+              "county": "ANDERSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
               "dem_votes": 10809,
               "rep_votes": 12349,
+              "other_votes": 0,
               "total_votes": 23158,
-              "dem_pct": 46.68,
-              "rep_pct": 53.32,
-              "margin_pct": 6.65,
+              "two_party_total": 23158,
+              "margin": 1540,
+              "margin_pct": 6.649969772864665,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "color": "#fb6a4a",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
                 "description": "Likely Republican"
-              }
+              },
+              "all_parties": {
+                "DEM": 10809,
+                "REP": 12349,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
-            "UNICOI": {
-              "dem_votes": 2015,
-              "rep_votes": 3491,
-              "total_votes": 5506,
-              "dem_pct": 36.6,
-              "rep_pct": 63.4,
-              "margin_pct": 26.81,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "HANCOCK": {
-              "dem_votes": 729,
-              "rep_votes": 1130,
-              "total_votes": 1859,
-              "dem_pct": 39.21,
-              "rep_pct": 60.79,
-              "margin_pct": 21.57,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "MONROE": {
-              "dem_votes": 4856,
-              "rep_votes": 7535,
-              "total_votes": 12391,
-              "dem_pct": 39.19,
-              "rep_pct": 60.81,
-              "margin_pct": 21.62,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CANNON": {
-              "dem_votes": 2282,
-              "rep_votes": 1925,
-              "total_votes": 4207,
-              "dem_pct": 54.24,
-              "rep_pct": 45.76,
-              "margin_pct": 8.49,
+            "BEDFORD": {
+              "county": "BEDFORD",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4931,
+              "rep_votes": 5602,
+              "other_votes": 0,
+              "total_votes": 10533,
+              "two_party_total": 10533,
+              "margin": 671,
+              "margin_pct": 6.370454761226625,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Likely",
-                "color": "#9ecae1",
-                "description": "Likely Democratic"
-              }
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 4931,
+                "REP": 5602,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
-            "LAUDERDALE": {
-              "dem_votes": 3954,
-              "rep_votes": 2953,
-              "total_votes": 6907,
-              "dem_pct": 57.25,
-              "rep_pct": 42.75,
-              "margin_pct": 14.49,
+            "BENTON": {
+              "county": "BENTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3232,
+              "rep_votes": 2176,
+              "other_votes": 0,
+              "total_votes": 5408,
+              "two_party_total": 5408,
+              "margin": 1056,
+              "margin_pct": 19.526627218934912,
+              "winner": "DEM",
               "competitiveness": {
                 "category": "Safe",
-                "color": "#6baed6",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
                 "description": "Safe Democratic"
-              }
-            },
-            "STEWART": {
-              "dem_votes": 2608,
-              "rep_votes": 1675,
-              "total_votes": 4283,
-              "dem_pct": 60.89,
-              "rep_pct": 39.11,
-              "margin_pct": 21.78,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "SEQUATCHIE": {
-              "dem_votes": 1986,
-              "rep_votes": 2227,
-              "total_votes": 4213,
-              "dem_pct": 47.14,
-              "rep_pct": 52.86,
-              "margin_pct": 5.72,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "LEWIS": {
-              "dem_votes": 1969,
-              "rep_votes": 1893,
-              "total_votes": 3862,
-              "dem_pct": 50.98,
-              "rep_pct": 49.02,
-              "margin_pct": 1.97,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "HARDEMAN": {
-              "dem_votes": 4484,
-              "rep_votes": 3367,
-              "total_votes": 7851,
-              "dem_pct": 57.11,
-              "rep_pct": 42.89,
-              "margin_pct": 14.23,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "GILES": {
-              "dem_votes": 4336,
-              "rep_votes": 4017,
-              "total_votes": 8353,
-              "dem_pct": 51.91,
-              "rep_pct": 48.09,
-              "margin_pct": 3.82,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
+              },
+              "all_parties": {
+                "DEM": 3232,
+                "REP": 2176,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
             "BLEDSOE": {
+              "county": "BLEDSOE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
               "dem_votes": 1692,
               "rep_votes": 2210,
+              "other_votes": 0,
               "total_votes": 3902,
-              "dem_pct": 43.36,
-              "rep_pct": 56.64,
-              "margin_pct": 13.28,
+              "two_party_total": 3902,
+              "margin": 518,
+              "margin_pct": 13.275243464889797,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Safe",
-                "color": "#ef3b2c",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
                 "description": "Safe Republican"
-              }
+              },
+              "all_parties": {
+                "DEM": 1692,
+                "REP": 2210,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
-            "JOHNSON": {
-              "dem_votes": 1626,
-              "rep_votes": 3148,
-              "total_votes": 4774,
-              "dem_pct": 34.06,
-              "rep_pct": 65.94,
-              "margin_pct": 31.88,
+            "BLOUNT": {
+              "county": "BLOUNT",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 13372,
+              "rep_votes": 22046,
+              "other_votes": 0,
+              "total_votes": 35418,
+              "two_party_total": 35418,
+              "margin": 8674,
+              "margin_pct": 24.490372127166978,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 13372,
+                "REP": 22046,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "BRADLEY": {
+              "county": "BRADLEY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 8057,
+              "rep_votes": 18161,
+              "other_votes": 0,
+              "total_votes": 26218,
+              "two_party_total": 26218,
+              "margin": 10104,
+              "margin_pct": 38.53840872682889,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Dominant",
-                "color": "#a50f15",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
                 "description": "Dominant Republican"
-              }
-            },
-            "MARSHALL": {
-              "dem_votes": 3762,
-              "rep_votes": 3391,
-              "total_votes": 7153,
-              "dem_pct": 52.59,
-              "rep_pct": 47.41,
-              "margin_pct": 5.19,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#c6dbef",
-                "description": "Lean Democratic"
-              }
-            },
-            "LAWRENCE": {
-              "dem_votes": 5550,
-              "rep_votes": 6715,
-              "total_votes": 12265,
-              "dem_pct": 45.25,
-              "rep_pct": 54.75,
-              "margin_pct": 9.5,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "RUTHERFORD": {
-              "dem_votes": 26829,
-              "rep_votes": 33809,
-              "total_votes": 60638,
-              "dem_pct": 44.24,
-              "rep_pct": 55.76,
-              "margin_pct": 11.51,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "HENDERSON": {
-              "dem_votes": 3126,
-              "rep_votes": 5360,
-              "total_votes": 8486,
-              "dem_pct": 36.84,
-              "rep_pct": 63.16,
-              "margin_pct": 26.33,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "WEAKLEY": {
-              "dem_votes": 4542,
-              "rep_votes": 5412,
-              "total_votes": 9954,
-              "dem_pct": 45.63,
-              "rep_pct": 54.37,
-              "margin_pct": 8.74,
-              "competitiveness": {
-                "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
-            },
-            "RHEA": {
-              "dem_votes": 3278,
-              "rep_votes": 5146,
-              "total_votes": 8424,
-              "dem_pct": 38.91,
-              "rep_pct": 61.09,
-              "margin_pct": 22.17,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#cb181d",
-                "description": "Stronghold Republican"
-              }
-            },
-            "CARROLL": {
-              "dem_votes": 4256,
-              "rep_votes": 4742,
-              "total_votes": 8998,
-              "dem_pct": 47.3,
-              "rep_pct": 52.7,
-              "margin_pct": 5.4,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
+              },
+              "all_parties": {
+                "DEM": 8057,
+                "REP": 18161,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
             "CAMPBELL": {
+              "county": "CAMPBELL",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
               "dem_votes": 4896,
               "rep_votes": 5051,
+              "other_votes": 0,
               "total_votes": 9947,
-              "dem_pct": 49.22,
-              "rep_pct": 50.78,
-              "margin_pct": 1.56,
+              "two_party_total": 9947,
+              "margin": 155,
+              "margin_pct": 1.5582587714888945,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "color": "#fcae91",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
                 "description": "Lean Republican"
-              }
+              },
+              "all_parties": {
+                "DEM": 4896,
+                "REP": 5051,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
-            "SUMNER": {
-              "dem_votes": 18976,
-              "rep_votes": 26996,
-              "total_votes": 45972,
-              "dem_pct": 41.28,
-              "rep_pct": 58.72,
-              "margin_pct": 17.45,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "MORGAN": {
-              "dem_votes": 2413,
-              "rep_votes": 2627,
-              "total_votes": 5040,
-              "dem_pct": 47.88,
-              "rep_pct": 52.12,
-              "margin_pct": 4.25,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "ROANE": {
-              "dem_votes": 7669,
-              "rep_votes": 9645,
-              "total_votes": 17314,
-              "dem_pct": 44.29,
-              "rep_pct": 55.71,
-              "margin_pct": 11.41,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#ef3b2c",
-                "description": "Safe Republican"
-              }
-            },
-            "SEVIER": {
-              "dem_votes": 7326,
-              "rep_votes": 15361,
-              "total_votes": 22687,
-              "dem_pct": 32.29,
-              "rep_pct": 67.71,
-              "margin_pct": 35.42,
-              "competitiveness": {
-                "category": "Dominant",
-                "color": "#a50f15",
-                "description": "Dominant Republican"
-              }
-            },
-            "WARREN": {
-              "dem_votes": 6255,
-              "rep_votes": 4940,
-              "total_votes": 11195,
-              "dem_pct": 55.87,
-              "rep_pct": 44.13,
-              "margin_pct": 11.75,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "GIBSON": {
-              "dem_votes": 7471,
-              "rep_votes": 8003,
-              "total_votes": 15474,
-              "dem_pct": 48.28,
-              "rep_pct": 51.72,
-              "margin_pct": 3.44,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "PUTNAM": {
-              "dem_votes": 9670,
-              "rep_votes": 10127,
-              "total_votes": 19797,
-              "dem_pct": 48.85,
-              "rep_pct": 51.15,
-              "margin_pct": 2.31,
-              "competitiveness": {
-                "category": "Lean",
-                "color": "#fcae91",
-                "description": "Lean Republican"
-              }
-            },
-            "VAN BUREN": {
-              "dem_votes": 1116,
-              "rep_votes": 766,
-              "total_votes": 1882,
-              "dem_pct": 59.3,
-              "rep_pct": 40.7,
-              "margin_pct": 18.6,
-              "competitiveness": {
-                "category": "Safe",
-                "color": "#6baed6",
-                "description": "Safe Democratic"
-              }
-            },
-            "LAKE": {
-              "dem_votes": 981,
-              "rep_votes": 571,
-              "total_votes": 1552,
-              "dem_pct": 63.21,
-              "rep_pct": 36.79,
-              "margin_pct": 26.42,
-              "competitiveness": {
-                "category": "Stronghold",
-                "color": "#3182bd",
-                "description": "Stronghold Democratic"
-              }
-            },
-            "MOORE": {
-              "dem_votes": 966,
-              "rep_votes": 1165,
-              "total_votes": 2131,
-              "dem_pct": 45.33,
-              "rep_pct": 54.67,
-              "margin_pct": 9.34,
+            "CANNON": {
+              "county": "CANNON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2282,
+              "rep_votes": 1925,
+              "other_votes": 0,
+              "total_votes": 4207,
+              "two_party_total": 4207,
+              "margin": 357,
+              "margin_pct": 8.485856905158066,
+              "winner": "DEM",
               "competitiveness": {
                 "category": "Likely",
-                "color": "#fb6a4a",
-                "description": "Likely Republican"
-              }
+                "party": "Democratic",
+                "code": "DEM_LIKELY",
+                "color": "#60a5fa",
+                "description": "Likely Democratic"
+              },
+              "all_parties": {
+                "DEM": 2282,
+                "REP": 1925,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             },
-            "DECATUR": {
-              "dem_votes": 1902,
-              "rep_votes": 1941,
-              "total_votes": 3843,
-              "dem_pct": 49.49,
-              "rep_pct": 50.51,
-              "margin_pct": 1.01,
+            "CARROLL": {
+              "county": "CARROLL",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4256,
+              "rep_votes": 4742,
+              "other_votes": 0,
+              "total_votes": 8998,
+              "two_party_total": 8998,
+              "margin": 486,
+              "margin_pct": 5.401200266725944,
+              "winner": "REP",
               "competitiveness": {
                 "category": "Lean",
-                "color": "#fcae91",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
                 "description": "Lean Republican"
-              }
+              },
+              "all_parties": {
+                "DEM": 4256,
+                "REP": 4742,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CARTER": {
+              "county": "CARTER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5664,
+              "rep_votes": 10577,
+              "other_votes": 0,
+              "total_votes": 16241,
+              "two_party_total": 16241,
+              "margin": 4913,
+              "margin_pct": 30.250600332491842,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
+                "description": "Dominant Republican"
+              },
+              "all_parties": {
+                "DEM": 5664,
+                "REP": 10577,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CHEATHAM": {
+              "county": "CHEATHAM",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5146,
+              "rep_votes": 6134,
+              "other_votes": 0,
+              "total_votes": 11280,
+              "two_party_total": 11280,
+              "margin": 988,
+              "margin_pct": 8.758865248226954,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 5146,
+                "REP": 6134,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CHESTER": {
+              "county": "CHESTER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1646,
+              "rep_votes": 2696,
+              "other_votes": 0,
+              "total_votes": 4342,
+              "two_party_total": 4342,
+              "margin": 1050,
+              "margin_pct": 24.182404421925384,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 1646,
+                "REP": 2696,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CLAIBORNE": {
+              "county": "CLAIBORNE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3426,
+              "rep_votes": 4112,
+              "other_votes": 0,
+              "total_votes": 7538,
+              "two_party_total": 7538,
+              "margin": 686,
+              "margin_pct": 9.100557176970021,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 3426,
+                "REP": 4112,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CLAY": {
+              "county": "CLAY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1425,
+              "rep_votes": 1015,
+              "other_votes": 0,
+              "total_votes": 2440,
+              "two_party_total": 2440,
+              "margin": 410,
+              "margin_pct": 16.803278688524586,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 1425,
+                "REP": 1015,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "COCKE": {
+              "county": "COCKE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3563,
+              "rep_votes": 5952,
+              "other_votes": 0,
+              "total_votes": 9515,
+              "two_party_total": 9515,
+              "margin": 2389,
+              "margin_pct": 25.107724645296898,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 3563,
+                "REP": 5952,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "COFFEE": {
+              "county": "COFFEE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7147,
+              "rep_votes": 8069,
+              "other_votes": 0,
+              "total_votes": 15216,
+              "two_party_total": 15216,
+              "margin": 922,
+              "margin_pct": 6.059411146161935,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 7147,
+                "REP": 8069,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CROCKETT": {
+              "county": "CROCKETT",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2246,
+              "rep_votes": 2212,
+              "other_votes": 0,
+              "total_votes": 4458,
+              "two_party_total": 4458,
+              "margin": 34,
+              "margin_pct": 0.7626738447734454,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Tilt",
+                "party": "Democratic",
+                "code": "DEM_TILT",
+                "color": "#bfdbfe",
+                "description": "Tilt Democratic"
+              },
+              "all_parties": {
+                "DEM": 2246,
+                "REP": 2212,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "CUMBERLAND": {
+              "county": "CUMBERLAND",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7471,
+              "rep_votes": 11515,
+              "other_votes": 0,
+              "total_votes": 18986,
+              "two_party_total": 18986,
+              "margin": 4044,
+              "margin_pct": 21.299905193300326,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 7471,
+                "REP": 11515,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "DAVIDSON": {
+              "county": "DAVIDSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 106847,
+              "rep_votes": 67136,
+              "other_votes": 0,
+              "total_votes": 173983,
+              "two_party_total": 173983,
+              "margin": 39711,
+              "margin_pct": 22.824643787036663,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 106847,
+                "REP": 67136,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "DECATUR": {
+              "county": "DECATUR",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1902,
+              "rep_votes": 1941,
+              "other_votes": 0,
+              "total_votes": 3843,
+              "two_party_total": 3843,
+              "margin": 39,
+              "margin_pct": 1.0148321623731533,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 1902,
+                "REP": 1941,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "DEKALB": {
+              "county": "DEKALB",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2999,
+              "rep_votes": 2450,
+              "other_votes": 0,
+              "total_votes": 5449,
+              "two_party_total": 5449,
+              "margin": 549,
+              "margin_pct": 10.075243163883286,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 2999,
+                "REP": 2450,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "DICKSON": {
+              "county": "DICKSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7232,
+              "rep_votes": 7014,
+              "other_votes": 0,
+              "total_votes": 14246,
+              "two_party_total": 14246,
+              "margin": 218,
+              "margin_pct": 1.530254106415832,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 7232,
+                "REP": 7014,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "DYER": {
+              "county": "DYER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4848,
+              "rep_votes": 6115,
+              "other_votes": 0,
+              "total_votes": 10963,
+              "two_party_total": 10963,
+              "margin": 1267,
+              "margin_pct": 11.557055550488002,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 4848,
+                "REP": 6115,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "FAYETTE": {
+              "county": "FAYETTE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5275,
+              "rep_votes": 7297,
+              "other_votes": 0,
+              "total_votes": 12572,
+              "two_party_total": 12572,
+              "margin": 2022,
+              "margin_pct": 16.083359847279667,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 5275,
+                "REP": 7297,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "FENTRESS": {
+              "county": "FENTRESS",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2237,
+              "rep_votes": 2918,
+              "other_votes": 0,
+              "total_votes": 5155,
+              "two_party_total": 5155,
+              "margin": 681,
+              "margin_pct": 13.21047526673133,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 2237,
+                "REP": 2918,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "FRANKLIN": {
+              "county": "FRANKLIN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 6477,
+              "rep_votes": 6142,
+              "other_votes": 0,
+              "total_votes": 12619,
+              "two_party_total": 12619,
+              "margin": 335,
+              "margin_pct": 2.6547269989698066,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 6477,
+                "REP": 6142,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "GIBSON": {
+              "county": "GIBSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7471,
+              "rep_votes": 8003,
+              "other_votes": 0,
+              "total_votes": 15474,
+              "two_party_total": 15474,
+              "margin": 532,
+              "margin_pct": 3.4380250743182046,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 7471,
+                "REP": 8003,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "GILES": {
+              "county": "GILES",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4336,
+              "rep_votes": 4017,
+              "other_votes": 0,
+              "total_votes": 8353,
+              "two_party_total": 8353,
+              "margin": 319,
+              "margin_pct": 3.8189871902310557,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 4336,
+                "REP": 4017,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "GRAINGER": {
+              "county": "GRAINGER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2211,
+              "rep_votes": 3198,
+              "other_votes": 0,
+              "total_votes": 5409,
+              "two_party_total": 5409,
+              "margin": 987,
+              "margin_pct": 18.24736550194121,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 2211,
+                "REP": 3198,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "GREENE": {
+              "county": "GREENE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 6419,
+              "rep_votes": 11852,
+              "other_votes": 0,
+              "total_votes": 18271,
+              "two_party_total": 18271,
+              "margin": 5433,
+              "margin_pct": 29.735646653166214,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 6419,
+                "REP": 11852,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "GRUNDY": {
+              "county": "GRUNDY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2367,
+              "rep_votes": 1466,
+              "other_votes": 0,
+              "total_votes": 3833,
+              "two_party_total": 3833,
+              "margin": 901,
+              "margin_pct": 23.50639186016175,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 2367,
+                "REP": 1466,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HAMBLEN": {
+              "county": "HAMBLEN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 6366,
+              "rep_votes": 10186,
+              "other_votes": 0,
+              "total_votes": 16552,
+              "two_party_total": 16552,
+              "margin": 3820,
+              "margin_pct": 23.078782020299663,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 6366,
+                "REP": 10186,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HAMILTON": {
+              "county": "HAMILTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 49904,
+              "rep_votes": 57411,
+              "other_votes": 0,
+              "total_votes": 107315,
+              "two_party_total": 107315,
+              "margin": 7507,
+              "margin_pct": 6.995294227274847,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 49904,
+                "REP": 57411,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HANCOCK": {
+              "county": "HANCOCK",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 729,
+              "rep_votes": 1130,
+              "other_votes": 0,
+              "total_votes": 1859,
+              "two_party_total": 1859,
+              "margin": 401,
+              "margin_pct": 21.570736955352345,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 729,
+                "REP": 1130,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HARDEMAN": {
+              "county": "HARDEMAN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4484,
+              "rep_votes": 3367,
+              "other_votes": 0,
+              "total_votes": 7851,
+              "two_party_total": 7851,
+              "margin": 1117,
+              "margin_pct": 14.227486944338303,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 4484,
+                "REP": 3367,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HARDIN": {
+              "county": "HARDIN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3029,
+              "rep_votes": 4278,
+              "other_votes": 0,
+              "total_votes": 7307,
+              "two_party_total": 7307,
+              "margin": 1249,
+              "margin_pct": 17.09319830299713,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 3029,
+                "REP": 4278,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HAWKINS": {
+              "county": "HAWKINS",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5943,
+              "rep_votes": 8636,
+              "other_votes": 0,
+              "total_votes": 14579,
+              "two_party_total": 14579,
+              "margin": 2693,
+              "margin_pct": 18.471774470128267,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 5943,
+                "REP": 8636,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HAYWOOD": {
+              "county": "HAYWOOD",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3763,
+              "rep_votes": 2130,
+              "other_votes": 0,
+              "total_votes": 5893,
+              "two_party_total": 5893,
+              "margin": 1633,
+              "margin_pct": 27.710843373493965,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 3763,
+                "REP": 2130,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HENDERSON": {
+              "county": "HENDERSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3126,
+              "rep_votes": 5360,
+              "other_votes": 0,
+              "total_votes": 8486,
+              "two_party_total": 8486,
+              "margin": 2234,
+              "margin_pct": 26.325712938958283,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 3126,
+                "REP": 5360,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HENRY": {
+              "county": "HENRY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4947,
+              "rep_votes": 4689,
+              "other_votes": 0,
+              "total_votes": 9636,
+              "two_party_total": 9636,
+              "margin": 258,
+              "margin_pct": 2.677459526774605,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 4947,
+                "REP": 4689,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HICKMAN": {
+              "county": "HICKMAN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3743,
+              "rep_votes": 2852,
+              "other_votes": 0,
+              "total_votes": 6595,
+              "two_party_total": 6595,
+              "margin": 891,
+              "margin_pct": 13.510235026535256,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 3743,
+                "REP": 2852,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HOUSTON": {
+              "county": "HOUSTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1734,
+              "rep_votes": 931,
+              "other_votes": 0,
+              "total_votes": 2665,
+              "two_party_total": 2665,
+              "margin": 803,
+              "margin_pct": 30.131332082551587,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Democratic",
+                "code": "DEM_DOMINANT",
+                "color": "#1e3a8a",
+                "description": "Dominant Democratic"
+              },
+              "all_parties": {
+                "DEM": 1734,
+                "REP": 931,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "HUMPHREYS": {
+              "county": "HUMPHREYS",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3916,
+              "rep_votes": 2236,
+              "other_votes": 0,
+              "total_votes": 6152,
+              "two_party_total": 6152,
+              "margin": 1680,
+              "margin_pct": 27.30819245773732,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 3916,
+                "REP": 2236,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "JACKSON": {
+              "county": "JACKSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2531,
+              "rep_votes": 1350,
+              "other_votes": 0,
+              "total_votes": 3881,
+              "two_party_total": 3881,
+              "margin": 1181,
+              "margin_pct": 30.430301468693635,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Democratic",
+                "code": "DEM_DOMINANT",
+                "color": "#1e3a8a",
+                "description": "Dominant Democratic"
+              },
+              "all_parties": {
+                "DEM": 2531,
+                "REP": 1350,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "JEFFERSON": {
+              "county": "JEFFERSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4906,
+              "rep_votes": 8219,
+              "other_votes": 0,
+              "total_votes": 13125,
+              "two_party_total": 13125,
+              "margin": 3313,
+              "margin_pct": 25.241904761904756,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 4906,
+                "REP": 8219,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "JOHNSON": {
+              "county": "JOHNSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1626,
+              "rep_votes": 3148,
+              "other_votes": 0,
+              "total_votes": 4774,
+              "two_party_total": 4774,
+              "margin": 1522,
+              "margin_pct": 31.881022203602846,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
+                "description": "Dominant Republican"
+              },
+              "all_parties": {
+                "DEM": 1626,
+                "REP": 3148,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "KNOX": {
+              "county": "KNOX",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 53293,
+              "rep_votes": 69129,
+              "other_votes": 0,
+              "total_votes": 122422,
+              "two_party_total": 122422,
+              "margin": 15836,
+              "margin_pct": 12.93558347355868,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 53293,
+                "REP": 69129,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LAKE": {
+              "county": "LAKE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 981,
+              "rep_votes": 571,
+              "other_votes": 0,
+              "total_votes": 1552,
+              "two_party_total": 1552,
+              "margin": 410,
+              "margin_pct": 26.417525773195877,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 981,
+                "REP": 571,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LAUDERDALE": {
+              "county": "LAUDERDALE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3954,
+              "rep_votes": 2953,
+              "other_votes": 0,
+              "total_votes": 6907,
+              "two_party_total": 6907,
+              "margin": 1001,
+              "margin_pct": 14.492543796148837,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 3954,
+                "REP": 2953,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LAWRENCE": {
+              "county": "LAWRENCE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5550,
+              "rep_votes": 6715,
+              "other_votes": 0,
+              "total_votes": 12265,
+              "two_party_total": 12265,
+              "margin": 1165,
+              "margin_pct": 9.498573175703214,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 5550,
+                "REP": 6715,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LEWIS": {
+              "county": "LEWIS",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1969,
+              "rep_votes": 1893,
+              "other_votes": 0,
+              "total_votes": 3862,
+              "two_party_total": 3862,
+              "margin": 76,
+              "margin_pct": 1.967892283790782,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 1969,
+                "REP": 1893,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LINCOLN": {
+              "county": "LINCOLN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3470,
+              "rep_votes": 4535,
+              "other_votes": 0,
+              "total_votes": 8005,
+              "two_party_total": 8005,
+              "margin": 1065,
+              "margin_pct": 13.304184884447224,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 3470,
+                "REP": 4535,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "LOUDON": {
+              "county": "LOUDON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5369,
+              "rep_votes": 10812,
+              "other_votes": 0,
+              "total_votes": 16181,
+              "two_party_total": 16181,
+              "margin": 5443,
+              "margin_pct": 33.638217662690806,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
+                "description": "Dominant Republican"
+              },
+              "all_parties": {
+                "DEM": 5369,
+                "REP": 10812,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MACON": {
+              "county": "MACON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2410,
+              "rep_votes": 3033,
+              "other_votes": 0,
+              "total_votes": 5443,
+              "two_party_total": 5443,
+              "margin": 623,
+              "margin_pct": 11.445893808561458,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 2410,
+                "REP": 3033,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MADISON": {
+              "county": "MADISON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 14549,
+              "rep_votes": 15367,
+              "other_votes": 0,
+              "total_votes": 29916,
+              "two_party_total": 29916,
+              "margin": 818,
+              "margin_pct": 2.7343227704238515,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 14549,
+                "REP": 15367,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MARION": {
+              "county": "MARION",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4775,
+              "rep_votes": 3944,
+              "other_votes": 0,
+              "total_votes": 8719,
+              "two_party_total": 8719,
+              "margin": 831,
+              "margin_pct": 9.530909507971103,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Democratic",
+                "code": "DEM_LIKELY",
+                "color": "#60a5fa",
+                "description": "Likely Democratic"
+              },
+              "all_parties": {
+                "DEM": 4775,
+                "REP": 3944,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MARSHALL": {
+              "county": "MARSHALL",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3762,
+              "rep_votes": 3391,
+              "other_votes": 0,
+              "total_votes": 7153,
+              "two_party_total": 7153,
+              "margin": 371,
+              "margin_pct": 5.1866349783307655,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 3762,
+                "REP": 3391,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MAURY": {
+              "county": "MAURY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 11128,
+              "rep_votes": 11994,
+              "other_votes": 0,
+              "total_votes": 23122,
+              "two_party_total": 23122,
+              "margin": 866,
+              "margin_pct": 3.745350748205169,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 11128,
+                "REP": 11994,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MCMINN": {
+              "county": "MCMINN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 5214,
+              "rep_votes": 8762,
+              "other_votes": 0,
+              "total_votes": 13976,
+              "two_party_total": 13976,
+              "margin": 3548,
+              "margin_pct": 25.38637664567831,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 5214,
+                "REP": 8762,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MCNAIRY": {
+              "county": "MCNAIRY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3360,
+              "rep_votes": 4292,
+              "other_votes": 0,
+              "total_votes": 7652,
+              "two_party_total": 7652,
+              "margin": 932,
+              "margin_pct": 12.179822268687928,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 3360,
+                "REP": 4292,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MEIGS": {
+              "county": "MEIGS",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1465,
+              "rep_votes": 1808,
+              "other_votes": 0,
+              "total_votes": 3273,
+              "two_party_total": 3273,
+              "margin": 343,
+              "margin_pct": 10.4796822487015,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 1465,
+                "REP": 1808,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MONROE": {
+              "county": "MONROE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4856,
+              "rep_votes": 7535,
+              "other_votes": 0,
+              "total_votes": 12391,
+              "two_party_total": 12391,
+              "margin": 2679,
+              "margin_pct": 21.62053103058672,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 4856,
+                "REP": 7535,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MONTGOMERY": {
+              "county": "MONTGOMERY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 17999,
+              "rep_votes": 17045,
+              "other_votes": 0,
+              "total_votes": 35044,
+              "two_party_total": 35044,
+              "margin": 954,
+              "margin_pct": 2.722291975801852,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 17999,
+                "REP": 17045,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MOORE": {
+              "county": "MOORE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 966,
+              "rep_votes": 1165,
+              "other_votes": 0,
+              "total_votes": 2131,
+              "two_party_total": 2131,
+              "margin": 199,
+              "margin_pct": 9.338338808071327,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 966,
+                "REP": 1165,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "MORGAN": {
+              "county": "MORGAN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2413,
+              "rep_votes": 2627,
+              "other_votes": 0,
+              "total_votes": 5040,
+              "two_party_total": 5040,
+              "margin": 214,
+              "margin_pct": 4.246031746031747,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 2413,
+                "REP": 2627,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "OBION": {
+              "county": "OBION",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4734,
+              "rep_votes": 4936,
+              "other_votes": 0,
+              "total_votes": 9670,
+              "two_party_total": 9670,
+              "margin": 202,
+              "margin_pct": 2.0889348500517,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 4734,
+                "REP": 4936,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "OVERTON": {
+              "county": "OVERTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3895,
+              "rep_votes": 2602,
+              "other_votes": 0,
+              "total_votes": 6497,
+              "two_party_total": 6497,
+              "margin": 1293,
+              "margin_pct": 19.90149299676773,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 3895,
+                "REP": 2602,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "PERRY": {
+              "county": "PERRY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1326,
+              "rep_votes": 964,
+              "other_votes": 0,
+              "total_votes": 2290,
+              "two_party_total": 2290,
+              "margin": 362,
+              "margin_pct": 15.807860262008731,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 1326,
+                "REP": 964,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "PICKETT": {
+              "county": "PICKETT",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 977,
+              "rep_votes": 1124,
+              "other_votes": 0,
+              "total_votes": 2101,
+              "two_party_total": 2101,
+              "margin": 147,
+              "margin_pct": 6.9966682532127535,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 977,
+                "REP": 1124,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "POLK": {
+              "county": "POLK",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2412,
+              "rep_votes": 2655,
+              "other_votes": 0,
+              "total_votes": 5067,
+              "two_party_total": 5067,
+              "margin": 243,
+              "margin_pct": 4.795737122557725,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 2412,
+                "REP": 2655,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "PUTNAM": {
+              "county": "PUTNAM",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 9670,
+              "rep_votes": 10127,
+              "other_votes": 0,
+              "total_votes": 19797,
+              "two_party_total": 19797,
+              "margin": 457,
+              "margin_pct": 2.3084305702884222,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Republican",
+                "code": "REP_LEAN",
+                "color": "#f87171",
+                "description": "Lean Republican"
+              },
+              "all_parties": {
+                "DEM": 9670,
+                "REP": 10127,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "RHEA": {
+              "county": "RHEA",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3278,
+              "rep_votes": 5146,
+              "other_votes": 0,
+              "total_votes": 8424,
+              "two_party_total": 8424,
+              "margin": 1868,
+              "margin_pct": 22.1747388414055,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 3278,
+                "REP": 5146,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "ROANE": {
+              "county": "ROANE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7669,
+              "rep_votes": 9645,
+              "other_votes": 0,
+              "total_votes": 17314,
+              "two_party_total": 17314,
+              "margin": 1976,
+              "margin_pct": 11.41272958299642,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 7669,
+                "REP": 9645,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "ROBERTSON": {
+              "county": "ROBERTSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 8587,
+              "rep_votes": 10008,
+              "other_votes": 0,
+              "total_votes": 18595,
+              "two_party_total": 18595,
+              "margin": 1421,
+              "margin_pct": 7.64183920408712,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 8587,
+                "REP": 10008,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "RUTHERFORD": {
+              "county": "RUTHERFORD",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 26829,
+              "rep_votes": 33809,
+              "other_votes": 0,
+              "total_votes": 60638,
+              "two_party_total": 60638,
+              "margin": 6980,
+              "margin_pct": 11.510933737920112,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 26829,
+                "REP": 33809,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SCOTT": {
+              "county": "SCOTT",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2504,
+              "rep_votes": 2798,
+              "other_votes": 0,
+              "total_votes": 5302,
+              "two_party_total": 5302,
+              "margin": 294,
+              "margin_pct": 5.545077329309699,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 2504,
+                "REP": 2798,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SEQUATCHIE": {
+              "county": "SEQUATCHIE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1986,
+              "rep_votes": 2227,
+              "other_votes": 0,
+              "total_votes": 4213,
+              "two_party_total": 4213,
+              "margin": 241,
+              "margin_pct": 5.720389271303112,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 1986,
+                "REP": 2227,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SEVIER": {
+              "county": "SEVIER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 7326,
+              "rep_votes": 15361,
+              "other_votes": 0,
+              "total_votes": 22687,
+              "two_party_total": 22687,
+              "margin": 8035,
+              "margin_pct": 35.41675849605502,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
+                "description": "Dominant Republican"
+              },
+              "all_parties": {
+                "DEM": 7326,
+                "REP": 15361,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SHELBY": {
+              "county": "SHELBY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 179677,
+              "rep_votes": 103377,
+              "other_votes": 0,
+              "total_votes": 283054,
+              "two_party_total": 283054,
+              "margin": 76300,
+              "margin_pct": 26.95598719678931,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 179677,
+                "REP": 103377,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SMITH": {
+              "county": "SMITH",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3622,
+              "rep_votes": 2610,
+              "other_votes": 0,
+              "total_votes": 6232,
+              "two_party_total": 6232,
+              "margin": 1012,
+              "margin_pct": 16.238767650834404,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 3622,
+                "REP": 2610,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "STEWART": {
+              "county": "STEWART",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2608,
+              "rep_votes": 1675,
+              "other_votes": 0,
+              "total_votes": 4283,
+              "two_party_total": 4283,
+              "margin": 933,
+              "margin_pct": 21.78379640438945,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Democratic",
+                "code": "DEM_STRONGHOLD",
+                "color": "#1e40af",
+                "description": "Stronghold Democratic"
+              },
+              "all_parties": {
+                "DEM": 2608,
+                "REP": 1675,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SULLIVAN": {
+              "county": "SULLIVAN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 16814,
+              "rep_votes": 27872,
+              "other_votes": 0,
+              "total_votes": 44686,
+              "two_party_total": 44686,
+              "margin": 11058,
+              "margin_pct": 24.74600546032314,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 16814,
+                "REP": 27872,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "SUMNER": {
+              "county": "SUMNER",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 18976,
+              "rep_votes": 26996,
+              "other_votes": 0,
+              "total_votes": 45972,
+              "two_party_total": 45972,
+              "margin": 8020,
+              "margin_pct": 17.445401548768814,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 18976,
+                "REP": 26996,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "TIPTON": {
+              "county": "TIPTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 6775,
+              "rep_votes": 9717,
+              "other_votes": 0,
+              "total_votes": 16492,
+              "two_party_total": 16492,
+              "margin": 2942,
+              "margin_pct": 17.83895221925782,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 6775,
+                "REP": 9717,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "TROUSDALE": {
+              "county": "TROUSDALE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1674,
+              "rep_votes": 891,
+              "other_votes": 0,
+              "total_votes": 2565,
+              "two_party_total": 2565,
+              "margin": 783,
+              "margin_pct": 30.526315789473692,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Democratic",
+                "code": "DEM_DOMINANT",
+                "color": "#1e3a8a",
+                "description": "Dominant Democratic"
+              },
+              "all_parties": {
+                "DEM": 1674,
+                "REP": 891,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "UNICOI": {
+              "county": "UNICOI",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2015,
+              "rep_votes": 3491,
+              "other_votes": 0,
+              "total_votes": 5506,
+              "two_party_total": 5506,
+              "margin": 1476,
+              "margin_pct": 26.807119505993455,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 2015,
+                "REP": 3491,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "UNION": {
+              "county": "UNION",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 2025,
+              "rep_votes": 2418,
+              "other_votes": 0,
+              "total_votes": 4443,
+              "two_party_total": 4443,
+              "margin": 393,
+              "margin_pct": 8.845374746792707,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 2025,
+                "REP": 2418,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "VAN BUREN": {
+              "county": "VAN BUREN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1116,
+              "rep_votes": 766,
+              "other_votes": 0,
+              "total_votes": 1882,
+              "two_party_total": 1882,
+              "margin": 350,
+              "margin_pct": 18.597236981934117,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 1116,
+                "REP": 766,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WARREN": {
+              "county": "WARREN",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 6255,
+              "rep_votes": 4940,
+              "other_votes": 0,
+              "total_votes": 11195,
+              "two_party_total": 11195,
+              "margin": 1315,
+              "margin_pct": 11.74631531933899,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Democratic",
+                "code": "DEM_SAFE",
+                "color": "#3b82f6",
+                "description": "Safe Democratic"
+              },
+              "all_parties": {
+                "DEM": 6255,
+                "REP": 4940,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WASHINGTON": {
+              "county": "WASHINGTON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 12894,
+              "rep_votes": 21147,
+              "other_votes": 0,
+              "total_votes": 34041,
+              "two_party_total": 34041,
+              "margin": 8253,
+              "margin_pct": 24.2442936458976,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 12894,
+                "REP": 21147,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WAYNE": {
+              "county": "WAYNE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 1583,
+              "rep_votes": 2496,
+              "other_votes": 0,
+              "total_votes": 4079,
+              "two_party_total": 4079,
+              "margin": 913,
+              "margin_pct": 22.38293699436136,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Stronghold",
+                "party": "Republican",
+                "code": "REP_STRONGHOLD",
+                "color": "#991b1b",
+                "description": "Stronghold Republican"
+              },
+              "all_parties": {
+                "DEM": 1583,
+                "REP": 2496,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WEAKLEY": {
+              "county": "WEAKLEY",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 4542,
+              "rep_votes": 5412,
+              "other_votes": 0,
+              "total_votes": 9954,
+              "two_party_total": 9954,
+              "margin": 870,
+              "margin_pct": 8.74020494273659,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Likely",
+                "party": "Republican",
+                "code": "REP_LIKELY",
+                "color": "#ef4444",
+                "description": "Likely Republican"
+              },
+              "all_parties": {
+                "DEM": 4542,
+                "REP": 5412,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WHITE": {
+              "county": "WHITE",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 3894,
+              "rep_votes": 3601,
+              "other_votes": 0,
+              "total_votes": 7495,
+              "two_party_total": 7495,
+              "margin": 293,
+              "margin_pct": 3.9092728485657133,
+              "winner": "DEM",
+              "competitiveness": {
+                "category": "Lean",
+                "party": "Democratic",
+                "code": "DEM_LEAN",
+                "color": "#93c5fd",
+                "description": "Lean Democratic"
+              },
+              "all_parties": {
+                "DEM": 3894,
+                "REP": 3601,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WILLIAMSON": {
+              "county": "WILLIAMSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 19682,
+              "rep_votes": 40852,
+              "other_votes": 0,
+              "total_votes": 60534,
+              "two_party_total": 60534,
+              "margin": 21170,
+              "margin_pct": 34.972081805266455,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Dominant",
+                "party": "Republican",
+                "code": "REP_DOMINANT",
+                "color": "#7f1d1d",
+                "description": "Dominant Republican"
+              },
+              "all_parties": {
+                "DEM": 19682,
+                "REP": 40852,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
+            },
+            "WILSON": {
+              "county": "WILSON",
+              "contest": "US Senate",
+              "year": "2006",
+              "dem_candidate": "Harold Ford Jr.",
+              "rep_candidate": "Bob Corker",
+              "dem_votes": 14520,
+              "rep_votes": 20662,
+              "other_votes": 0,
+              "total_votes": 35182,
+              "two_party_total": 35182,
+              "margin": 6142,
+              "margin_pct": 17.45779091580922,
+              "winner": "REP",
+              "competitiveness": {
+                "category": "Safe",
+                "party": "Republican",
+                "code": "REP_SAFE",
+                "color": "#dc2626",
+                "description": "Safe Republican"
+              },
+              "all_parties": {
+                "DEM": 14520,
+                "REP": 20662,
+                "OTHER": 0
+              },
+              "contest_type": "federal"
             }
           }
         }
