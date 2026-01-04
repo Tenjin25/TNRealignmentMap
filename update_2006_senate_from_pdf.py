@@ -16,13 +16,13 @@ def calculate_competitiveness(dem_votes, rep_votes):
     # Define competitiveness categories with proper political colors (matching existing data)
     if margin < 0.5:
         category = "Tossup"
-        base_color = "#4292c6" if winner == 'D' else "#fc9272"
+        base_color = "#2563eb" if winner == 'D' else "#dc2626"
     elif margin < 1:
         category = "Tilt"
-        base_color = "#2171b5" if winner == 'D' else "#fb6a4a"
+        base_color = "#e1f5fe" if winner == 'D' else "#fee8c8"
     elif margin < 5.5:
         category = "Lean"
-        base_color = "#c6dbef" if winner == 'D' else "#fee0d2"
+        base_color = "#c6dbef" if winner == 'D' else "#fcae91"
     elif margin < 10:
         category = "Likely"
         base_color = "#9ecae1" if winner == 'D' else "#fb6a4a"
