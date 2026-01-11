@@ -2426,6 +2426,39 @@ function toggleSidebar() {
       select.addEventListener('change', onContestChange);
     }
 
+    // Simplify contest names to format like "President (2024)"
+    function simplifyContestName(contestName) {
+      if (!contestName) return '';
+      
+      // Extract year from contest name (e.g., "2024 Presidential Election" -> "2024")
+      const yearMatch = contestName.match(/\b(20\d{2})\b/);
+      const year = yearMatch ? yearMatch[1] : '';
+      
+      // Map full names to short names
+      const nameMap = {
+        'Presidential Election': 'President',
+        'Gubernatorial Election': 'Governor',
+        'Senate Election': 'Senate',
+        'US Senate': 'Senate',
+        'Governor': 'Governor',
+        'President': 'President'
+      };
+      
+      // Try to find a match in the name map
+      for (const [fullName, shortName] of Object.entries(nameMap)) {
+        if (contestName.includes(fullName)) {
+          return year ? `${shortName} (${year})` : shortName;
+        }
+      }
+      
+      // If no match found, try to extract the office from the name
+      // Remove year and common words
+      let simplified = contestName.replace(/\b20\d{2}\b/g, '').trim();
+      simplified = simplified.replace(/\b(Election|Contest)\b/gi, '').trim();
+      
+      return year ? `${simplified} (${year})` : simplified;
+    }
+
     let updateTimeout = null;
 
     function onContestChange() {
@@ -2474,7 +2507,7 @@ function toggleSidebar() {
         // Update contest name in statewide section
         const contestNameEl = document.getElementById('contest-name');
         if (contestNameEl) {
-          contestNameEl.textContent = `TN ${currentContest.data.contest_name} (${year})`;
+          contestNameEl.textContent = simplifyContestName(currentContest.data.contest_name);
         }
         
         // Update sidebar if a county is currently selected
@@ -2760,7 +2793,7 @@ function toggleSidebar() {
       }
       
       // Update contest display
-      document.getElementById('contest-name').textContent = `TN ${contestData.contest_name} (${year})`;
+      document.getElementById('contest-name').textContent = simplifyContestName(contestData.contest_name);
       setStatus(`Applied Tennessee contest: ${contestData.contest_name} (${countiesProcessed} counties)`);
     }
 
