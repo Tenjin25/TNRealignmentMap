@@ -875,7 +875,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mapboxgl.accessToken = CONFIG.mapboxToken;
 
+
     const map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/mapbox/streets-v12', center: CONFIG.center, zoom: CONFIG.zoom });
+
+    // Toggle county label visibility
+    let countyLabelsVisible = true;
+    function toggleCountyLabels() {
+      if (!map.getLayer('county-label')) return;
+      countyLabelsVisible = !countyLabelsVisible;
+      map.setLayoutProperty('county-label', 'visibility', countyLabelsVisible ? 'visible' : 'none');
+      const btn = document.getElementById('county-label-toggle-btn');
+      if (btn) btn.textContent = countyLabelsVisible ? 'Hide County Labels' : 'Show County Labels';
+    }
 
     let electionData = null;
     let currentContest = null;
