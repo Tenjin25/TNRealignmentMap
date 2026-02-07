@@ -813,6 +813,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div style="display:flex;align-items:center;gap:8px;">
               <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">−</button>
             </div>
+
         </div>
         <div class="controls-content" id="controls-content">
             <div class="analysis-mode">
@@ -820,9 +821,12 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="control-group">
                 <label>📊 Contest Type:</label>
-                <select id="contestSelect">
-                    <option value="">Select a Contest...</option>
-                </select>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <select id="contestSelect">
+                      <option value="">Select a Contest...</option>
+                  </select>
+                  <button class="minimize-btn" onclick="toggleCountyLabels()" id="county-label-toggle-btn" title="Show/Hide County Labels" style="font-size:15px;width:auto;padding:4px 10px;">Hide County Labels</button>
+                </div>
             </div>
         </div>
     </div>
