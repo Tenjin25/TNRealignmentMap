@@ -1251,6 +1251,31 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       sel.onchange = () => { applyContest(sel.value); };
     }
 
+
+    function getContestCandidateNames(contestData, countyData = null) {
+      let demCandidate = '';
+      let repCandidate = '';
+
+      if (countyData) {
+        demCandidate = countyData.dem_candidate || '';
+        repCandidate = countyData.rep_candidate || '';
+      }
+
+      if ((!demCandidate || !repCandidate) && contestData && contestData.results) {
+        const firstCountyKey = Object.keys(contestData.results)[0];
+        if (firstCountyKey) {
+          const firstResult = contestData.results[firstCountyKey] || {};
+          demCandidate = demCandidate || firstResult.dem_candidate || '';
+          repCandidate = repCandidate || firstResult.rep_candidate || '';
+        }
+      }
+
+      return {
+        demCandidate: demCandidate || 'Democratic Candidate',
+        repCandidate: repCandidate || 'Republican Candidate'
+      };
+    }
+
     function updateStatewideResults(contestType, year, demVotes, repVotes, totalVotes, otherVotes = 0) {
       const statewideContent = document.getElementById('statewide-content');
       const tempBar = document.getElementById('statewide-temperature-bar');
@@ -1269,15 +1294,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       const winner = demPct > repPct ? 'Democratic' : 'Republican';
       const loser = demPct > repPct ? 'Republican' : 'Democratic';
       
-      // Get candidate names from the current contest data
-      let demCandidate = 'Democratic Candidate';
-      let repCandidate = 'Republican Candidate';
-      
-      if (currentContest && currentContest.data) {
-        // Get candidate names from contest level data
-        demCandidate = currentContest.data.dem_candidate || 'Democratic Candidate';
-        repCandidate = currentContest.data.rep_candidate || 'Republican Candidate';
-      }
+      const { demCandidate, repCandidate } = getContestCandidateNames(currentContest?.data);
       
       // Calculate competitiveness (precise ranges)
       let compLabel = '';
@@ -1573,9 +1590,7 @@ function toggleSidebar() {
       const repPct = (repVotes / totalVotes * 100);
       const otherPct = (otherVotes / totalVotes * 100);
       
-      // Get candidate names from the contest data, not the county data
-      const demCandidate = currentContest?.data?.dem_candidate || 'Democratic Candidate';
-      const repCandidate = currentContest?.data?.rep_candidate || 'Republican Candidate';
+      const { demCandidate, repCandidate } = getContestCandidateNames(currentContest?.data, countyData);
       
       // Margin calculation and winner determination
       const margin = demVotes - repVotes;
